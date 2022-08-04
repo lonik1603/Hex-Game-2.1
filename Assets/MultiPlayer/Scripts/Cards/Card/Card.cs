@@ -9,12 +9,14 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] protected Material defaultMaterial;
     [SerializeField] protected Material markedMterial;
     [SerializeField] protected GameObject point;
+    [SerializeField] protected GameObject giveMarkPoint;
 
     protected bool cardIsBlue;
     public string cardClass;
     public bool isActivated;
-    protected bool isMarked;
-    protected PhotonView pView;
+    public bool isMarked;
+    public PhotonView pView;
+    public bool canGiveMark;
 
     public bool canMove;
 
@@ -23,13 +25,11 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsWriting)
         {
-            stream.SendNext(cardIsBlue);
             stream.SendNext(isActivated);
             stream.SendNext(isMarked);
         }
         else
         {
-            cardIsBlue = (bool)stream.ReceiveNext();
             isActivated = (bool)stream.ReceiveNext();
             isMarked = (bool)stream.ReceiveNext();
         }
@@ -50,6 +50,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         else
         {
             GameManeger.enemyCards.Add(gameObject);
+            cardIsBlue = !LocalGameManager.isBlue;
         }
 
         if (LocalGameManager.isBlue == false)
@@ -82,19 +83,29 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
                 LocalGameManager.tmpGameObjects.Remove(other.gameObject);
                 Destroy(other.gameObject);
             }
+            else if(cardClass == "Shild" && isActivated)
+            {
+                LocalGameManager.tmpGameObjects.Remove(other.gameObject);
+                Destroy(other.gameObject);
+            }
 
         }            
         else if(SF.cardClassList.Contains(other.gameObject.tag))
         {
-            if((!cardIsBlue && GameManeger.isBlueTurn) || (cardIsBlue && !GameManeger.isBlueTurn))
+            if(pView.IsMine && SF.isMyTurn())
             {
-                if(isMarked)
+                if(SF.getCardScript(other.gameObject).isMarked)
                 {
-                    Board.giveMark();
+                    Board.giveMeMark();
                 }
-                SF.getCardScript(other.gameObject).canMove = false;
-                LocalGameManager.cantMoveCards.Add(other.gameObject);
-                gameObject.SetActive(false);
+                canMove = false;
+                GameManeger.enemyCards.Remove(other.gameObject);
+                Destroy(other.gameObject);
+            }
+            else if (photonView.IsMine)
+            {
+                GameManeger.myCards.Remove(gameObject);
+                Destroy(gameObject);
             }
         }
     }
@@ -161,76 +172,96 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
            
         }
     }
+    public virtual void MoveTo(Vector3 finPos)
+    {
+        StartCoroutine(MoveToCur(finPos));
+    }
 
+    IEnumerator MoveToCur(Vector3 finPos)
+    {
+        Vector3 startPos = gameObject.transform.position;
+        for (float i = 0; i < 1; i += Time.deltaTime * 10)
+        {
+            gameObject.transform.position = Vector3.Lerp(startPos, finPos, i);
+            yield return null;
+        }
+        LocalGameManager.activeCard.transform.position = finPos;
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
+        yield return new WaitForSeconds(0.1f);
+        canGiveMark = false;
+        if (GameManeger.myMana > 0)
+        {
+            spawnPoints();
+        }
+        else
+        {
+            SF.pass();
+            SF.tmpObjListClear();
+        }
 
+    }
 
     protected virtual void spawnPoints()
     {
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),
-            Quaternion.identity));
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y + SF.hexUp, -1),
-            Quaternion.identity));
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y - SF.hexUp, -1),
-            Quaternion.identity));
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - SF.hexUp * 2, -1),
-            Quaternion.identity));
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x -3, gameObject.transform.position.y - SF.hexUp, -1),
-            Quaternion.identity));
-        LocalGameManager.tmpGameObjects.Add
-            (Instantiate(point,
-            new Vector3(gameObject.transform.position.x - 3, gameObject.transform.position.y + SF.hexUp, -1),
-            Quaternion.identity));
-    }
-    public void tryToSpawnPoints()
-    {
         if (canMove)
         {
-            Color pointColor = new Color(1, 0, 0.85783f, 0.5f);
-            List<GameObject> newPoints = new List<GameObject>();
-
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),
                 Quaternion.identity));
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y + SF.hexUp, -1),
                 Quaternion.identity));
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y - SF.hexUp, -1),
                 Quaternion.identity));
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - SF.hexUp * 2, -1),
                 Quaternion.identity));
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x - 3, gameObject.transform.position.y - SF.hexUp, -1),
                 Quaternion.identity));
-            newPoints.Add
+            LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x - 3, gameObject.transform.position.y + SF.hexUp, -1),
                 Quaternion.identity));
-            foreach (GameObject obj1 in newPoints)
+            if (canGiveMark)
             {
-                obj1.GetComponent<SpriteRenderer>().color = pointColor;
-                obj1.GetComponent<BoxCollider>().enabled = true;
-                LocalGameManager.tmpGameObjects.Add(obj1);
+                LocalGameManager.tmpGameObjects.Add(Instantiate(giveMarkPoint,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), Quaternion.identity));
             }
-            newPoints.Clear();
         }
     }
 
-
+    public virtual void cardCheck()
+    {
+        canMove = true;
+        if (isMarked)
+        {
+            if (cardIsBlue)
+            {
+                if ((Mathf.Abs(Mathf.Abs(gameObject.transform.position.x) - 6) < 0.5f) && Mathf.Abs(gameObject.transform.position.y - 3 * SF.hexUp) < 0.5f)
+                {
+                    canGiveMark = true;
+                }
+            }
+            else
+            {
+                if ((Mathf.Abs(Mathf.Abs(gameObject.transform.position.x) - 6) < 0.5f) && Mathf.Abs(gameObject.transform.position.y + 3 * SF.hexUp) < 0.5f)
+                {
+                    canGiveMark = true;
+                }
+            }
+        }
+    }
+    public void giveMark()
+    {
+        isMarked = false;
+        canGiveMark = false;
+        gameObject.GetComponent<Renderer>().material = defaultMaterial;
+    }
 }

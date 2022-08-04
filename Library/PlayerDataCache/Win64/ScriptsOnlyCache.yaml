@@ -10,9 +10,12 @@ ScriptsOnlyBuild:
     - CardPlace
     - CardsChoiseStage
     - EndOfChoiceStage
+    - Explosion
+    - ExplosionPoint
     - GameInterface
     - GameManeger
     - GameStart
+    - GiveMarkPoint
     - LocalGameManager
     - MarkPoint
     - MarksChoseStage
@@ -250,6 +253,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5866}
     - Class: 114
       Script: {instanceID: 6092}
+    - Class: 114
+      Script: {instanceID: 18654}
+    - Class: 114
+      Script: {instanceID: 29400}
+    - Class: 114
+      Script: {instanceID: 29480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1059,7 +1068,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: b462b853452d85cc2b9e7e98c5a813a5
+      Hash: ef07f8d10f2fa3e929fd295a56997982
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shild
@@ -1179,7 +1188,7 @@ ScriptsOnlyBuild:
     className: ToDemoHubButton
   - hash:
       serializedVersion: 2
-      Hash: b462b853452d85cc2b9e7e98c5a813a5
+      Hash: ef07f8d10f2fa3e929fd295a56997982
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Card
@@ -1407,7 +1416,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: b462b853452d85cc2b9e7e98c5a813a5
+      Hash: 99aeb716abbcb6c2e955839b8ae69549
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bomb
@@ -1683,7 +1692,7 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
-      Hash: b462b853452d85cc2b9e7e98c5a813a5
+      Hash: ef07f8d10f2fa3e929fd295a56997982
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Boots
@@ -1777,8 +1786,26 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GiveMarkPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExplosionPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explosion
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/User/Documents/GitHub/HexGame/HexGame V2.exe
+  playerPath: C:/Users/User/Documents/GitHub/Hex GAme Bild/HexGame V2.exe

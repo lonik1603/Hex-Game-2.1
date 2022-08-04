@@ -6,10 +6,21 @@ using Photon.Realtime;
 
 public class Bomb : Card
 {
-
+    [SerializeField] private GameObject explosionPoint;
     private void Awake()
     {
-        cardClass = "Shild";
+        cardClass = "Bomb";
     }
-
+    protected override void spawnPoints()
+    {
+        base.spawnPoints();
+        if(isActivated)
+        {
+            if(!canGiveMark)
+            {
+                LocalGameManager.tmpGameObjects.Add(Instantiate(explosionPoint,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), Quaternion.identity));
+            }
+        }
+    }
 }

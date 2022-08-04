@@ -26,10 +26,7 @@ public class ActButton : MonoBehaviourPunCallbacks
         {
             SF.changeMana(-2);
             Board.activateThisClass(cardClass);
-            if (GameManeger.myMana > 0)
-            {
-                SF.pass();
-            }
+
         }
 
     }
@@ -162,6 +159,14 @@ public class ActButton : MonoBehaviourPunCallbacks
             }
 
         }
+        if (pView.IsMine && isActivated)
+        {
+            SF.pass();
+        }
+        else if(pView.IsMine)
+        {
+            canBeActivated = true;
+        }
     }
 
 
@@ -170,7 +175,7 @@ public class ActButton : MonoBehaviourPunCallbacks
         isActivated = true;
         if (pView.IsMine)
         {
-            activeTurnsCount = 3;
+            activeTurnsCount = 4;
         }
         else
         {

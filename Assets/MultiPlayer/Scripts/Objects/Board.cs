@@ -42,7 +42,14 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
                         card.GetComponent<ActButton>().activateThis();
                     }
                 }
-
+                break;
+            case 18:
+                GameManeger.enemyGottenMarks++;
+                enemyMarks[GameManeger.enemyGottenMarks - 1].SetActive(true);
+                break;
+            case 19:
+                GameManeger.myGottenMarks++;
+                myMarks[GameManeger.myGottenMarks - 1].SetActive(true);
                 break;
         }
     }
@@ -128,20 +135,19 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         }
     }
 
-    public static void giveMark()
+    public static void giveMeMark()
     {
-        if (SF.isMyTurn())
-        {
-            GameManeger.myGottenMarks++;
-            myMarks[GameManeger.myGottenMarks - 1].SetActive(true);
-
-        }
-        else
-        {
-            GameManeger.enemyGottenMarks++;
-            enemyMarks[GameManeger.enemyGottenMarks - 1].SetActive(true);
-        }
+        GameManeger.myGottenMarks++;
+        myMarks[GameManeger.myGottenMarks - 1].SetActive(true);
+        PhotonNetwork.RaiseEvent(18, null, SF.OtherEventOptions, SF.StandatSendOptions);
     }
+    public static void giveOtherPlayerMark()
+    {
+        GameManeger.enemyGottenMarks++;
+        enemyMarks[GameManeger.enemyGottenMarks - 1].SetActive(true);
+        PhotonNetwork.RaiseEvent(19, null, SF.OtherEventOptions, SF.StandatSendOptions);
+    }
+
     public static void activateThisClass(string thisClass)
     {
         PhotonNetwork.RaiseEvent(12, thisClass, SF.OtherEventOptions, SF.StandatSendOptions);

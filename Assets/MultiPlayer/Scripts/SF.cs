@@ -102,11 +102,6 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
         }
         Board.updateMyMana();
         PhotonNetwork.RaiseEvent(10, mana, OtherEventOptions, StandatSendOptions);
-        if (GameManeger.myMana == 0)
-        {
-            pass();
-        }
-
     }
 
     public static bool isMyTurn()
@@ -126,10 +121,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
         GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
         Board.passButton.SetActive(false);
         sf.GetComponent<SF>().StartCoroutine("passCur");
-        foreach (GameObject card in GameManeger.myActButtons)
-        {
-            card.GetComponent<ActButton>().checkThisActButtton();
-        }
+
     }
 
     IEnumerator passCur()
@@ -138,7 +130,14 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
         PhotonNetwork.RaiseEvent(15, null, OtherEventOptions, StandatSendOptions);
         GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
         PhotonNetwork.RaiseEvent(11, null, StandertEventOptions, StandatSendOptions);
-        cardsCanMove();
+        foreach (GameObject card in GameManeger.myActButtons)
+        {
+            card.GetComponent<ActButton>().checkThisActButtton();
+        }
+        foreach (GameObject card in GameManeger.myCards)
+        {
+            getCardScript(card).cardCheck();
+        }
         changeMana(2);
     }
     private static void cardsCanMove()

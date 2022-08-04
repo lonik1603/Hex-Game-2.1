@@ -125,8 +125,12 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: 7a4e53507deb1b940b4580f3ee1da24b, type: 2}
   markedMterial: {fileID: 2100000, guid: af25382eb4800604db431d48c9859c4c, type: 2}
   point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
+  giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
   cardClass: 
   isActivated: 0
+  isMarked: 0
+  pView: {fileID: 0}
+  canGiveMark: 0
   canMove: 0
 --- !u!65 &4127343268017622376
 BoxCollider:
@@ -139,7 +143,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.032, y: 0.019999994, z: 0.047999993}
+  m_Size: {x: 0.02241079, y: 0.02, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-5032200923822239084
 MonoBehaviour:

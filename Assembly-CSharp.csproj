@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D04573CE-1F09-5F34-30C3-59435CFC369D}</ProjectGuid>
+    <ProjectGuid>{5DF0C9A2-15AA-7DA3-D361-D3FE55584F89}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,7 +59,6 @@
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\ShildChoceButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\MarksChoseStage.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\ExplosionPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BombChoiceButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\EndOfChoiceStage.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\CardsChoiseStage.cs" />
@@ -74,19 +73,18 @@
     <Compile Include="Assets\MultiPlayer\Scripts\GameStart.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Card.cs" />
     <Compile Include="Assets\Main Menu\Menu.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\PassButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bomb.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Point.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\LocalGameManager.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Trap.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\Explosion.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BootsChoiceButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\GameManeger.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-<<<<<<< HEAD
-=======
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\PassButton.cs" />
->>>>>>> parent of 3ae98d80 (5)
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\GiveMarkPoint.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\ExplosionPoint.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\Explosion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
@@ -767,43 +765,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{0DBC1E0C-5AF3-750F-66E9-A767D90C21C8}</Project>
+      <Project>{08D79BAC-43C6-934C-BFE9-D3B120FBD2FF}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{D01636D6-CDB9-CE62-3E6E-CCAF33A3822B}</Project>
+      <Project>{04AF24C9-7FD1-25CE-F486-909FF9A023B0}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{7F7E9A6C-DA79-EBE4-213A-EB818F52A3E9}</Project>
+      <Project>{60FC2A4A-7D9F-42BC-7317-5881DC72968A}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoHubEditor.csproj">
-      <Project>{BCAFCB55-3217-BD2A-FD39-37E4236AEF9C}</Project>
+      <Project>{9F849CB1-7912-C64B-22E1-31BD71EDD80D}</Project>
       <Name>PunDemos.DemoHubEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{A3B79783-7C64-B90C-D0BF-35985FFD0A29}</Project>
+      <Project>{347CCF9E-1890-BAEE-FE7D-9AFE3FBD3AA7}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{3A4315FF-6133-2C8C-1664-E92B09F1EF14}</Project>
+      <Project>{60E73DB1-C8C7-C62F-8D65-F89D37F67520}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{17386017-BCE6-5DBB-052D-DAAC609D5F29}</Project>
+      <Project>{5B342CE3-348F-BAEA-779E-EC757BB0A181}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Demos.csproj">
-      <Project>{2A16F486-87D1-72F5-AD84-27812868D725}</Project>
+      <Project>{A91B5F9A-D2C6-B9BF-38CB-56943B8A0832}</Project>
       <Name>PhotonUnityNetworking.Demos</Name>
     </ProjectReference>
     <ProjectReference Include="PunDemos.DemoSlotcarEditor.csproj">
-      <Project>{A6E008CE-4A84-A0CC-B261-E584D8967065}</Project>
+      <Project>{64942DDA-9E62-9548-7A31-0360A80DD96D}</Project>
       <Name>PunDemos.DemoSlotcarEditor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{E03033CA-C6E9-6809-81B3-E38EE5B3B8F8}</Project>
+      <Project>{0D51FB38-818D-D199-BE5A-95EB39D229AD}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
   </ItemGroup>
