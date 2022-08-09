@@ -84,7 +84,6 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         else
         {
             passButton = Instantiate(redPassButtun, new Vector3(-10, 22, 0), Quaternion.Euler(0, 0, 180));
-            passButton.SetActive(false);
             for (int i = 0; i < 4; i++)
             {
                 myMana.Add(Instantiate(redMana, new Vector3(1.353f - i * 0.9f, 14.6f, 0), Quaternion.identity));

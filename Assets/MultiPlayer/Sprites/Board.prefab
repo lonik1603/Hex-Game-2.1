@@ -97,6 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blueMana: {fileID: 8733185275071074372, guid: fc88a2efd26bda84ba286685acd213cb, type: 3}
   redMana: {fileID: 973787898583788675, guid: 84c85a635123dda41b0db167c6d1bcd8, type: 3}
-  bluePassButtun: {fileID: 209338868514206467, guid: 89f06872d8b767a45ba9eda82d8cc170, type: 3}
-  redPassButtun: {fileID: 7224493652067380680, guid: 6e9358516a86c1b4aa37cf50687c5012, type: 3}
+  bluePassButtun: {fileID: 408204522692007974, guid: 639f4b5dfb2eccf479222955c2e5e054, type: 3}
+  redPassButtun: {fileID: 2931219402134441849, guid: 76b30cf19239a5a47840fa8b01e3bf41, type: 3}
   Mark: {fileID: 7949227073030163987, guid: 31071b4675899c14aa09971a1c7c7fbd, type: 3}

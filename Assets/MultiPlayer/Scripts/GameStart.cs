@@ -8,8 +8,10 @@ public class GameStart : MonoBehaviourPunCallbacks, IOnEventCallback
 {
     public GameObject gameCamera;
 
-    public  GameObject gameStart; 
-    public  GameObject cardsChoseStage;
+    public GameObject gameStart; 
+
+    public GameObject textManager;
+
     private int masterIsBlue;
 
     public GameObject gfg;
@@ -44,7 +46,7 @@ public class GameStart : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             gameCamera.transform.rotation = Quaternion.Euler(0,0,180);
         }
-        cardsChoseStage.SetActive(true);
+        textManager.SetActive(true);
         gameStart.SetActive(false);   
     }
 

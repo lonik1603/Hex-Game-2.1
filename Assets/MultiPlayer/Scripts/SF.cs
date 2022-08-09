@@ -26,7 +26,6 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
         switch (photonEvent.Code)
         {
             case 5:
-                SF.tmpObjListClear();
                 GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
                 Debug.Log("next turn");
                 break;
@@ -39,12 +38,18 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
             case 11:
                 SF.tmpObjListClear();
                 GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
-                
-                if(isMyTurn())
+
+                if (isMyTurn())
                 {
-                    Board.passButton.SetActive(true);
+                    TextManager.activateThisText(TextManager.yourTurn);
+                    brighterSprite(Board.passButton);
+                    Board.passButton.GetComponent<BoxCollider>().enabled = true;
                 }
-                Debug.Log("next turn");
+                else
+                {
+                    TextManager.activateThisText(TextManager.waitFor);
+
+                }
                 break;
             case 15:
                 foreach(GameObject card in GameManeger.enemyActButtons)
@@ -62,6 +67,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     }
     public static void tmpObjListClear()
     {
+        TextManager.disableAllText();
         foreach (GameObject obj in LocalGameManager.tmpGameObjects)
         {
             Destroy(obj);
@@ -119,9 +125,10 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     public static void pass()
     {
         GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
-        Board.passButton.SetActive(false);
+        darkerSprite(Board.passButton);
+        Board.passButton.GetComponent<BoxCollider>().enabled = false;
         sf.GetComponent<SF>().StartCoroutine("passCur");
-
+        tmpObjListClear();
     }
 
     IEnumerator passCur()

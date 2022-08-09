@@ -30,6 +30,8 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
             case 3:
                 foreach (GameObject obj in createdChoiceButtons)
                 {
+                    TextManager.activateThisText(TextManager.ChooseCardClass);
+
                     SF.brighterSprite(obj);
                     obj.GetComponent<BoxCollider>().enabled = true;
                 }
@@ -40,6 +42,7 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 {
                     Destroy(obj);
                 }
+                TextManager.disableAllText();
                 marksChoiceStage.SetActive(true);
                 gameObject.SetActive(false);
 
@@ -64,6 +67,8 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 cardPlaces.Add(Instantiate(cardPlace, new Vector3(-9, -11.4f, -2), Quaternion.Euler(0, 0, 90)));
                 cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, -11.4f, -2), Quaternion.Euler(0, 0, -90)));
                 cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, -11.4f, -2), Quaternion.Euler(0, 0, 90)));
+
+                TextManager.activateThisText(TextManager.ChooseCardClass);
             }
             else
             {
@@ -76,6 +81,7 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, 11.4f, -2), Quaternion.Euler(0, 0, 90)));
                 cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, 11.4f, -2), Quaternion.Euler(0, 0, -90)));
                 diactivateClassChoiceButtons();
+                TextManager.activateThisText(TextManager.waitFor);
             }
             g = 1;
         }
@@ -114,6 +120,8 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
     }
     protected static void nextTurn()
     {
+        TextManager.activateThisText(TextManager.waitFor);
+
 
         PhotonNetwork.RaiseEvent(3, null, SF.OtherEventOptions, SF.StandatSendOptions);
     }

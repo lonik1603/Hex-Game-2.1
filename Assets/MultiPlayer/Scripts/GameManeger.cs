@@ -18,6 +18,7 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public static List<GameObject> myAbilityCards;
     public static List<GameObject> enemyAbilityCards;
 
+
     public static int myMana;
     public static int enemyMana;
 
@@ -35,6 +36,8 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
         enemyActButtons = new List<GameObject>();
         myAbilityCards = new List<GameObject>();
         enemyAbilityCards = new List<GameObject>();
+        Crown.myActivatedClasses = new List<string>();
+        Crown.enemyActivatedClasses = new List<string>();
 
     }
 
