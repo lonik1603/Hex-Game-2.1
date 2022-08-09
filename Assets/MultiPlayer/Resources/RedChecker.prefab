@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5671759009497681022}
   - component: {fileID: -5147363377408379433}
   - component: {fileID: -1328263414739984905}
+  - component: {fileID: 4129871406259291817}
   m_Layer: 0
   m_Name: RedChecker
   m_TagString: Untagged
@@ -118,3 +119,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.032, y: 0.019999994, z: 0.043999992}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4129871406259291817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6176368807453699499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c65b66b3ffe35d4984fc5640d66b549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkerPoint: {fileID: 7943391347548296961, guid: 8d0c0043a3f11654bb216cd2b214c08e, type: 3}

@@ -60,6 +60,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\MarksChoseStage.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BombChoiceButton.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\GiveMarkPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\EndOfChoiceStage.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\CardsChoiseStage.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Checker.cs" />
@@ -67,13 +68,16 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\ActButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\AbilityCard\AbilityCard.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Relay.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\CheckerPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\cardPlace\CardPlace.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\ExplosionPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Shild.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\SF.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\GameStart.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Card.cs" />
     <Compile Include="Assets\Main Menu\Menu.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\PassButton.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\Explosion.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bomb.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Point.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\LocalGameManager.cs" />
@@ -82,9 +86,8 @@
     <Compile Include="Assets\MultiPlayer\Scripts\GameManeger.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\GiveMarkPoint.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\ExplosionPoint.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\Explosion.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\RelayPoint1.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\RelayPoint2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

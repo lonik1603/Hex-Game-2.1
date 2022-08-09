@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8995404969933964630}
   - component: {fileID: -3244320713884437182}
   - component: {fileID: 5658620974845662063}
+  - component: {fileID: 7140020354951466400}
   m_Layer: 0
   m_Name: RedRelay
   m_TagString: Untagged
@@ -118,3 +119,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.032, y: 0.019999994, z: 0.043999992}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7140020354951466400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7482420001960174723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cfbca0651da61439e934876234d7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  relayPoint1: {fileID: 7009446732669684417, guid: debac2908ab884043b14d21879715939, type: 3}

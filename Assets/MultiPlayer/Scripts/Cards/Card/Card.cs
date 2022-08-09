@@ -6,8 +6,8 @@ using Photon.Realtime;
 
 public class Card : MonoBehaviourPunCallbacks, IPunObservable
 {
-    [SerializeField] protected Material defaultMaterial;
-    [SerializeField] protected Material markedMterial;
+    [SerializeField] public Material defaultMaterial;
+    [SerializeField] public Material markedMterial;
     [SerializeField] protected GameObject point;
     [SerializeField] protected GameObject giveMarkPoint;
 

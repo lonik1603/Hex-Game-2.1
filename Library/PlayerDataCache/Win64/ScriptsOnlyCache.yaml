@@ -9,6 +9,8 @@ ScriptsOnlyBuild:
     - BootsChoiceButton
     - CardPlace
     - CardsChoiseStage
+    - Checker
+    - CheckerPoint
     - EndOfChoiceStage
     - Explosion
     - ExplosionPoint
@@ -22,6 +24,9 @@ ScriptsOnlyBuild:
     - Menu
     - PassButton
     - Point
+    - Relay
+    - RelayPoint1
+    - RelayPoint2
     - SF
     - Shild
     - ShildChoceButton
@@ -84,7 +89,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -109,39 +120,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2350}
     - Class: 114
-      Script: {instanceID: 2514}
+      Script: {instanceID: 2516}
     - Class: 114
-      Script: {instanceID: 2704}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3204}
+      Script: {instanceID: 3174}
     - Class: 114
-      Script: {instanceID: 3438}
+      Script: {instanceID: 3206}
     - Class: 114
-      Script: {instanceID: 3448}
+      Script: {instanceID: 3440}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3842}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 4154}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 4178}
+      Script: {instanceID: 3776}
     - Class: 114
-      Script: {instanceID: 4678}
+      Script: {instanceID: 3846}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 4160}
     - Class: 114
-      Script: {instanceID: 5412}
+      Script: {instanceID: 4184}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 4684}
     - Class: 114
-      Script: {instanceID: 5880}
+      Script: {instanceID: 5162}
+    - Class: 114
+      Script: {instanceID: 5420}
+    - Class: 114
+      Script: {instanceID: 5732}
+    - Class: 114
+      Script: {instanceID: 5888}
+    - Class: 114
+      Script: {instanceID: 18488}
+    - Class: 114
+      Script: {instanceID: 18496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,57 +229,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 2432}
+      Script: {instanceID: 2358}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2434}
     - Class: 114
-      Script: {instanceID: 2768}
+      Script: {instanceID: 2502}
     - Class: 114
-      Script: {instanceID: 2940}
+      Script: {instanceID: 2770}
     - Class: 114
-      Script: {instanceID: 3172}
+      Script: {instanceID: 2924}
     - Class: 114
-      Script: {instanceID: 3438}
+      Script: {instanceID: 2942}
     - Class: 114
-      Script: {instanceID: 3448}
+      Script: {instanceID: 3174}
+    - Class: 114
+      Script: {instanceID: 3440}
     - Class: 114
       Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3460}
+      Script: {instanceID: 3452}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3462}
     - Class: 114
-      Script: {instanceID: 3984}
+      Script: {instanceID: 3570}
     - Class: 114
-      Script: {instanceID: 4190}
+      Script: {instanceID: 3582}
     - Class: 114
-      Script: {instanceID: 4474}
+      Script: {instanceID: 3776}
     - Class: 114
-      Script: {instanceID: 4618}
+      Script: {instanceID: 3960}
+    - Class: 114
+      Script: {instanceID: 3990}
+    - Class: 114
+      Script: {instanceID: 4196}
+    - Class: 114
+      Script: {instanceID: 4480}
     - Class: 114
       Script: {instanceID: 4624}
     - Class: 114
-      Script: {instanceID: 4850}
+      Script: {instanceID: 4630}
     - Class: 114
-      Script: {instanceID: 4884}
+      Script: {instanceID: 4800}
     - Class: 114
-      Script: {instanceID: 4890}
+      Script: {instanceID: 4858}
     - Class: 114
-      Script: {instanceID: 4918}
+      Script: {instanceID: 4892}
     - Class: 114
-      Script: {instanceID: 5472}
+      Script: {instanceID: 4898}
     - Class: 114
-      Script: {instanceID: 5652}
+      Script: {instanceID: 4926}
     - Class: 114
-      Script: {instanceID: 5866}
+      Script: {instanceID: 5480}
     - Class: 114
-      Script: {instanceID: 6092}
+      Script: {instanceID: 5660}
     - Class: 114
-      Script: {instanceID: 18654}
+      Script: {instanceID: 5874}
     - Class: 114
-      Script: {instanceID: 29400}
+      Script: {instanceID: 6100}
     - Class: 114
-      Script: {instanceID: 29480}
+      Script: {instanceID: 18488}
+    - Class: 114
+      Script: {instanceID: 18496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -582,6 +613,12 @@ ScriptsOnlyBuild:
     className: BombChoiceButton
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GiveMarkPoint
+  - hash:
+      serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -636,7 +673,7 @@ ScriptsOnlyBuild:
     className: SplineWalker
   - hash:
       serializedVersion: 2
-      Hash: 41b093df7a93b20992e5b61cc969cf87
+      Hash: 9aa50bdd047c843e9850973bf943d936
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EndOfChoiceStage
@@ -726,7 +763,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1d51580f48d09cc383d46e7f2ccea405
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Checker
@@ -966,7 +1003,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 10ccbb41c8d9de661b6de111e57cbdca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Relay
@@ -1000,6 +1037,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.SlotRacer.Utils
     className: BezierCurve
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckerPoint
   - hash:
       serializedVersion: 2
       Hash: 5e8a01a14cef8c5fb6866e39e13545df
@@ -1060,6 +1103,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: OnClickDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExplosionPoint
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1354,6 +1403,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomMasterClientIdProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explosion
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1788,22 +1843,16 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6e41452e6dd05871cb8638187edec80d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GiveMarkPoint
+    className: RelayPoint1
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 6e41452e6dd05871cb8638187edec80d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ExplosionPoint
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Explosion
+    className: RelayPoint2
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
