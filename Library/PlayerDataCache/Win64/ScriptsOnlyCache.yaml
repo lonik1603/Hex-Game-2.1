@@ -30,6 +30,8 @@ ScriptsOnlyBuild:
     - SF
     - Shild
     - ShildChoceButton
+    - TextManager
+    - Trap
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
     - Photon.Pun.Demo.Asteroids.Bullet
@@ -116,53 +118,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1744}
     - Class: 114
-      Script: {instanceID: 1788}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 2350}
+      Script: {instanceID: 1790}
     - Class: 114
-      Script: {instanceID: 2516}
+      Script: {instanceID: 2352}
     - Class: 114
-      Script: {instanceID: 2706}
+      Script: {instanceID: 2518}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2708}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2926}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 3206}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 3442}
     - Class: 114
-      Script: {instanceID: 3570}
+      Script: {instanceID: 3452}
     - Class: 114
-      Script: {instanceID: 3582}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3846}
+      Script: {instanceID: 3778}
     - Class: 114
-      Script: {instanceID: 4160}
+      Script: {instanceID: 3848}
     - Class: 114
-      Script: {instanceID: 4184}
+      Script: {instanceID: 4162}
     - Class: 114
-      Script: {instanceID: 4684}
+      Script: {instanceID: 4186}
     - Class: 114
-      Script: {instanceID: 5162}
+      Script: {instanceID: 4686}
     - Class: 114
-      Script: {instanceID: 5420}
+      Script: {instanceID: 5164}
     - Class: 114
-      Script: {instanceID: 5732}
+      Script: {instanceID: 5182}
     - Class: 114
-      Script: {instanceID: 5888}
+      Script: {instanceID: 5422}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 18496}
+      Script: {instanceID: 5764}
+    - Class: 114
+      Script: {instanceID: 5892}
+    - Class: 114
+      Script: {instanceID: 18856}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,71 +231,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1756}
     - Class: 114
-      Script: {instanceID: 1794}
+      Script: {instanceID: 1768}
     - Class: 114
-      Script: {instanceID: 1798}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 2358}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 2434}
+      Script: {instanceID: 2360}
     - Class: 114
-      Script: {instanceID: 2502}
+      Script: {instanceID: 2436}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 2924}
+      Script: {instanceID: 2772}
     - Class: 114
-      Script: {instanceID: 2942}
+      Script: {instanceID: 2926}
     - Class: 114
-      Script: {instanceID: 3174}
+      Script: {instanceID: 2944}
     - Class: 114
-      Script: {instanceID: 3440}
+      Script: {instanceID: 3176}
     - Class: 114
-      Script: {instanceID: 3450}
+      Script: {instanceID: 3442}
     - Class: 114
       Script: {instanceID: 3452}
     - Class: 114
-      Script: {instanceID: 3462}
+      Script: {instanceID: 3454}
     - Class: 114
-      Script: {instanceID: 3570}
+      Script: {instanceID: 3464}
     - Class: 114
-      Script: {instanceID: 3582}
+      Script: {instanceID: 3572}
     - Class: 114
-      Script: {instanceID: 3776}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3960}
+      Script: {instanceID: 3778}
     - Class: 114
-      Script: {instanceID: 3990}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 4196}
+      Script: {instanceID: 3992}
     - Class: 114
-      Script: {instanceID: 4480}
+      Script: {instanceID: 4198}
     - Class: 114
-      Script: {instanceID: 4624}
+      Script: {instanceID: 4482}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4626}
     - Class: 114
-      Script: {instanceID: 4800}
+      Script: {instanceID: 4632}
     - Class: 114
-      Script: {instanceID: 4858}
+      Script: {instanceID: 4802}
     - Class: 114
-      Script: {instanceID: 4892}
+      Script: {instanceID: 4860}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 4894}
     - Class: 114
-      Script: {instanceID: 4926}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 5480}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5660}
+      Script: {instanceID: 5182}
     - Class: 114
-      Script: {instanceID: 5874}
+      Script: {instanceID: 5482}
     - Class: 114
-      Script: {instanceID: 6100}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 5764}
     - Class: 114
-      Script: {instanceID: 18496}
+      Script: {instanceID: 5878}
+    - Class: 114
+      Script: {instanceID: 6104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -479,6 +487,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 6e41452e6dd05871cb8638187edec80d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RelayPoint2
   - hash:
       serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
@@ -1189,7 +1203,7 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
-      Hash: f7c812460fb64dcded559c7e30fae4b3
+      Hash: 5d22125b0be597982cb40dfe2593cfd4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameStart
@@ -1717,6 +1731,12 @@ ScriptsOnlyBuild:
     className: PunTurnManager
   - hash:
       serializedVersion: 2
+      Hash: 6e41452e6dd05871cb8638187edec80d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RelayPoint1
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -1843,16 +1863,16 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 6e41452e6dd05871cb8638187edec80d
+      Hash: ef07f8d10f2fa3e929fd295a56997982
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RelayPoint1
+    className: Crown
   - hash:
       serializedVersion: 2
-      Hash: 6e41452e6dd05871cb8638187edec80d
+      Hash: 9e401b35e3daf2df329db7444a0075aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RelayPoint2
+    className: TextManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

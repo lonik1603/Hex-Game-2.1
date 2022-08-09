@@ -31,6 +31,8 @@ public class EndOfChoiceStage : MonoBehaviour
             GameManeger.enemyAbilityCards.Add(Instantiate(RedRelay, new Vector3(-3.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
             GameManeger.enemyAbilityCards.Add(Instantiate(RedChecker, new Vector3(-6.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
             GameManeger.enemyAbilityCards.Add(Instantiate(RedTrap, new Vector3(-9.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
+
+            TextManager.activateThisText(TextManager.yourTurn);
         }
         else
         {
@@ -41,6 +43,8 @@ public class EndOfChoiceStage : MonoBehaviour
             GameManeger.myAbilityCards.Add(Instantiate(RedRelay, new Vector3(-3.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
             GameManeger.myAbilityCards.Add(Instantiate(RedChecker, new Vector3(-6.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
             GameManeger.myAbilityCards.Add(Instantiate(RedTrap, new Vector3(-9.5f, 16.27f), Quaternion.Euler(-90, 0, 0)));
+
+            TextManager.activateThisText(TextManager.waitFor);
         }
 
 

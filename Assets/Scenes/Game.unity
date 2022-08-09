@@ -174,7 +174,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138788420
 GameObject:
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameCamera: {fileID: 955255873}
   gameStart: {fileID: 853230867}
-  cardsChoseStage: {fileID: 97658735}
+  textManager: {fileID: 1839732686}
   gfg: {fileID: 7851957991395919325, guid: e45f40b01fa905c46a7903ecc1e610b1, type: 3}
 --- !u!4 &853230869
 Transform:
@@ -706,7 +706,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381028890
 GameObject:
@@ -857,7 +857,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474540769
 GameObject:
@@ -984,7 +984,58 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1839732686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839732688}
+  - component: {fileID: 1839732687}
+  m_Layer: 0
+  m_Name: textManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1839732687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839732686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc5f050200593bf48904c58042a842c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardsChoseStage: {fileID: 97658735}
+  ChooseCardClassBluePref: {fileID: 1803710340047041098, guid: 01269ef2e1899bc45bcd42af9778180e, type: 3}
+  ChooseCardClassRedPref: {fileID: 7145357214017968992, guid: 3f1db82c8a144e34a987228378128d59, type: 3}
+  waitForBluePref: {fileID: 3788464255298848159, guid: 6403018e664d45844a6cce3e940cf3f8, type: 3}
+  waitForRedPref: {fileID: 5570471420234573405, guid: db4676116ce019746a1525cbae360785, type: 3}
+  mark3ofCardsPref: {fileID: 137528274745758236, guid: 03ba52f142715f34c96e686bf9212dde, type: 3}
+  yourTurnBluePref: {fileID: 1559218239616039270, guid: b4772d8a9a270be40b420d94f485c71b, type: 3}
+  yourTurnRedPref: {fileID: 6916224086459143169, guid: ddeaad9570581c144955b634cbf66543, type: 3}
+--- !u!4 &1839732688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839732686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2090361, y: -6.362398, z: -95.73251}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2147444569
 GameObject:
