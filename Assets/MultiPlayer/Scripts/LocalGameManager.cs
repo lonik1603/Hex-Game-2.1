@@ -8,6 +8,7 @@ public class LocalGameManager : MonoBehaviour
     public static List<GameObject> tmpGameObjects;
     public static List<GameObject> cantMoveCards;
     public static int marksCount;
+    public static bool canClick;
 
     [SerializeField] private GameObject BoardPref;
 
@@ -19,6 +20,7 @@ public class LocalGameManager : MonoBehaviour
 
     private void Start()
     {
+        canClick = true;
         tmpGameObjects = new List<GameObject>();
         cantMoveCards = new List<GameObject>();
         gameStarted = false;

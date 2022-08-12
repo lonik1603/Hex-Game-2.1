@@ -11,7 +11,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] protected GameObject point;
     [SerializeField] protected GameObject giveMarkPoint;
 
-    protected bool cardIsBlue;
+    public bool cardIsBlue;
     public string cardClass;
     public bool isActivated;
     public bool isMarked;
@@ -179,6 +179,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
 
     IEnumerator MoveToCur(Vector3 finPos)
     {
+        LocalGameManager.canClick = false;
         Vector3 startPos = gameObject.transform.position;
         for (float i = 0; i < 1; i += Time.deltaTime * 10)
         {
@@ -186,6 +187,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
             yield return null;
         }
         LocalGameManager.activeCard.transform.position = finPos;
+        LocalGameManager.canClick = true;
         gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
         yield return new WaitForSeconds(0.1f);
         canGiveMark = false;
@@ -197,8 +199,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         {
             SF.pass();
             SF.tmpObjListClear();
-        }
-
+        };
     }
 
     protected virtual void spawnPoints()

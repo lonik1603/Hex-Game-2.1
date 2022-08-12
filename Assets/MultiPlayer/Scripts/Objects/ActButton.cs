@@ -108,6 +108,7 @@ public class ActButton : MonoBehaviourPunCallbacks
 
     IEnumerator flipThisActCard()
     {
+        LocalGameManager.canClick = false;
         float x = Mathf.Abs(gameObject.transform.rotation.eulerAngles.x);
         float y = Mathf.Abs(gameObject.transform.rotation.eulerAngles.y);
         float z = Mathf.Abs(gameObject.transform.rotation.eulerAngles.z);
@@ -167,6 +168,7 @@ public class ActButton : MonoBehaviourPunCallbacks
         {
             canBeActivated = true;
         }
+        LocalGameManager.canClick = true;
     }
 
 

@@ -17,7 +17,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     public static ExitGames.Client.Photon.SendOptions StandatSendOptions = new ExitGames.Client.Photon.SendOptions
     { Reliability = true };
 
-    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots" };
+    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Crown" };
 
     public const float hexUp = 1.75f;
     private static Card script;
@@ -112,7 +112,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public static bool isMyTurn()
     {
-        if (((LocalGameManager.isBlue && GameManeger.isBlueTurn) || (!LocalGameManager.isBlue && !GameManeger.isBlueTurn)) && LocalGameManager.gameStarted)
+        if (((LocalGameManager.isBlue && GameManeger.isBlueTurn) || (!LocalGameManager.isBlue && !GameManeger.isBlueTurn)) && LocalGameManager.gameStarted && LocalGameManager.canClick)
         {
             return true;
         }
@@ -169,6 +169,9 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
                 break;
             case "Shild":
                 script = card.GetComponent<Shild>();
+                break;
+            case "Crown":
+                script = card.GetComponent<Crown>();
                 break;
         }
         return script;

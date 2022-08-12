@@ -69,6 +69,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\ActButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\AbilityCard\AbilityCard.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Relay.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\TextManager.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\CheckerPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\cardPlace\CardPlace.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\ExplosionPoint.cs" />
@@ -83,13 +84,14 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Point.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\LocalGameManager.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Trap.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Crown.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BootsChoiceButton.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\Base.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\GameManeger.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\RelayPoint1.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Crown.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\TextManager.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\CameraConstantWidth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

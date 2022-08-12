@@ -12,6 +12,7 @@ public class MarkPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(SF.cardClassList.Contains(other.gameObject.tag))
         card = other.gameObject;
     }
 

@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ActButton
+    - Base
     - Board
     - Bomb
     - BombChoiceButton
@@ -11,6 +12,7 @@ ScriptsOnlyBuild:
     - CardsChoiseStage
     - Checker
     - CheckerPoint
+    - Crown
     - EndOfChoiceStage
     - Explosion
     - ExplosionPoint
@@ -146,29 +148,31 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3656}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 4162}
+      Script: {instanceID: 3850}
     - Class: 114
-      Script: {instanceID: 4186}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 4686}
+      Script: {instanceID: 4188}
     - Class: 114
-      Script: {instanceID: 5164}
+      Script: {instanceID: 4688}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5166}
     - Class: 114
-      Script: {instanceID: 5422}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 5734}
+      Script: {instanceID: 5426}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5738}
     - Class: 114
-      Script: {instanceID: 5892}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 18856}
+      Script: {instanceID: 5896}
+    - Class: 114
+      Script: {instanceID: 18638}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,41 +267,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3778}
+      Script: {instanceID: 3780}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3964}
     - Class: 114
-      Script: {instanceID: 3992}
+      Script: {instanceID: 3994}
     - Class: 114
-      Script: {instanceID: 4198}
+      Script: {instanceID: 4200}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 4626}
+      Script: {instanceID: 4628}
     - Class: 114
-      Script: {instanceID: 4632}
+      Script: {instanceID: 4634}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4804}
     - Class: 114
-      Script: {instanceID: 4860}
+      Script: {instanceID: 4862}
     - Class: 114
-      Script: {instanceID: 4894}
+      Script: {instanceID: 4896}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4902}
     - Class: 114
-      Script: {instanceID: 4928}
+      Script: {instanceID: 4930}
     - Class: 114
-      Script: {instanceID: 5182}
+      Script: {instanceID: 5184}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 5222}
     - Class: 114
-      Script: {instanceID: 5662}
+      Script: {instanceID: 5486}
     - Class: 114
-      Script: {instanceID: 5764}
+      Script: {instanceID: 5666}
     - Class: 114
-      Script: {instanceID: 5878}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 6104}
+      Script: {instanceID: 5882}
+    - Class: 114
+      Script: {instanceID: 6108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1035,6 +1041,12 @@ ScriptsOnlyBuild:
     className: IsConnectedAndReadyProperty
   - hash:
       serializedVersion: 2
+      Hash: 9e401b35e3daf2df329db7444a0075aa
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TextManager
+  - hash:
+      serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1131,7 +1143,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: ef07f8d10f2fa3e929fd295a56997982
+      Hash: f30914b2fdf1718493af876290bfe717
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shild
@@ -1251,7 +1263,7 @@ ScriptsOnlyBuild:
     className: ToDemoHubButton
   - hash:
       serializedVersion: 2
-      Hash: ef07f8d10f2fa3e929fd295a56997982
+      Hash: f30914b2fdf1718493af876290bfe717
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Card
@@ -1485,7 +1497,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 99aeb716abbcb6c2e955839b8ae69549
+      Hash: 2b8fd87dd869b25e64cf3741e18f0cac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bomb
@@ -1603,6 +1615,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: PhotonStatsGui
+  - hash:
+      serializedVersion: 2
+      Hash: f30914b2fdf1718493af876290bfe717
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Crown
   - hash:
       serializedVersion: 2
       Hash: 74494c459d8da1b3c2f0349d1d8534aa
@@ -1767,7 +1785,7 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
-      Hash: ef07f8d10f2fa3e929fd295a56997982
+      Hash: f30914b2fdf1718493af876290bfe717
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Boots
@@ -1863,16 +1881,10 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: ef07f8d10f2fa3e929fd295a56997982
+      Hash: 20be11c0a8ba2e8bc66c194f9387a863
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Crown
-  - hash:
-      serializedVersion: 2
-      Hash: 9e401b35e3daf2df329db7444a0075aa
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TextManager
+    className: Base
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
