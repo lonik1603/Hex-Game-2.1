@@ -51,6 +51,12 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     }
     public override void OnLeftRoom()
     {
+        SF.tmpObjListClear();
+        foreach(GameObject obj in CardsChoiseStage.cardPlaces)
+        {
+            Destroy(obj);
+        }
+        CardsChoiseStage.cardPlaces.Clear();
         SceneManager.LoadScene(0);
     }
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)

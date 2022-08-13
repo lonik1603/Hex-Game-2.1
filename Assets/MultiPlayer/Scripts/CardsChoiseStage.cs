@@ -17,7 +17,7 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
     protected static GameObject pressedButton;
 
     protected static List<GameObject> createdChoiceButtons = new List<GameObject>();
-    protected static List<GameObject> cardPlaces = new List<GameObject>();
+    public static List<GameObject> cardPlaces = new List<GameObject>();
 
     protected static int turnCount;
     public static int g;

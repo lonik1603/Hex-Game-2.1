@@ -20,9 +20,7 @@ public class GameStart : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         CardsChoiseStage.g = 0;
         MarksChoseStage.p = 0;
-    }
-    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
-    {
+
         if(PhotonNetwork.IsMasterClient)
         {
             Instantiate(gfg, new Vector3(-20,0,0), Quaternion.identity);           
