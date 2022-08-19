@@ -84,9 +84,8 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 TextManager.activateThisText(TextManager.waitFor);
             }
             g = 1;
+            disableCardPlaces();
         }
-
-        disableCardPlaces();
     }
     protected void activateCardPlaces()
     {

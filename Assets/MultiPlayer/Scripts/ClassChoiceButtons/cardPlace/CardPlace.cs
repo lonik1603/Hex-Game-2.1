@@ -8,6 +8,7 @@ public class CardPlace : CardsChoiseStage
 {
     private void OnMouseDown()
     {
+
         if(LocalGameManager.isBlue)
         {
             if(gameObject.transform.position.x != 0)

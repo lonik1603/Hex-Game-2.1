@@ -4,15 +4,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 using Photon.Realtime;
-
+using UnityEngine.UI;
 public class Menu : MonoBehaviourPunCallbacks
 {
+    public InputField nickname;
     private static bool conected;
-    private void Awake()
+    private void Start()
     {
         conected = false;
-        PhotonNetwork.NickName = "Player" + Random.Range(1000, 9999);
-
+        if (PlayerPrefs.HasKey("Nickname"))
+        {
+            nickname.text = PlayerPrefs.GetString("Nickname");
+            PhotonNetwork.NickName = nickname.text;
+        }
+        else
+        {
+            PhotonNetwork.NickName = "Player" + Random.Range(1000, 9999);
+        }
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.GameVersion = "0.2";
         PhotonNetwork.ConnectUsingSettings();
@@ -64,4 +72,11 @@ public class Menu : MonoBehaviourPunCallbacks
         }
 
     }
+
+    public void saveNickname()
+    {
+        PlayerPrefs.SetString("Nickname", nickname.text);
+        PhotonNetwork.NickName = nickname.text;
+    }
+
 }
