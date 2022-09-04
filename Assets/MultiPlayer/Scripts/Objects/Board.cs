@@ -50,6 +50,7 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
             case 19:
                 GameManeger.myGottenMarks++;
                 myMarks[GameManeger.myGottenMarks - 1].SetActive(true);
+                markCheck();
                 break;
             case 20:
                 GameManeger.enemyAbilityCards[(int)photonEvent.CustomData].GetComponent<AbilityCard>().useThisCard();
@@ -142,6 +143,7 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         GameManeger.myGottenMarks++;
         myMarks[GameManeger.myGottenMarks - 1].SetActive(true);
         PhotonNetwork.RaiseEvent(18, null, SF.OtherEventOptions, SF.StandatSendOptions);
+        markCheck();
     }
     public static void giveOtherPlayerMark()
     {
@@ -172,5 +174,13 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
     public static void useThisAblityCard(int id)
     {
         PhotonNetwork.RaiseEvent(20, id, SF.OtherEventOptions, SF.StandatSendOptions);
+    }
+
+    public static void markCheck()
+    {
+        if(GameManeger.myGottenMarks == 3)
+        {
+            SF.sf.GetComponent<SF>().iWon();
+        }
     }
 }

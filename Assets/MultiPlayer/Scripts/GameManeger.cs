@@ -28,6 +28,8 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public static int myGottenMarks;
     public static int enemyGottenMarks;
 
+    public static bool gameIsOver;
+
     private void Start()
     {
         isBlueTurn = true;
@@ -41,7 +43,7 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
         enemyAbilityCards = new List<GameObject>();
         myActivatedClasses = new List<string>();
         enemyActivatedClasses = new List<string>();
-
+        gameIsOver = false;
     }
 
 
