@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bbf79082fa8cd214a820148d93b3c9f1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultMaterial: {instanceID: 0}
+  - markedMterial: {instanceID: 0}
+  - point: {instanceID: 0}
+  - giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
+  - pView: {instanceID: 0}
+  - bowPoint: {fileID: 1134125777395701195, guid: 4abae1106da5c1b4a8aabd38375c42ed, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

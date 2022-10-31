@@ -18,7 +18,7 @@ public class Point : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        activeCardScript = LocalGameManager.activeCard.GetComponent<Bomb>();
+        activeCardScript = LocalGameManager.activeCard.GetComponent<Card>();
     }
     private void OnMouseDown()
     {
