@@ -102,7 +102,6 @@ public class ActButton : MonoBehaviourPunCallbacks
 
     public void flipActCard()
     {
-        gameObject.GetComponent<BoxCollider>().enabled = false;
         StartCoroutine(flipThisActCard());
     }
 
@@ -174,6 +173,7 @@ public class ActButton : MonoBehaviourPunCallbacks
 
     public void activateThis()
     {
+        gameObject.GetComponent<BoxCollider>().enabled = false;
         isActivated = true;
         if (pView.IsMine)
         {
@@ -191,6 +191,8 @@ public class ActButton : MonoBehaviourPunCallbacks
     }
     public void diactivateThis()
     {
+        canBeActivated = true;
+        gameObject.GetComponent<BoxCollider>().enabled = true;
         isActivated = false;
         if(pView.IsMine)
         {
@@ -234,6 +236,7 @@ public class ActButton : MonoBehaviourPunCallbacks
             }
             if(activeTurnsCount == 0)
             {
+
                 diactivateThis();
             }
         }

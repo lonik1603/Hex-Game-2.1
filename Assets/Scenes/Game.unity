@@ -156,10 +156,12 @@ MonoBehaviour:
   - {fileID: 6526848211595358925, guid: 015addbfcbc0e9d4e8ce3b1e3682460b, type: 3}
   - {fileID: 4139616173685366595, guid: 36fa71fa1874ebf4f8a8621ea4b7a82f, type: 3}
   - {fileID: 5870095778587590253, guid: fd0dbb779a671914fb13f88711fb6e16, type: 3}
+  - {fileID: 4196997767579300343, guid: 95bfddb85a212f140b2f6770ae643d49, type: 3}
   redChoiceButtonsPrefabs:
   - {fileID: 8881414570679157553, guid: a9331529ac852ab4780af916d6692e7c, type: 3}
   - {fileID: 8976656653430048806, guid: 98b95654ddb189f4d9fd9b7bf63f1ae5, type: 3}
   - {fileID: 5047673933884817941, guid: 367daa7fe5f203a4caff8157bd7348ea, type: 3}
+  - {fileID: 4525615058833376501, guid: 8fbeaac575639364290b89ffc4402ff0, type: 3}
   cardPlace: {fileID: 5587277629454376728, guid: ee31f99218efcdb448c337e9f1523ef5, type: 3}
   marksChoiceStage: {fileID: 1756734644}
 --- !u!4 &97658737

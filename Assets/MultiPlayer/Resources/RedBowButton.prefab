@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7925445122970840241}
   m_Layer: 0
   m_Name: RedBowButton
-  m_TagString: Shild
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

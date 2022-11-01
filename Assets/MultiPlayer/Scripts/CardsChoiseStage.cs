@@ -38,13 +38,16 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 break;
 
             case 6:
-                foreach(GameObject obj in createdChoiceButtons)
+                if (gameObject.name == "CardsChoseStage")
                 {
-                    Destroy(obj);
+                    TextManager.disableAllText();
+                    marksChoiceStage.SetActive(true);
+                    gameObject.SetActive(false);
+                    foreach (GameObject obj in createdChoiceButtons)
+                    {
+                        Destroy(obj);
+                    }
                 }
-                TextManager.disableAllText();
-                marksChoiceStage.SetActive(true);
-                gameObject.SetActive(false);
 
             break;
         }

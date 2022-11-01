@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3689557801770171738}
   - component: {fileID: 1501675649945356688}
   - component: {fileID: 2422986871359534319}
-  - component: {fileID: 2032510138992381420}
   - component: {fileID: 7555197225306804741}
   - component: {fileID: 554878276128986719}
   - component: {fileID: 1306039447282915821}
+  - component: {fileID: 4463892893411112923}
   m_Layer: 0
   m_Name: BlueBow
-  m_TagString: Boots
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,34 +105,11 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 2032510138992381420}
   - {fileID: 554878276128986719}
+  - {fileID: 4463892893411112923}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &2032510138992381420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141656441387968581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c87b4aedd85a17408c0b11f8a4f5c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: ca4ae2b9709a9eb46a95be81248b5536, type: 2}
-  markedMterial: {fileID: 2100000, guid: 093a32a26098df344ba247cc06c24ed7, type: 2}
-  point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
-  giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
-  cardIsBlue: 0
-  cardClass: 
-  isActivated: 0
-  isMarked: 0
-  pView: {fileID: 0}
-  canGiveMark: 0
-  canMove: 0
 --- !u!65 &7555197225306804741
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,3 +155,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4463892893411112923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141656441387968581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf79082fa8cd214a820148d93b3c9f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: ca4ae2b9709a9eb46a95be81248b5536, type: 2}
+  markedMterial: {fileID: 2100000, guid: 093a32a26098df344ba247cc06c24ed7, type: 2}
+  point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
+  giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
+  cardIsBlue: 0
+  cardClass: 
+  isActivated: 0
+  isMarked: 0
+  pView: {fileID: 0}
+  canGiveMark: 0
+  canMove: 0
+  bowPoint: {fileID: 1134125777395701195, guid: 4abae1106da5c1b4a8aabd38375c42ed, type: 3}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 559417153117226703}
   - component: {fileID: 5663838060986127099}
   - component: {fileID: 6941949712855142861}
-  - component: {fileID: 6177799482155633311}
+  - component: {fileID: 8516212169950226259}
   m_Layer: 0
   m_Name: "\u0441\u0438\u043D\u0438\u0439 \u043B\u0443\u043A"
   m_TagString: Untagged
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 2.4, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6177799482155633311
+--- !u!114 &8516212169950226259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4196997767579300343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8328ed017ef0dda48927b764077ab679, type: 3}
+  m_Script: {fileID: 11500000, guid: 963611b7d19b9d14895437f4df560db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blueChoiceButtonsPrefabs: []

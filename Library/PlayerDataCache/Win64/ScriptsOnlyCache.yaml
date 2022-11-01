@@ -7,7 +7,11 @@ ScriptsOnlyBuild:
     - BombChoiceButton
     - Boots
     - BootsChoiceButton
+    - Bow
+    - BowChoice
+    - BowPoint
     - CameraConstantWidth
+    - CardDestroyer
     - CardPlace
     - CardsChoiseStage
     - Checker
@@ -46,6 +50,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -140,43 +145,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3454}
+      Script: {instanceID: 3446}
     - Class: 114
-      Script: {instanceID: 3574}
+      Script: {instanceID: 3456}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3576}
     - Class: 114
-      Script: {instanceID: 3658}
+      Script: {instanceID: 3588}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 3660}
     - Class: 114
-      Script: {instanceID: 3852}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 4166}
+      Script: {instanceID: 3854}
     - Class: 114
-      Script: {instanceID: 4190}
+      Script: {instanceID: 4168}
     - Class: 114
-      Script: {instanceID: 4690}
+      Script: {instanceID: 4192}
     - Class: 114
-      Script: {instanceID: 5168}
+      Script: {instanceID: 4692}
     - Class: 114
-      Script: {instanceID: 5186}
+      Script: {instanceID: 5170}
     - Class: 114
-      Script: {instanceID: 5428}
+      Script: {instanceID: 5188}
     - Class: 114
-      Script: {instanceID: 5742}
+      Script: {instanceID: 5430}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 5744}
     - Class: 114
-      Script: {instanceID: 5900}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 18594}
+      Script: {instanceID: 5910}
+    - Class: 114
+      Script: {instanceID: 20534}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -257,61 +264,67 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 3056}
     - Class: 114
-      Script: {instanceID: 3242}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 3444}
+      Script: {instanceID: 3244}
     - Class: 114
-      Script: {instanceID: 3454}
+      Script: {instanceID: 3446}
     - Class: 114
       Script: {instanceID: 3456}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 3458}
     - Class: 114
-      Script: {instanceID: 3574}
+      Script: {instanceID: 3468}
     - Class: 114
-      Script: {instanceID: 3586}
+      Script: {instanceID: 3576}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 3588}
     - Class: 114
-      Script: {instanceID: 3966}
+      Script: {instanceID: 3784}
     - Class: 114
-      Script: {instanceID: 3996}
+      Script: {instanceID: 3968}
     - Class: 114
-      Script: {instanceID: 4202}
+      Script: {instanceID: 3998}
     - Class: 114
-      Script: {instanceID: 4486}
+      Script: {instanceID: 4204}
     - Class: 114
-      Script: {instanceID: 4630}
+      Script: {instanceID: 4488}
     - Class: 114
-      Script: {instanceID: 4636}
+      Script: {instanceID: 4632}
     - Class: 114
-      Script: {instanceID: 4806}
+      Script: {instanceID: 4638}
     - Class: 114
-      Script: {instanceID: 4864}
+      Script: {instanceID: 4808}
     - Class: 114
-      Script: {instanceID: 4898}
+      Script: {instanceID: 4866}
     - Class: 114
-      Script: {instanceID: 4904}
+      Script: {instanceID: 4900}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 4906}
     - Class: 114
-      Script: {instanceID: 5186}
+      Script: {instanceID: 4934}
     - Class: 114
-      Script: {instanceID: 5224}
+      Script: {instanceID: 5188}
     - Class: 114
-      Script: {instanceID: 5488}
+      Script: {instanceID: 5226}
     - Class: 114
-      Script: {instanceID: 5670}
+      Script: {instanceID: 5490}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 5672}
     - Class: 114
-      Script: {instanceID: 5886}
+      Script: {instanceID: 5774}
     - Class: 114
-      Script: {instanceID: 6112}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 18594}
+      Script: {instanceID: 5882}
+    - Class: 114
+      Script: {instanceID: 5896}
+    - Class: 114
+      Script: {instanceID: 6122}
+    - Class: 114
+      Script: {instanceID: 20478}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -855,6 +868,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.dll
     namespaceName: Photon.Pun
     className: PhotonRigidbody2DView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ManaBoost
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1775,6 +1794,12 @@ ScriptsOnlyBuild:
     className: RelayPoint1
   - hash:
       serializedVersion: 2
+      Hash: 8a20b0fc43a55d0eb984f77f32209438
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BowPoint
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
@@ -1803,6 +1828,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit
     className: AppVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 22da41d7498ae574bde524148bc2a209
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bow
   - hash:
       serializedVersion: 2
       Hash: f30914b2fdf1718493af876290bfe717
@@ -1904,7 +1935,13 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ManaBoost
+    className: CardDestroyer
+  - hash:
+      serializedVersion: 2
+      Hash: 767c1c75466cf79a4d998108dafae134
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BowChoice
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

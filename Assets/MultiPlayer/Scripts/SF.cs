@@ -21,7 +21,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     { Reliability = true };
     public static int manaBoostTurns; 
 
-    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Crown" };
+    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Bow", "Knife"};
 
     public const float hexUp = 1.75f;
     private static Card script;
@@ -176,7 +176,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public static Card getCardScript(GameObject card)
     {
-        
+
         switch (card.tag)
         {
             case "Bomb":
@@ -190,6 +190,9 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
                 break;
             case "Crown":
                 script = card.GetComponent<Crown>();
+                break;
+            case "Bow":
+                script = card.GetComponent<Bow>();
                 break;
         }
         return script;

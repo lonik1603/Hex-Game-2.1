@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class BowPoint : MonoBehaviour
 {
@@ -16,12 +18,16 @@ public class BowPoint : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        else
+        {
+            StartCoroutine(bowPointCheck());
+        }
     }
     private void OnMouseDown()
     {
         
         SF.changeMana(-1);
-        SF.getCardScript(LocalGameManager.activeCard).MoveTo(gameObject.transform.position);
+        PhotonNetwork.Instantiate("CardDestroyer", gameObject.transform.position, Quaternion.identity);
         SF.tmpObjListClear();
     }
     protected void OnTriggerEnter(Collider other)
@@ -31,10 +37,11 @@ public class BowPoint : MonoBehaviour
     
     IEnumerator bowPointCheck()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.05f);
         if(otherCard != null)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1f, 0f, 1f);
+            gameObject.GetComponent<BoxCollider>().enabled = true;
         }
         else
         {

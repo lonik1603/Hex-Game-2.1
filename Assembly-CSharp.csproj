@@ -91,10 +91,12 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Base.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\GameManeger.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\RelayPoint1.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\BowPoint.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bow.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bow.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\BowPoint.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\CardDestroyer.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BowChoice.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

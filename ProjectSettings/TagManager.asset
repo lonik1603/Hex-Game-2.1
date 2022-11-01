@@ -9,6 +9,7 @@ TagManager:
   - Boots
   - Point
   - Crown
+  - Bow
   layers:
   - Default
   - TransparentFX

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4926713951218848142}
   - component: {fileID: 3756997937583063530}
   - component: {fileID: 650773399470972420}
-  - component: {fileID: 4662145743936644451}
   - component: {fileID: 8674647537388879463}
   - component: {fileID: 6065477649632304189}
   m_Layer: 0
@@ -99,22 +98,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.180327, y: 2.074504, z: 1.230574}
   m_Center: {x: 0, y: 0, z: 0.4}
---- !u!114 &4662145743936644451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134125777395701195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ec1036c785e41c41ba2626a71e1dd24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisCardIsBlue: 0
-  thisCardClass: 
-  thisCardIsActivated: 0
-  point: {fileID: 1134125777395701195}
 --- !u!54 &8674647537388879463
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,4 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisCardIsBlue: 0
   thisCardIsActivated: 0
-  point: {fileID: 0}
+  point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
