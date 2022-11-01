@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0380d1dd083db3845aefdcf7bc9958ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 288ddee99de2f4543acd59127740e9b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -112,3 +112,4 @@ MonoBehaviour:
   blueChoiceButtonsPrefabs: []
   redChoiceButtonsPrefabs: []
   cardPlace: {fileID: 5587277629454376728, guid: ee31f99218efcdb448c337e9f1523ef5, type: 3}
+  marksChoiceStage: {fileID: 0}

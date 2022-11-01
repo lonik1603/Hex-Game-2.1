@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 40726bf1665548d42a6a50f57deeecb3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53ec8dece6e8a2f4784c243175bf5317, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8328ed017ef0dda48927b764077ab679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueChoiceButtons: []
-  redChoiceButtons: []
+  blueChoiceButtonsPrefabs: []
+  redChoiceButtonsPrefabs: []
   cardPlace: {fileID: 5587277629454376728, guid: ee31f99218efcdb448c337e9f1523ef5, type: 3}
+  marksChoiceStage: {fileID: 0}
