@@ -194,6 +194,9 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
             case "Bow":
                 script = card.GetComponent<Bow>();
                 break;
+            case "Knife":
+                script = card.GetComponent<Knife>();
+                break;
         }
         return script;
     }

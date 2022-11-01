@@ -10,6 +10,7 @@ TagManager:
   - Point
   - Crown
   - Bow
+  - Knife
   layers:
   - Default
   - TransparentFX

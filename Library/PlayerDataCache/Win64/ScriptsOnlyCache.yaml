@@ -24,6 +24,8 @@ ScriptsOnlyBuild:
     - GameManeger
     - GameStart
     - GiveMarkPoint
+    - Knife
+    - KnifeChoice
     - LocalGameManager
     - ManaBoost
     - MarkPoint
@@ -50,7 +52,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -141,49 +142,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2886}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 3056}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 3212}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3660}
+      Script: {instanceID: 3592}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3664}
     - Class: 114
-      Script: {instanceID: 3854}
+      Script: {instanceID: 3788}
     - Class: 114
-      Script: {instanceID: 4168}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4192}
+      Script: {instanceID: 4172}
     - Class: 114
-      Script: {instanceID: 4692}
+      Script: {instanceID: 4196}
     - Class: 114
-      Script: {instanceID: 5170}
+      Script: {instanceID: 4696}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 5174}
     - Class: 114
-      Script: {instanceID: 5430}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5434}
     - Class: 114
-      Script: {instanceID: 5774}
+      Script: {instanceID: 5748}
     - Class: 114
-      Script: {instanceID: 5910}
+      Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 20534}
+      Script: {instanceID: 5914}
+    - Class: 114
+      Script: {instanceID: 19104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -260,71 +263,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2928}
+      Script: {instanceID: 2930}
     - Class: 114
-      Script: {instanceID: 2946}
+      Script: {instanceID: 2948}
     - Class: 114
-      Script: {instanceID: 3056}
+      Script: {instanceID: 3058}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 3182}
     - Class: 114
-      Script: {instanceID: 3244}
+      Script: {instanceID: 3246}
     - Class: 114
-      Script: {instanceID: 3446}
+      Script: {instanceID: 3436}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 3450}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3460}
     - Class: 114
-      Script: {instanceID: 3468}
+      Script: {instanceID: 3462}
     - Class: 114
-      Script: {instanceID: 3576}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3588}
+      Script: {instanceID: 3580}
     - Class: 114
-      Script: {instanceID: 3784}
+      Script: {instanceID: 3592}
     - Class: 114
-      Script: {instanceID: 3968}
+      Script: {instanceID: 3788}
     - Class: 114
-      Script: {instanceID: 3998}
+      Script: {instanceID: 3972}
     - Class: 114
-      Script: {instanceID: 4204}
+      Script: {instanceID: 4002}
     - Class: 114
-      Script: {instanceID: 4488}
+      Script: {instanceID: 4208}
     - Class: 114
-      Script: {instanceID: 4632}
+      Script: {instanceID: 4492}
     - Class: 114
-      Script: {instanceID: 4638}
+      Script: {instanceID: 4636}
     - Class: 114
-      Script: {instanceID: 4808}
+      Script: {instanceID: 4642}
     - Class: 114
-      Script: {instanceID: 4866}
+      Script: {instanceID: 4812}
     - Class: 114
-      Script: {instanceID: 4900}
+      Script: {instanceID: 4870}
     - Class: 114
-      Script: {instanceID: 4906}
+      Script: {instanceID: 4904}
     - Class: 114
-      Script: {instanceID: 4934}
+      Script: {instanceID: 4910}
     - Class: 114
-      Script: {instanceID: 5188}
+      Script: {instanceID: 4938}
     - Class: 114
-      Script: {instanceID: 5226}
+      Script: {instanceID: 5192}
     - Class: 114
-      Script: {instanceID: 5490}
+      Script: {instanceID: 5230}
     - Class: 114
-      Script: {instanceID: 5672}
+      Script: {instanceID: 5494}
     - Class: 114
-      Script: {instanceID: 5774}
+      Script: {instanceID: 5676}
     - Class: 114
       Script: {instanceID: 5778}
     - Class: 114
-      Script: {instanceID: 5882}
+      Script: {instanceID: 5782}
     - Class: 114
-      Script: {instanceID: 5896}
+      Script: {instanceID: 5886}
     - Class: 114
-      Script: {instanceID: 6122}
+      Script: {instanceID: 5900}
     - Class: 114
-      Script: {instanceID: 20478}
+      Script: {instanceID: 6126}
+    - Class: 114
+      Script: {instanceID: 20490}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -798,6 +803,12 @@ ScriptsOnlyBuild:
     className: CurrentRoomPropertiesListedInLobbyProperty
   - hash:
       serializedVersion: 2
+      Hash: 767c1c75466cf79a4d998108dafae134
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BowChoice
+  - hash:
+      serializedVersion: 2
       Hash: 46a296a078af6e2a02857aa18e9cdf2b
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
@@ -964,6 +975,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: OnClickInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CardDestroyer
   - hash:
       serializedVersion: 2
       Hash: 00e94708ac94b5a38c9f21b9f89467a6
@@ -1932,16 +1949,16 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CardDestroyer
-  - hash:
-      serializedVersion: 2
       Hash: 767c1c75466cf79a4d998108dafae134
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: BowChoice
+    className: KnifeChoice
+  - hash:
+      serializedVersion: 2
+      Hash: f30914b2fdf1718493af876290bfe717
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Knife
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
