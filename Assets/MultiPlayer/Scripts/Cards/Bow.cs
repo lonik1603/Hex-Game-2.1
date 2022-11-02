@@ -39,7 +39,12 @@ public class Bow : Card
                 (Instantiate(bowPoint,
                 new Vector3(gameObject.transform.position.x - 3, gameObject.transform.position.y + SF.hexUp, -1),
                 Quaternion.identity));
-}
+            if (canGiveMark)
+            {
+                LocalGameManager.tmpGameObjects.Add(Instantiate(giveMarkPoint,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), Quaternion.identity));
+            }
+        }
         else
         {
             base.spawnPoints();

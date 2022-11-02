@@ -177,4 +177,6 @@ MonoBehaviour:
   isMarked: 0
   pView: {fileID: 0}
   canGiveMark: 0
+  hasEaten: 0
   canMove: 0
+  KnifePoint: {fileID: 4695654453007790958, guid: b0cd2558bab1b944da43b29197666ad3, type: 3}

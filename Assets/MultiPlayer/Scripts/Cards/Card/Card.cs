@@ -17,6 +17,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     public bool isMarked;
     public PhotonView pView;
     public bool canGiveMark;
+    public bool hasEaten;
 
     public bool canMove;
 
@@ -40,6 +41,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         isActivated = false;
         isMarked = false;
         canMove = true;
+        hasEaten = false;
         cardClass = gameObject.tag;
 
         if (pView.IsMine)
@@ -101,6 +103,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
                 canMove = false;
                 GameManeger.enemyCards.Remove(other.gameObject);
                 Destroy(other.gameObject);
+                hasEaten = true;
             }
             else if (photonView.IsMine)
             {
@@ -241,6 +244,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     public virtual void cardCheck()
     {
         canMove = true;
+        hasEaten = false;
         if (isMarked)
         {
             if (cardIsBlue)

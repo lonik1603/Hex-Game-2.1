@@ -132,6 +132,7 @@ MonoBehaviour:
   isMarked: 0
   pView: {fileID: 0}
   canGiveMark: 0
+  hasEaten: 0
   canMove: 0
 --- !u!65 &6620368205237502778
 BoxCollider:
