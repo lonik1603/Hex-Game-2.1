@@ -65,6 +65,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\GiveMarkPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\EndOfChoiceStage.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\CardsChoiseStage.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\KnifePoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\BowChoice.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\Checker.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\ManaBoost.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\GameStart.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Card.cs" />
     <Compile Include="Assets\Main Menu\Menu.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\TrapPoint.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\PassButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Explosion.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bomb.cs" />
@@ -99,7 +101,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bow.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\KnifePoint.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\TrapIcon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

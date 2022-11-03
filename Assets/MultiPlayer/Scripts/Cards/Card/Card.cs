@@ -11,6 +11,9 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] protected GameObject point;
     [SerializeField] protected GameObject giveMarkPoint;
 
+    public GameObject stun;
+    public int stunCount;
+
     public bool cardIsBlue;
     public string cardClass;
     public bool isActivated;
@@ -78,25 +81,25 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
 
     protected void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Point")
+        if (other.gameObject.tag == "Point")
         {
-            if((cardIsBlue && LocalGameManager.isBlue) || (!cardIsBlue && !LocalGameManager.isBlue))
+            if ((cardIsBlue && LocalGameManager.isBlue) || (!cardIsBlue && !LocalGameManager.isBlue))
             {
                 LocalGameManager.tmpGameObjects.Remove(other.gameObject);
                 Destroy(other.gameObject);
             }
-            else if(cardClass == "Shild" && isActivated)
+            else if (cardClass == "Shild" && isActivated)
             {
                 LocalGameManager.tmpGameObjects.Remove(other.gameObject);
                 Destroy(other.gameObject);
             }
 
-        }            
-        else if(SF.cardClassList.Contains(other.gameObject.tag))
+        }
+        else if (SF.cardClassList.Contains(other.gameObject.tag))
         {
-            if(pView.IsMine && SF.isMyTurn())
+            if (pView.IsMine && SF.isMyTurn())
             {
-                if(SF.getCardScript(other.gameObject).isMarked)
+                if (SF.getCardScript(other.gameObject).isMarked)
                 {
                     Board.giveMeMark();
                 }
@@ -169,10 +172,10 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
                     gameObject.transform.rotation = Quaternion.Euler(x, y, z);
                     z += 5;
                     yield return new WaitForSeconds(0.01f);
-                } 
+                }
                 gameObject.transform.rotation = Quaternion.Euler(x, y, 0);
             }
-           
+
         }
     }
     public virtual void MoveTo(Vector3 finPos)
@@ -262,6 +265,16 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
                 }
             }
         }
+        if(stunCount > 0)
+        {
+            canMove = false;
+            stunCount -= 1;
+            if (stunCount == 0)
+            {
+                canMove = true;
+                PhotonNetwork.Destroy(stun);
+            }
+        }
     }
     public void giveMark()
     {
@@ -269,4 +282,12 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         canGiveMark = false;
         gameObject.GetComponent<Renderer>().material = defaultMaterial;
     }
+
+    public void stunThisCard(string obj)
+    {
+        canMove = false;
+        stunCount = 3;
+        stun = PhotonNetwork.Instantiate(obj, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -0.5f), Quaternion.identity);
+    }
+
 }

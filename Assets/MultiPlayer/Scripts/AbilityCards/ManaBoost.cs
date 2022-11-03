@@ -6,7 +6,7 @@ public class ManaBoost : AbilityCard
 {
     public override void onClick()
     {
-        if (GameManeger.myMana > 0)
+        if (GameManeger.myMana > 1)
         {
             SF.manaBoostTurns = 3;
             useThisCard();

@@ -126,6 +126,8 @@ MonoBehaviour:
   markedMterial: {fileID: 2100000, guid: fa6e12cbb491a7d44b8efd651ad7116f, type: 2}
   point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
   giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
+  stun: {fileID: 0}
+  stunCount: 0
   cardIsBlue: 0
   cardClass: 
   isActivated: 0
