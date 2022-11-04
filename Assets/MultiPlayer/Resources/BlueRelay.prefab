@@ -131,4 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cfbca0651da61439e934876234d7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityBoarderline: {fileID: 4394604387052519008, guid: 8aa314c588ed8e94788d9c248cda6d1a, type: 3}
   relayPoint1: {fileID: 7009446732669684417, guid: debac2908ab884043b14d21879715939, type: 3}

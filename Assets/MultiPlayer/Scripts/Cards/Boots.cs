@@ -23,6 +23,8 @@ public class Boots : Card
         {
             if (canMove)
             {
+                LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+
                 LocalGameManager.tmpGameObjects.Add
                     (Instantiate(point,
                     new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 4, -1),

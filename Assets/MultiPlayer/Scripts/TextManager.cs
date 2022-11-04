@@ -30,7 +30,7 @@ public class TextManager : MonoBehaviour
 
         if (LocalGameManager.isBlue)
         {
-            textCoord = new Vector3(-4, -22, 0);
+            textCoord = new Vector3(-4, -25, 0);
             ChooseCardClass = Instantiate(ChooseCardClassBluePref, textCoord, Quaternion.Euler(0, 0, 0));
             waitFor = Instantiate(waitForBluePref, textCoord, Quaternion.Euler(0, 0, 0));
             yourTurn =Instantiate(yourTurnBluePref, textCoord, Quaternion.Euler(0, 0, 0));
@@ -38,7 +38,7 @@ public class TextManager : MonoBehaviour
         }
         else
         {
-            textCoord = new Vector3(4, 22, 0);
+            textCoord = new Vector3(4, 25, 0);
             ChooseCardClass =Instantiate(ChooseCardClassRedPref, textCoord, Quaternion.Euler(0, 0, 180));
             waitFor = Instantiate(waitForRedPref, textCoord, Quaternion.Euler(0, 0, 180));
             yourTurn = Instantiate(yourTurnRedPref, textCoord, Quaternion.Euler(0, 0, 180));

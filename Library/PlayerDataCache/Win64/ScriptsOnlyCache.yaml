@@ -4,11 +4,8 @@ ScriptsOnlyBuild:
     - ActButton
     - Board
     - Bomb
-    - BombChoiceButton
     - Boots
-    - BootsChoiceButton
     - Bow
-    - BowChoice
     - BowPoint
     - CameraConstantWidth
     - CardDestroyer
@@ -16,6 +13,7 @@ ScriptsOnlyBuild:
     - CardsChoiseStage
     - Checker
     - CheckerPoint
+    - ClassChoiceButton
     - Crown
     - EndOfChoiceStage
     - Explosion
@@ -25,7 +23,6 @@ ScriptsOnlyBuild:
     - GameStart
     - GiveMarkPoint
     - Knife
-    - KnifeChoice
     - KnifePoint
     - LocalGameManager
     - ManaBoost
@@ -39,7 +36,6 @@ ScriptsOnlyBuild:
     - RelayPoint2
     - SF
     - Shild
-    - ShildChoceButton
     - TextManager
     - Trap
     - TrapIcon
@@ -129,15 +125,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1744}
-    - Class: 114
       Script: {instanceID: 1768}
     - Class: 114
       Script: {instanceID: 1790}
     - Class: 114
       Script: {instanceID: 2026}
-    - Class: 114
-      Script: {instanceID: 2354}
     - Class: 114
       Script: {instanceID: 2520}
     - Class: 114
@@ -145,15 +137,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2888}
-    - Class: 114
       Script: {instanceID: 2932}
     - Class: 114
       Script: {instanceID: 2950}
     - Class: 114
       Script: {instanceID: 3060}
-    - Class: 114
-      Script: {instanceID: 3150}
     - Class: 114
       Script: {instanceID: 3186}
     - Class: 114
@@ -185,13 +173,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5444}
-    - Class: 114
       Script: {instanceID: 5758}
     - Class: 114
       Script: {instanceID: 5788}
     - Class: 114
       Script: {instanceID: 5924}
+    - Class: 114
+      Script: {instanceID: 34688}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -838,7 +826,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 1d51580f48d09cc383d46e7f2ccea405
+      Hash: d07576a7e57d5db316b227f1641cda3a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Checker
@@ -898,7 +886,7 @@ ScriptsOnlyBuild:
     className: PhotonRigidbody2DView
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fcc2bea991ae6abb841cc73f2e9630ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ManaBoost
@@ -994,7 +982,7 @@ ScriptsOnlyBuild:
     className: OfflineModeProperty
   - hash:
       serializedVersion: 2
-      Hash: 354aea842bb1c4cb276ac25274d50bb3
+      Hash: eef10a63312d7b50437d6e899ce070b0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Knife
@@ -1072,7 +1060,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomNameProperty
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fcc2bea991ae6abb841cc73f2e9630ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AbilityCard
@@ -1108,7 +1096,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 10ccbb41c8d9de661b6de111e57cbdca
+      Hash: 6458fbaa8f5ba473da9db925001cfc79
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Relay
@@ -1186,7 +1174,7 @@ ScriptsOnlyBuild:
     className: ConnectToRegionUIForm
   - hash:
       serializedVersion: 2
-      Hash: 767c1c75466cf79a4d998108dafae134
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CardPlace
@@ -1228,7 +1216,7 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: dc80f92765497873d8fd90b93c164f48
+      Hash: 328c5aa6d04d61d4772c550a590c90f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shild
@@ -1348,7 +1336,7 @@ ScriptsOnlyBuild:
     className: ToDemoHubButton
   - hash:
       serializedVersion: 2
-      Hash: dc80f92765497873d8fd90b93c164f48
+      Hash: 328c5aa6d04d61d4772c550a590c90f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Card
@@ -1588,7 +1576,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: 38ed30336acf590a2b1be8e840fed83b
+      Hash: 29691a0d21009bcc3eb3e85c02247d04
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bomb
@@ -1696,7 +1684,7 @@ ScriptsOnlyBuild:
     className: LocalGameManager
   - hash:
       serializedVersion: 2
-      Hash: 9ccdfadb071a9e9cebcfde12c5a07bd9
+      Hash: 9d786febeac392ef0f4ccc9663f34b6b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Trap
@@ -1708,7 +1696,7 @@ ScriptsOnlyBuild:
     className: PhotonStatsGui
   - hash:
       serializedVersion: 2
-      Hash: dc80f92765497873d8fd90b93c164f48
+      Hash: 328c5aa6d04d61d4772c550a590c90f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Crown
@@ -1888,13 +1876,13 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
-      Hash: 88ff88f6c6e4fde115c5c1209d40fefa
+      Hash: a2d721cec48e1b3acb90d7214ae74a61
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Bow
   - hash:
       serializedVersion: 2
-      Hash: dc80f92765497873d8fd90b93c164f48
+      Hash: 328c5aa6d04d61d4772c550a590c90f9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Boots
@@ -1988,6 +1976,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos.dll
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClassChoiceButton
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

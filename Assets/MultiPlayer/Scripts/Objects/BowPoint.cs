@@ -16,7 +16,8 @@ public class BowPoint : MonoBehaviour
     {
         if (gameObject.transform.position.x > 14 || gameObject.transform.position.x < -14 || gameObject.transform.position.y < -13 || gameObject.transform.position.y > 13)
         {
-            gameObject.SetActive(false);
+            LocalGameManager.tmpGameObjects.Remove(gameObject);
+            Destroy(gameObject);
         }
         else
         {

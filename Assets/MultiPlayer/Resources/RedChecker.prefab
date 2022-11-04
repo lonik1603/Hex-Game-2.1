@@ -131,4 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c65b66b3ffe35d4984fc5640d66b549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityBoarderline: {fileID: 4394604387052519008, guid: 8aa314c588ed8e94788d9c248cda6d1a, type: 3}
   checkerPoint: {fileID: 7943391347548296961, guid: 8d0c0043a3f11654bb216cd2b214c08e, type: 3}

@@ -64,6 +64,7 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
     {
         base.OnPlayerLeftRoom(otherPlayer);
+        SF.sf.GetComponent<SF>().iWon();
     }
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 230808653661729741}
   - component: {fileID: 5361943713187473401}
   - component: {fileID: 7252571847581820111}
-  - component: {fileID: -674586257602248198}
+  - component: {fileID: 1945379149776761499}
   m_Layer: 0
   m_Name: "\u041A\u0440\u0430\u0441\u043D\u044B\u0439 \u043B\u0443\u043A"
-  m_TagString: Untagged
+  m_TagString: Bow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 2.4, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-674586257602248198
+--- !u!114 &1945379149776761499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,10 +106,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4525615058833376501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 963611b7d19b9d14895437f4df560db7, type: 3}
+  m_Script: {fileID: 11500000, guid: 10bd8fa795d560641872005dfaf11396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueChoiceButtonsPrefabs: []
-  redChoiceButtonsPrefabs: []
-  cardPlace: {fileID: 5587277629454376728, guid: ee31f99218efcdb448c337e9f1523ef5, type: 3}
-  marksChoiceStage: {fileID: 0}

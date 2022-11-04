@@ -16,9 +16,11 @@ public class Point : MonoBehaviour
     {
         if (gameObject.transform.position.x > 14 || gameObject.transform.position.x < -14 || gameObject.transform.position.y < -13 || gameObject.transform.position.y > 13)
         {
-            gameObject.SetActive(false);
+            LocalGameManager.tmpGameObjects.Remove(gameObject);
+            Destroy(gameObject);
         }
         activeCardScript = LocalGameManager.activeCard.GetComponent<Card>();
+        StartCoroutine(visualisePoint());
     }
     private void OnMouseDown()
     {
@@ -26,5 +28,11 @@ public class Point : MonoBehaviour
         SF.changeMana(-1);
         SF.getCardScript(LocalGameManager.activeCard).MoveTo(gameObject.transform.position);
         SF.tmpObjListClear();
+    }
+
+    IEnumerator visualisePoint()
+    {
+        yield return new WaitForSeconds(0.05f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.85f, 0.6f);
     }
 }

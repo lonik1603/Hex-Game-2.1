@@ -71,6 +71,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\AbilityCards\ManaBoost.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\KnifeChoice.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\GameInterface.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\Objects\TrapIcon.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Knife.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\CardDestroyer.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\ActButton.cs" />
@@ -101,7 +102,7 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Bow.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Board.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\Objects\TrapIcon.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\ClassChoiceButtons\ClassChoiceButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AbilityCard : MonoBehaviour
 {
+    [SerializeField] private GameObject abilityBoarderline;
+
     protected bool canBeUsed;
     protected bool isMine;
 
@@ -27,6 +29,8 @@ public class AbilityCard : MonoBehaviour
         if (SF.isMyTurn() && canBeUsed && isMine)
         {
             SF.tmpObjListClear();
+            LocalGameManager.tmpGameObjects.Add(Instantiate(abilityBoarderline, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+
             onClick();
         }
     }

@@ -131,4 +131,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7bf1c5805e62b4188dbd31f444f0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityBoarderline: {fileID: 4394604387052519008, guid: 8aa314c588ed8e94788d9c248cda6d1a, type: 3}
   trapPoint: {fileID: 7461413169040086079, guid: 369d7299e9b2e074aa98782e5185b006, type: 3}

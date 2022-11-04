@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class Menu : MonoBehaviourPunCallbacks
 {
     public InputField nickname;
+    [SerializeField] private Text gameVersionText;
+
+    const string gameVersion = "0.1";
     private static bool conected;
     private void Start()
     {
@@ -22,8 +25,9 @@ public class Menu : MonoBehaviourPunCallbacks
             PhotonNetwork.NickName = "Player" + Random.Range(1000, 9999);
         }
         PhotonNetwork.AutomaticallySyncScene = true;
-        PhotonNetwork.GameVersion = "0.2";
+        PhotonNetwork.GameVersion = gameVersion;
         PhotonNetwork.ConnectUsingSettings();
+        gameVersionText.text = "V" + gameVersion;
 
     }
 
@@ -39,13 +43,13 @@ public class Menu : MonoBehaviourPunCallbacks
         {
 
             Debug.Log("Trying to join random room");
-            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2 }, null);
+            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
         }
     }
     public override void OnJoinRoomFailed(short returnCode, string message)
     {
         Debug.Log("Failed");
-        PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions{MaxPlayers = 2}, null);
+        PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions{MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
         Debug.Log("New room created");
     }
     public override void OnJoinedRoom()
@@ -58,7 +62,7 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         if (conected)
         {
-            PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2 });
+            PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false});
             Debug.Log("New room created");
         }
     }

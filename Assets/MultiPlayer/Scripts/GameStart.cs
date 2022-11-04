@@ -41,16 +41,8 @@ public class GameStart : MonoBehaviourPunCallbacks, IOnEventCallback
                 PhotonNetwork.RaiseEvent(2, null, SF.StandertEventOptions, SF.StandatSendOptions);
             }
         }
-        if (LocalGameManager.isBlue)
-        {
-            nick2.text = PhotonNetwork.NickName;
-            nick1.text = PhotonNetwork.PlayerListOthers[0].NickName;
-        }
-        else
-        {
-            nick2.text = PhotonNetwork.NickName;
-            nick1.text = PhotonNetwork.PlayerListOthers[0].NickName;
-        }
+            nick1.text = PhotonNetwork.NickName;
+            nick2.text = PhotonNetwork.PlayerListOthers[0].NickName;
     }
 
     private void nextStage()

@@ -13,13 +13,13 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
 
     [SerializeField] private GameObject marksChoiceStage;
 
-    protected static string choisenClass;
-    protected static GameObject pressedButton;
+    public static string choisenClass;
+    public static GameObject pressedButton;
 
-    protected static List<GameObject> createdChoiceButtons = new List<GameObject>();
+    public static List<GameObject> createdChoiceButtons = new List<GameObject>();
     public static List<GameObject> cardPlaces = new List<GameObject>();
 
-    protected static int turnCount;
+    public static int turnCount;
     public static int g;
 
 
@@ -47,6 +47,8 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                     {
                         Destroy(obj);
                     }
+                    createdChoiceButtons.Clear();
+                    cardPlaces.Clear();
                 }
 
             break;
@@ -57,8 +59,10 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         if (g == 0)
         {
+            createdChoiceButtons.Clear();
+            cardPlaces.Clear();
             turnCount = 0;
-
+            g = 1;
             if (LocalGameManager.isBlue)
             {
                 for (int i = 0; i < blueChoiceButtonsPrefabs.Count; i++)
@@ -86,25 +90,25 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                 diactivateClassChoiceButtons();
                 TextManager.activateThisText(TextManager.waitFor);
             }
-            g = 1;
-            disableCardPlaces();
+
+
         }
     }
-    protected void activateCardPlaces()
+    public static void activateCardPlaces()
     {
         foreach (GameObject obj in cardPlaces)
         {
             obj.SetActive(true);
         }
     }
-    protected void disableCardPlaces()
+    public static void disableCardPlaces()
     {
         foreach (GameObject obj in cardPlaces)
         {
             obj.SetActive(false);
         }
     }
-    protected static void activateClassChoiceButtons()
+    public static void activateClassChoiceButtons()
     {
         foreach (GameObject obj in createdChoiceButtons)
         {
@@ -112,7 +116,7 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
             obj.GetComponent<BoxCollider>().enabled = true;
         }
     }
-    protected static void diactivateClassChoiceButtons()
+    public static void diactivateClassChoiceButtons()
     {
         foreach (GameObject obj in createdChoiceButtons)
         {
@@ -120,14 +124,14 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
             obj.GetComponent<BoxCollider>().enabled = false;
         }
     }
-    protected static void nextTurn()
+    public static void nextTurn()
     {
         TextManager.activateThisText(TextManager.waitFor);
 
 
         PhotonNetwork.RaiseEvent(3, null, SF.OtherEventOptions, SF.StandatSendOptions);
     }
-    protected static void nextStage()
+    public static void nextStage()
     {
         PhotonNetwork.RaiseEvent(6, null, SF.StandertEventOptions, SF.StandatSendOptions);
     }

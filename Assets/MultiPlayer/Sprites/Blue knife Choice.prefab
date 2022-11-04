@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 6806969117666151264}
   - component: {fileID: 3779725875724047723}
   - component: {fileID: 1164662197556882049}
-  - component: {fileID: -5398646759355892322}
+  - component: {fileID: -4107705055467828875}
   m_Layer: 0
   m_Name: Blue knife Choice
-  m_TagString: Untagged
+  m_TagString: Knife
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 2.4, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-5398646759355892322
+--- !u!114 &-4107705055467828875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,10 +106,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 765684786900010628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0b9cea5b85bbd34d87b1e7562b9bff5, type: 3}
+  m_Script: {fileID: 11500000, guid: 10bd8fa795d560641872005dfaf11396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blueChoiceButtonsPrefabs: []
-  redChoiceButtonsPrefabs: []
-  cardPlace: {fileID: 5587277629454376728, guid: ee31f99218efcdb448c337e9f1523ef5, type: 3}
-  marksChoiceStage: {fileID: 0}

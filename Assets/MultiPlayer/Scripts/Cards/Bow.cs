@@ -15,6 +15,8 @@ public class Bow : Card
     {
         if (isActivated)
         {
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+
             LocalGameManager.tmpGameObjects.Add
               (Instantiate(bowPoint,
               new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),

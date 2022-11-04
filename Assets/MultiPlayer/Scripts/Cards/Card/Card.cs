@@ -10,6 +10,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     [SerializeField] public Material markedMterial;
     [SerializeField] protected GameObject point;
     [SerializeField] protected GameObject giveMarkPoint;
+    [SerializeField] protected GameObject boarderLine;
 
     public GameObject stun;
     public int stunCount;
@@ -212,6 +213,8 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (canMove)
         {
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+
             LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),
