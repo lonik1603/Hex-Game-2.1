@@ -43,8 +43,8 @@ public class GameStart : MonoBehaviourPunCallbacks, IOnEventCallback
         }
         if (LocalGameManager.isBlue)
         {
-            nick1.text = PhotonNetwork.NickName;
-            nick2.text = PhotonNetwork.PlayerListOthers[0].NickName;
+            nick2.text = PhotonNetwork.NickName;
+            nick1.text = PhotonNetwork.PlayerListOthers[0].NickName;
         }
         else
         {
