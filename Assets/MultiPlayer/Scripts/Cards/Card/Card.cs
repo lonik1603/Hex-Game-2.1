@@ -100,22 +100,26 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         {
             if (pView.IsMine && SF.isMyTurn())
             {
-                if (SF.getCardScript(other.gameObject).isMarked)
-                {
-                    Board.giveMeMark();
-                }
+
                 canMove = false;
-                GameManeger.enemyCards.Remove(other.gameObject);
-                Destroy(other.gameObject);
+                SF.destroyThisCard(other.gameObject);
                 hasEaten = true;
             }
-            else if (photonView.IsMine)
-            {
-                GameManeger.myCards.Remove(gameObject);
-                Destroy(gameObject);
-            }
+
         }
     }
+    private void OnDestroy()
+    {
+        if(photonView.IsMine)
+        {
+            GameManeger.myCards.Remove(gameObject);
+        }
+        else
+        {
+            GameManeger.enemyCards.Remove(gameObject);
+        }
+    }
+
     public void activateThisCard()
     {
         isActivated = true;
@@ -195,7 +199,8 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         }
         LocalGameManager.activeCard.transform.position = finPos;
         LocalGameManager.canClick = true;
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -0.1f);
+        canGiveMark = false;
         yield return new WaitForSeconds(0.1f);
         canGiveMark = false;
         if (GameManeger.myMana > 0)
@@ -206,14 +211,16 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         {
             SF.pass();
             SF.tmpObjListClear();
-        };
+        }
+        yield return new WaitForSeconds(0.3f);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0f);
     }
 
     protected virtual void spawnPoints()
     {
         if (canMove)
         {
-            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 4), Quaternion.identity));
 
             LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,

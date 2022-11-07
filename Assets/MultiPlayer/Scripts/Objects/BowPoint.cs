@@ -28,7 +28,11 @@ public class BowPoint : MonoBehaviour
     {
         
         SF.changeMana(-1);
-        PhotonNetwork.Instantiate("CardDestroyer", gameObject.transform.position, Quaternion.identity);
+        if (SF.getCardScript(otherCard).isMarked)
+        {
+            Board.giveMeMark();
+        }
+        SF.destroyThisCard(otherCard);
         SF.tmpObjListClear();
     }
     protected void OnTriggerEnter(Collider other)

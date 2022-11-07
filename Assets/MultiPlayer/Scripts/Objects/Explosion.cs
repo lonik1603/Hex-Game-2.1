@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class Explosion : MonoBehaviour
 {
@@ -25,25 +27,28 @@ public class Explosion : MonoBehaviour
             SF.pass();
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (gameObject.transform.position.x < 14 || gameObject.transform.position.x > -14 || gameObject.transform.position.y > -13 || gameObject.transform.position.y < 13)
         {
             if(SF.cardClassList.Contains(other.gameObject.tag))
             {
-                if (SF.getCardScript(other.gameObject).pView.IsMine)
+                if(GetComponent<PhotonView>().IsMine)
                 {
-                    GameManeger.myCards.Remove(other.gameObject);
-                    if (SF.getCardScript(other.gameObject).isMarked)
+                    if (SF.getCardScript(other.gameObject).pView.IsMine)
                     {
-                        Board.giveOtherPlayerMark();
+                        if (SF.getCardScript(other.gameObject).isMarked)
+                        {
+                            Board.giveOtherPlayerMark();
+                        }
+                        PhotonNetwork.Destroy(other.gameObject);
+                    }
+                    else
+                    {
+                        SF.destroyThisCard(other.gameObject);
                     }
                 }
-                else
-                {
-                    GameManeger.enemyCards.Remove(other.gameObject);
-                }
-                Destroy(other.gameObject);
+
             }
         }
     }

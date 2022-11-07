@@ -35,6 +35,8 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
         isBlueTurn = true;
         myMana = 2;
         enemyMana = 2;
+        myGottenMarks = 0;
+        enemyGottenMarks = 0;
         myCards = new List<GameObject>();
         enemyCards = new List<GameObject>();
         myActButtons = new List<GameObject>();

@@ -6,7 +6,10 @@ public class PassButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        SF.pass();
+        if (LocalGameManager.canClick)
+        {
+            SF.pass();
+        }
     }
 
 }

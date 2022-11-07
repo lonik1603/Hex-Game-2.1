@@ -10,7 +10,7 @@ public class Menu : MonoBehaviourPunCallbacks
     public InputField nickname;
     [SerializeField] private Text gameVersionText;
 
-    const string gameVersion = "0.1";
+    const string gameVersion = "0.2";
     private static bool conected;
     private void Start()
     {
@@ -29,6 +29,14 @@ public class Menu : MonoBehaviourPunCallbacks
         PhotonNetwork.ConnectUsingSettings();
         gameVersionText.text = "V" + gameVersion;
 
+    }
+
+    private void Update()
+    {
+        if (conected == false)
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
     public override void OnConnectedToMaster()
