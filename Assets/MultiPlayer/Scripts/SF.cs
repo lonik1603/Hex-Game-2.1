@@ -34,7 +34,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
                 break;
 
             case 10:
-                GameManeger.enemyMana += (int)photonEvent.CustomData;
+                GameManeger.enemyMana = (int)photonEvent.CustomData;
                 Board.updateEnemyMana();
 
                 break;
@@ -112,7 +112,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
             GameManeger.myMana = 4;
         }
         Board.updateMyMana();
-        PhotonNetwork.RaiseEvent(10, mana, OtherEventOptions, StandatSendOptions);
+        PhotonNetwork.RaiseEvent(10, GameManeger.myMana, OtherEventOptions, StandatSendOptions);
     }
 
     public static bool isMyTurn()

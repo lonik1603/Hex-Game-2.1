@@ -37,7 +37,12 @@ public class TrapIcon : MonoBehaviour
                 {
                     SF.getCardScript(other.gameObject).stunThisCard("blueStun");
                 }
+                Destroy(gameObject);
             }
+        }
+        else if (SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine && SF.getCardScript(other.gameObject).pView.IsMine == false)
+        {
+            Destroy(gameObject);
         }
     }
 

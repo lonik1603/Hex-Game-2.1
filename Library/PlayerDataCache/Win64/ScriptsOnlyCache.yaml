@@ -1988,4 +1988,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/User/Documents/GitHub/Hex GAme Bild/HexGame V2.exe
+  playerPath: C:/Users/User/Documents/GitHub/Hex GAme Bild/HexGame.exe

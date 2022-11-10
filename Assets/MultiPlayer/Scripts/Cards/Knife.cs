@@ -51,4 +51,46 @@ public class Knife : Card
             base.spawnPoints();
         }
     }
+    public override void MoveTo(Vector3 finPos)
+    {
+        if (hasEaten && isActivated)
+        {
+            StartCoroutine(moveToKnife(finPos));
+        }
+        else
+        {
+            base.MoveTo(finPos);
+        }
+    }
+    IEnumerator moveToKnife(Vector3 finPos)
+    {
+        LocalGameManager.canClick = false;
+        Vector3 startPos = gameObject.transform.position;
+        for (float i = 0; i < 1; i += Time.deltaTime * 10)
+        {
+            gameObject.transform.position = Vector3.Lerp(startPos, finPos, i);
+            yield return null;
+        }
+        LocalGameManager.activeCard.transform.position = finPos;
+        LocalGameManager.canClick = true;
+        spawnPoints();
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -0.1f);
+        canGiveMark = false;
+
+        yield return new WaitForSeconds(0.3f);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0f);
+        bool thereIsPoint = false;
+        foreach(GameObject obj in LocalGameManager.tmpGameObjects)
+        {
+            if (obj.tag == "Point")
+            {
+                thereIsPoint = true;
+                break;
+            }
+        }
+        if (thereIsPoint == false && GameManeger.myMana == 0)
+        {
+            SF.pass();
+        }
+    }
 }

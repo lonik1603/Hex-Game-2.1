@@ -21,7 +21,7 @@ public class RelayPoint2 : RelayPoint1
         SF.getCardScript(thisCard2).GetComponent<Renderer>().material = SF.getCardScript(thisCard2).markedMterial;
 
         LocalGameManager.activeCard.GetComponent<Relay>().useThisCard();
-        SF.changeMana(-1);
+        SF.changeMana(-2);
         if (GameManeger.myMana == 0)
         {
             SF.pass();
