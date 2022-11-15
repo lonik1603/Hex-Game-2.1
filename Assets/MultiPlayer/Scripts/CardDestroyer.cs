@@ -9,7 +9,8 @@ public class CardDestroyer : MonoBehaviour
     private PhotonView pView;
     private void Start()
     {
-        pView = GetComponent<PhotonView>(); 
+        pView = GetComponent<PhotonView>();
+        StartCoroutine(destroyObject());
     }
     private void OnTriggerStay(Collider other)
     {
@@ -25,5 +26,10 @@ public class CardDestroyer : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+    IEnumerator destroyObject()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Destroy(gameObject);
     }
 }

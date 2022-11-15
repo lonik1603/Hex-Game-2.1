@@ -27,7 +27,7 @@ public class TrapIcon : MonoBehaviour
     {        
         if(SF.cardClassList.Contains(other.tag))
         {
-            if(SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine && SF.getCardScript(other.gameObject).pView.IsMine)
+            if((SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine) && SF.getCardScript(other.gameObject).pView.IsMine)
             {
                 if(SF.getCardScript(other.gameObject).cardIsBlue)
                 {
@@ -39,11 +39,12 @@ public class TrapIcon : MonoBehaviour
                 }
                 Destroy(gameObject);
             }
-        }
-        else if (SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine && SF.getCardScript(other.gameObject).pView.IsMine == false)
-        {
-            Destroy(gameObject);
+            else if ((SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine) && SF.getCardScript(other.gameObject).pView.IsMine == false)
+            {
+                Destroy(gameObject);
+            }
         }
     }
+
 
 }

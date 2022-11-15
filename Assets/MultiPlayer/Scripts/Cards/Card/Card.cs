@@ -104,6 +104,10 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
                 canMove = false;
                 SF.destroyThisCard(other.gameObject);
                 hasEaten = true;
+                if(cardClass == "Shild" && isActivated)
+                {
+                    diactivateThisCard();
+                }
             }
 
         }
@@ -113,6 +117,10 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         if(photonView.IsMine)
         {
             GameManeger.myCards.Remove(gameObject);
+            if (stunCount > 0)
+            {
+                PhotonNetwork.Destroy(stun);
+            }
         }
         else
         {

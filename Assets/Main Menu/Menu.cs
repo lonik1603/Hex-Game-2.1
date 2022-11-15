@@ -9,8 +9,9 @@ public class Menu : MonoBehaviourPunCallbacks
 {
     public InputField nickname;
     [SerializeField] private Text gameVersionText;
+    [SerializeField] private GameObject matchmakongButton;
 
-    const string gameVersion = "0.2";
+    const string gameVersion = "0.2.1";
     private static bool conected;
     private void Start()
     {
@@ -43,6 +44,7 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         conected = true;
         Debug.Log("Connected to master");
+        matchmakongButton.SetActive(true);
     }
 
     public void matchmaking()

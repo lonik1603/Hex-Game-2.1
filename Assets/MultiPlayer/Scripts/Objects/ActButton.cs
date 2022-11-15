@@ -22,10 +22,10 @@ public class ActButton : MonoBehaviourPunCallbacks
     private void OnMouseDown()
     {
 
-        if (GameManeger.myMana >= 2 && SF.isMyTurn() && pView.IsMine && canBeActivated)
+        if (GameManeger.myMana >= 3 && SF.isMyTurn() && pView.IsMine && canBeActivated)
         {
             SF.tmpObjListClear();
-            SF.changeMana(-2);
+            SF.changeMana(-3);
             Board.activateThisClass(cardClass);
 
         }
@@ -199,7 +199,7 @@ public class ActButton : MonoBehaviourPunCallbacks
         {
             foreach (GameObject card in GameManeger.myCards)
             {
-                if (cardClass == SF.getCardScript(card).cardClass)
+                if (cardClass == SF.getCardScript(card).cardClass && SF.getCardScript(card).isActivated)
                 {
                     SF.getCardScript(card).diactivateThisCard();
                 }
