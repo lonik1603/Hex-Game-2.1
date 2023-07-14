@@ -29,7 +29,7 @@ public class AbilityCard : MonoBehaviour
         if (SF.isMyTurn() && canBeUsed && isMine)
         {
             SF.tmpObjListClear();
-            LocalGameManager.tmpGameObjects.Add(Instantiate(abilityBoarderline, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+            LocalGameManager.tmpGameObjects.Add(Instantiate(abilityBoarderline, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 4), Quaternion.identity));
 
             onClick();
         }

@@ -9,8 +9,9 @@ public class Menu : MonoBehaviourPunCallbacks
 {
     public InputField nickname;
     [SerializeField] private Text gameVersionText;
+    [SerializeField] private GameObject matchmakongButton;
 
-    const string gameVersion = "0.1";
+    const string gameVersion = "0.2.1";
     private static bool conected;
     private void Start()
     {
@@ -31,10 +32,19 @@ public class Menu : MonoBehaviourPunCallbacks
 
     }
 
+    private void Update()
+    {
+        if (conected == false)
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
+    }
+
     public override void OnConnectedToMaster()
     {
         conected = true;
         Debug.Log("Connected to master");
+        matchmakongButton.SetActive(true);
     }
 
     public void matchmaking()

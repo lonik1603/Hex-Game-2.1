@@ -9,30 +9,27 @@ public class CardDestroyer : MonoBehaviour
     private PhotonView pView;
     private void Start()
     {
-        pView = GetComponent<PhotonView>(); 
+        pView = GetComponent<PhotonView>();
+        StartCoroutine(destroyObject());
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        Debug.LogError(other.gameObject.tag);
         if (SF.cardClassList.Contains(other.gameObject.tag))
         {
-
-            if(SF.getCardScript(other.gameObject).isMarked && pView.IsMine)
+            if (SF.getCardScript(other.gameObject).pView.IsMine != pView.IsMine)
             {
-                Board.giveMeMark();
-            }
-            if(SF.getCardScript(other.gameObject).pView.IsMine)
-            {
-                GameManeger.myCards.Remove(other.gameObject);
+                if(SF.getCardScript(other.gameObject).pView.IsMine == false && SF.getCardScript(other.gameObject).isMarked)
+                {
+                    Board.giveMeMark();
+                }
                 Destroy(other.gameObject);
+                Destroy(gameObject);
             }
-            else
-            {
-                GameManeger.enemyCards.Remove(other.gameObject);
-                Destroy(other.gameObject);
-            }
-            Destroy(gameObject);
         }
-
+    }
+    IEnumerator destroyObject()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Destroy(gameObject);
     }
 }
