@@ -22,7 +22,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Bow", "Knife"};
 
-    public const float hexUp = 1.75f;
+    public const float hexUp = 3.37666f / 2;
     private static Card script;
     public void OnEvent(ExitGames.Client.Photon.EventData photonEvent)
     {

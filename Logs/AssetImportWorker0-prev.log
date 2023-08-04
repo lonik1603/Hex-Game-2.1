@@ -1,0 +1,394 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16049 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49284
+Successfully changed project path to: C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10824] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 1805834481 [EditorId] 1805834481 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10824] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 1805834481 [EditorId] 1805834481 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 30.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.5f1 (9674261d40ee)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/asus/Documents/GitHub/Hex-Game-2.1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   Intel
+    VRAM:     8024 MB
+    Driver:   27.20.100.9268
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.028760 seconds.
+- Loaded All Assemblies, in  1.085 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 785 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.872 seconds
+Domain Reload Profiling: 2953ms
+	BeginReloadAssembly (284ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (110ms)
+	RebuildNativeTypeToScriptingClass (36ms)
+	initialDomainReloadingComplete (191ms)
+	LoadAllAssembliesAndSetupDomain (459ms)
+		LoadAssemblies (276ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (441ms)
+			TypeCache.Refresh (438ms)
+				TypeCache.ScanAssembly (405ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1874ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1682ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1173ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (331ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.283 seconds
+Refreshing native plugins compatible for Editor in 15.07 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.986 seconds
+Domain Reload Profiling: 4260ms
+	BeginReloadAssembly (362ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (112ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (138ms)
+	LoadAllAssembliesAndSetupDomain (1613ms)
+		LoadAssemblies (829ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (960ms)
+			TypeCache.Refresh (876ms)
+				TypeCache.ScanAssembly (833ms)
+			ScanForSourceGeneratedMonoScriptInfo (61ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1987ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1335ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (88ms)
+			SetLoadedEditorAssemblies (15ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (239ms)
+			ProcessInitializeOnLoadAttributes (853ms)
+			ProcessInitializeOnLoadMethodAttributes (114ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (28ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 14.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2646 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (60.7 KB). Loaded Objects now: 3118.
+Memory consumption went from 115.3 MB to 115.3 MB.
+Total: 8.104600 ms (FindLiveObjects: 0.423000 ms CreateObjectMapping: 0.305900 ms MarkObjects: 6.966400 ms  DeleteObjects: 0.407200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 252580.357046 seconds.
+  path: Assets/MultiPlayer/Sprites/field_2.jpg
+  artifactKey: Guid(e3fcc58591104a04f8c4e28bd7a1419b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/field_2.jpg using Guid(e3fcc58591104a04f8c4e28bd7a1419b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf9fc1bccd0ec96027b2834fe702f4a') in 0.226448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/MultiPlayer/Sprites/text/your turn red.png
+  artifactKey: Guid(48cd46b0cbacf7049802e8dbe9211c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/your turn red.png using Guid(48cd46b0cbacf7049802e8dbe9211c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71deb8cc7e456773982b5ef7e9640c8f') in 0.059929 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/MultiPlayer/Sprites/text/choose a card class red.prefab
+  artifactKey: Guid(3f1db82c8a144e34a987228378128d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/choose a card class red.prefab using Guid(3f1db82c8a144e34a987228378128d59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dc7567a0c097823fca62d5ad1c3202') in 0.124260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MultiPlayer/Sprites/Red Knife Choice.prefab
+  artifactKey: Guid(e2d118d5fbb4d48439d2eaace3f998e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Red Knife Choice.prefab using Guid(e2d118d5fbb4d48439d2eaace3f998e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633cb1ad3adc07e1903d51ce7d931aab') in 0.038918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MultiPlayer/Sprites/text/pass blue.prefab
+  artifactKey: Guid(639f4b5dfb2eccf479222955c2e5e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/pass blue.prefab using Guid(639f4b5dfb2eccf479222955c2e5e054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0fa3f92c33fb53966d3660eaa3dc84b') in 0.035447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/MultiPlayer/Sprites/Синий неактивированный щит.prefab
+  artifactKey: Guid(fd0dbb779a671914fb13f88711fb6e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Синий неактивированный щит.prefab using Guid(fd0dbb779a671914fb13f88711fb6e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407a1f42893963b2f726d68eb90b66cc') in 0.039967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/MultiPlayer/Sprites/Красный неактивированный щит.prefab
+  artifactKey: Guid(367daa7fe5f203a4caff8157bd7348ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Красный неактивированный щит.prefab using Guid(367daa7fe5f203a4caff8157bd7348ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edce82624202073a7e7424eb50e5fc5d') in 0.033390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/MultiPlayer/Sprites/redMana.prefab
+  artifactKey: Guid(84c85a635123dda41b0db167c6d1bcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/redMana.prefab using Guid(84c85a635123dda41b0db167c6d1bcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77060ee49b69133bb1ed1f4741fd5456') in 0.030399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/MultiPlayer/Sprites/text/wait for blue.png
+  artifactKey: Guid(ef46c72d9cef1ec4896d71fcae078112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/wait for blue.png using Guid(ef46c72d9cef1ec4896d71fcae078112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf8bc67331f31fefd5b405670e22526') in 0.048472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/MultiPlayer/Sprites/Board.prefab
+  artifactKey: Guid(164b5ce28491dd043be0f7c32fecd8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Board.prefab using Guid(164b5ce28491dd043be0f7c32fecd8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6221ab954ea6a8686a0a9bda3340c1c5') in 0.039501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/MultiPlayer/Sprites/Relay Point 1.prefab
+  artifactKey: Guid(debac2908ab884043b14d21879715939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Relay Point 1.prefab using Guid(debac2908ab884043b14d21879715939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2482904171d4f3399773ddc5d46858d') in 0.050243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/MultiPlayer/Sprites/text/mark 3 of your cards.prefab
+  artifactKey: Guid(03ba52f142715f34c96e686bf9212dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/mark 3 of your cards.prefab using Guid(03ba52f142715f34c96e686bf9212dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86914db40c89ed3bf48f9139b32c1f36') in 0.060154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/MultiPlayer/Sprites/text/choose a card class blue.prefab
+  artifactKey: Guid(01269ef2e1899bc45bcd42af9778180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/choose a card class blue.prefab using Guid(01269ef2e1899bc45bcd42af9778180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612cc8a9a7bd3c03a0b90c0c31c9d6eb') in 0.074899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MultiPlayer/Sprites
+  artifactKey: Guid(24c6d4af025002441ade0824d32c10a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites using Guid(24c6d4af025002441ade0824d32c10a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3227858f6ec8fc132cb352835144610') in 0.003640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000746 seconds.
+  path: Assets/MultiPlayer/Sprites/text/pass blue.png
+  artifactKey: Guid(e4ce074c81db10b4b8ccf411197277c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/pass blue.png using Guid(e4ce074c81db10b4b8ccf411197277c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea03d732bfb3d723e19a0024645ac4e') in 0.088899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/MultiPlayer/Sprites/text/your turn blue.png
+  artifactKey: Guid(33ef213a848864847a6d1c55a7c2bc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/your turn blue.png using Guid(33ef213a848864847a6d1c55a7c2bc55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d9bd2f9807b89944ac0300e687cf70a') in 0.059782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MultiPlayer/Sprites/CheckerPoint.prefab
+  artifactKey: Guid(8d0c0043a3f11654bb216cd2b214c08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/CheckerPoint.prefab using Guid(8d0c0043a3f11654bb216cd2b214c08e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771e8229910c9917876738c53286e3c3') in 0.038741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/MultiPlayer/Sprites/blueMana.png
+  artifactKey: Guid(60ade00dd53db934ea9c8acd331a4be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/blueMana.png using Guid(60ade00dd53db934ea9c8acd331a4be9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b15e6fff5f6d92ff7f185ee1ec4fdfd') in 0.062552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/MultiPlayer/Sprites/text/your turn red.prefab
+  artifactKey: Guid(ddeaad9570581c144955b634cbf66543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/your turn red.prefab using Guid(ddeaad9570581c144955b634cbf66543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661614d88fbcbd969dcb8ed6620dbfda') in 0.035486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/MultiPlayer/Sprites/3hex.prefab
+  artifactKey: Guid(ee31f99218efcdb448c337e9f1523ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/3hex.prefab using Guid(ee31f99218efcdb448c337e9f1523ef5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee56b5bb9c8c0a41d80b71b15fa7f118') in 0.040304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MultiPlayer/Sprites/CardBoarderline.prefab
+  artifactKey: Guid(d7d5d931b25b7964baaff3068757488d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/CardBoarderline.prefab using Guid(d7d5d931b25b7964baaff3068757488d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7697116701e0b032646700f6d41c2bfc') in 0.031232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/MultiPlayer/Sprites/Красная бомба неактивированная (1).prefab
+  artifactKey: Guid(a9331529ac852ab4780af916d6692e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/Красная бомба неактивированная (1).prefab using Guid(a9331529ac852ab4780af916d6692e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa858f2d27d887e2fdcc48577a239ddf') in 0.034541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/MultiPlayer/Sprites/text/choose a card class red.png
+  artifactKey: Guid(37dc40b89e26fdb438615c0651076591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/choose a card class red.png using Guid(37dc40b89e26fdb438615c0651076591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b772633b0c6904688ad8a7cfec237d') in 0.058236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/MultiPlayer/Sprites/text/choose a card class blue.png
+  artifactKey: Guid(415ea29875a28554c8a3330592037a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/text/choose a card class blue.png using Guid(415ea29875a28554c8a3330592037a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82d22f9384f5f3b3d5ce85cd0e91322') in 0.050305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MultiPlayer/Sprites/mark point.prefab
+  artifactKey: Guid(a9857549eed791e4ab5b80ae5072598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/mark point.prefab using Guid(a9857549eed791e4ab5b80ae5072598a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1341b9bb4bec41e0cd887f4db7c824bd') in 0.034184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/MultiPlayer/Sprites/blueMana.prefab
+  artifactKey: Guid(fc88a2efd26bda84ba286685acd213cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/blueMana.prefab using Guid(fc88a2efd26bda84ba286685acd213cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17f41d7bc263d67fb1b14d821458f021') in 0.031630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/MultiPlayer/Sprites/choiceCardBoarder.prefab
+  artifactKey: Guid(c5ef611f722e66942aa59cccc3799584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Sprites/choiceCardBoarder.prefab using Guid(c5ef611f722e66942aa59cccc3799584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a97d5a9f45f93072de0ae73ed788ec') in 0.030839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
