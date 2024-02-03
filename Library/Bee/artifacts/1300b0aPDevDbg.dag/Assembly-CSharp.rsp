@@ -363,6 +363,7 @@
 "Assets/MultiPlayer/Scripts/Objects/Base.cs"
 "Assets/MultiPlayer/Scripts/Objects/Board.cs"
 "Assets/MultiPlayer/Scripts/Objects/BowPoint.cs"
+"Assets/MultiPlayer/Scripts/Objects/Cell.cs"
 "Assets/MultiPlayer/Scripts/Objects/CheckerPoint.cs"
 "Assets/MultiPlayer/Scripts/Objects/Explosion.cs"
 "Assets/MultiPlayer/Scripts/Objects/ExplosionPoint.cs"
