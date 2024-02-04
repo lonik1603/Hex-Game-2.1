@@ -23,7 +23,7 @@ public class KnifePoint : MonoBehaviour
     private void OnMouseDown()
     {
         LocalGameManager.activeCard.transform.position = new Vector3(LocalGameManager.activeCard.transform.position.x, LocalGameManager.activeCard.transform.position.y, -1);
-        SF.getCardScript(LocalGameManager.activeCard).MoveTo(gameObject.transform.position);
+       
         SF.tmpObjListClear();
     }
     protected void OnTriggerEnter(Collider other)

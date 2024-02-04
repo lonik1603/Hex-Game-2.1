@@ -399,6 +399,7 @@
 "Assets/MultiPlayer/Scripts/Cards/Knife.cs"
 "Assets/MultiPlayer/Scripts/Cards/Shild.cs"
 "Assets/MultiPlayer/Scripts/CardsChoiseStage.cs"
+"Assets/MultiPlayer/Scripts/CardsConroller.cs"
 "Assets/MultiPlayer/Scripts/ClassChoiceButtons/BombChoiceButton.cs"
 "Assets/MultiPlayer/Scripts/ClassChoiceButtons/BootsChoiceButton.cs"
 "Assets/MultiPlayer/Scripts/ClassChoiceButtons/BowChoice.cs"

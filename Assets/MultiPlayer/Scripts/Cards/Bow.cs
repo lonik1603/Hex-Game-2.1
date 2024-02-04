@@ -11,7 +11,7 @@ public class Bow : Card
         canUseAbility = false;
         cardClass = "Bow";
     }
-    protected override void spawnPoints()
+    public override void spawnPoints()
     {
         if (isActivated)
         {

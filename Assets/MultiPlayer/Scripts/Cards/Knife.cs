@@ -10,7 +10,7 @@ public class Knife : Card
         cardClass = "Knife";
         hasEaten = false;
     }
-    protected override void spawnPoints()
+    public override void spawnPoints()
     {
         if (isActivated && hasEaten)
         {
@@ -51,17 +51,7 @@ public class Knife : Card
             base.spawnPoints();
         }
     }
-    public override void MoveTo(Vector3 finPos)
-    {
-        if (hasEaten && isActivated)
-        {
-            StartCoroutine(moveToKnife(finPos));
-        }
-        else
-        {
-            base.MoveTo(finPos);
-        }
-    }
+
     IEnumerator moveToKnife(Vector3 finPos)
     {
         LocalGameManager.canClick = false;

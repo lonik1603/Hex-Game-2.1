@@ -11,7 +11,7 @@ public class Bomb : Card
     {
         cardClass = "Bomb";
     }
-    protected override void spawnPoints()
+    public override void spawnPoints()
     {
         base.spawnPoints();
         if(isActivated)

@@ -17,7 +17,7 @@ public class Boots : Card
         base.cardCheck();
     }
 
-    protected override void spawnPoints()
+    public override void spawnPoints()
     {
         if (isActivated && canUseAbility)
         {
@@ -85,9 +85,5 @@ public class Boots : Card
             base.spawnPoints();
         }
     }
-    public override void MoveTo(Vector3 finPos)
-    {
-        canUseAbility = false;
-        base.MoveTo(finPos);
-    }
+
 }

@@ -22,11 +22,24 @@ public class Point : MonoBehaviour
         activeCardScript = LocalGameManager.activeCard.GetComponent<Card>();
         StartCoroutine(visualisePoint());
     }
+
+        private void OnTriggerEnter(Collider other)
+    {        
+        if(SF.cardClassList.Contains(other.tag))
+        {
+            otherCard = other.gameObject;
+        }
+
+    }
     private void OnMouseDown()
     {
-        LocalGameManager.activeCard.transform.position = new Vector3(LocalGameManager.activeCard.transform.position.x, LocalGameManager.activeCard.transform.position.y, -1);
+
         SF.changeMana(-1);
-        SF.getCardScript(LocalGameManager.activeCard).MoveTo(gameObject.transform.position);
+        //MoveTo
+        if (otherCard != null)
+        {
+            //Destroy(otherCard)
+        }
         SF.tmpObjListClear();
     }
 

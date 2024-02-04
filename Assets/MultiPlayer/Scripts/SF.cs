@@ -202,12 +202,4 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
         youWon.SetActive(true);
     }
 
-    public static void destroyThisCard(GameObject card)
-    {
-        sf.GetComponent<SF>().destroyThisCard1(card);
-    }
-    public void destroyThisCard1(GameObject card)
-    {
-        PhotonNetwork.Instantiate("CardDestroyer", card.transform.position, Quaternion.identity);
-    }
 }

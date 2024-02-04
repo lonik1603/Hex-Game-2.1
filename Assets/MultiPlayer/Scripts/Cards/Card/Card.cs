@@ -77,6 +77,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
             LocalGameManager.activeCard = gameObject;
             SF.tmpObjListClear();
             spawnPoints();
+            
         }
     }
 
@@ -191,40 +192,10 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
 
         }
     }
-    public virtual void MoveTo(Vector3 finPos)
-    {
-        StartCoroutine(MoveToCur(finPos));
-    }
 
-    IEnumerator MoveToCur(Vector3 finPos)
-    {
-        LocalGameManager.canClick = false;
-        Vector3 startPos = gameObject.transform.position;
-        for (float i = 0; i < 1; i += Time.deltaTime * 10)
-        {
-            gameObject.transform.position = Vector3.Lerp(startPos, finPos, i);
-            yield return null;
-        }
-        LocalGameManager.activeCard.transform.position = finPos;
-        LocalGameManager.canClick = true;
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -0.1f);
-        canGiveMark = false;
-        yield return new WaitForSeconds(0.1f);
-        canGiveMark = false;
-        if (GameManeger.myMana > 0)
-        {
-            spawnPoints();
-        }
-        else
-        {
-            SF.pass();
-            SF.tmpObjListClear();
-        }
-        yield return new WaitForSeconds(0.3f);
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0f);
-    }
 
-    protected virtual void spawnPoints()
+
+    public virtual void spawnPoints()
     {
         if (canMove)
         {
