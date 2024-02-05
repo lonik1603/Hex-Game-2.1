@@ -35,10 +35,13 @@ public class Point : MonoBehaviour
     {
 
         SF.changeMana(-1);
-        //MoveTo
         if (otherCard != null)
         {
-            //Destroy(otherCard)
+           CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard, otherCard);
+        }
+        else
+        {
+            CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard);
         }
         SF.tmpObjListClear();
     }

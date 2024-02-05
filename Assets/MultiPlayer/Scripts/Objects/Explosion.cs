@@ -45,7 +45,7 @@ public class Explosion : MonoBehaviour
                     }
                     else
                     {
-                        SF.destroyThisCard(other.gameObject);
+                        
                     }
                 }
 

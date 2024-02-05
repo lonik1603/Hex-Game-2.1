@@ -32,7 +32,7 @@ public class BowPoint : MonoBehaviour
         {
             Board.giveMeMark();
         }
-        SF.destroyThisCard(otherCard);
+
         SF.tmpObjListClear();
     }
     protected void OnTriggerEnter(Collider other)

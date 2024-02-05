@@ -21,8 +21,9 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     public bool isMarked;
     public PhotonView pView;
     public bool canGiveMark;
-    public bool hasEaten;
 
+
+    public bool hasEaten;
     public bool canMove;
 
 
@@ -97,21 +98,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
             }
 
         }
-        else if (SF.cardClassList.Contains(other.gameObject.tag))
-        {
-            if (pView.IsMine && SF.isMyTurn())
-            {
 
-                canMove = false;
-                SF.destroyThisCard(other.gameObject);
-                hasEaten = true;
-                if(cardClass == "Shild" && isActivated)
-                {
-                    diactivateThisCard();
-                }
-            }
-
-        }
     }
     private void OnDestroy()
     {

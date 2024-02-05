@@ -95,8 +95,8 @@
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\Cell.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\PassButton.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Card\Crown.cs" />
+    <Compile Include="Assets\MultiPlayer\Scripts\CardsController.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Shild.cs" />
-    <Compile Include="Assets\MultiPlayer\Scripts\CardsConroller.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Cards\Boots.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\Objects\RelayPoint1.cs" />
     <Compile Include="Assets\MultiPlayer\Scripts\CardDestroyer.cs" />
