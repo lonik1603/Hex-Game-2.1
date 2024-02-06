@@ -8,7 +8,6 @@ public class Point : MonoBehaviour
     public string thisCardClass;
     public bool thisCardIsActivated;
     private GameObject otherCard;
-    private Object activeCardScript;
 
     [SerializeField] private GameObject point;
 
@@ -19,7 +18,7 @@ public class Point : MonoBehaviour
             LocalGameManager.tmpGameObjects.Remove(gameObject);
             Destroy(gameObject);
         }
-        activeCardScript = LocalGameManager.activeCard.GetComponent<Card>();
+
         StartCoroutine(visualisePoint());
     }
 
@@ -37,7 +36,22 @@ public class Point : MonoBehaviour
         SF.changeMana(-1);
         if (otherCard != null)
         {
-           CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard, otherCard);
+            if (otherCard.tag == "Shild" && SF.getCardScript(otherCard).isActivated)
+            {
+                CardsController.diactivateThisCard(otherCard);
+                SF.getCardScript(LocalGameManager.activeCard).canMove = false;
+                if (GameManeger.myMana == 0)
+                {
+                    SF.pass();
+                }
+
+            }
+            else
+            {
+                CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard, otherCard);
+                SF.getCardScript(LocalGameManager.activeCard).hasEaten = true;
+                SF.getCardScript(LocalGameManager.activeCard).canMove = false;
+            }
         }
         else
         {

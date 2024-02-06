@@ -15,6 +15,8 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     public GameObject stun;
     public int stunCount;
 
+    public bool canUseAbility;
+
     public bool cardIsBlue;
     public string cardClass;
     public bool isActivated;
@@ -31,12 +33,10 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsWriting)
         {
-            stream.SendNext(isActivated);
             stream.SendNext(isMarked);
         }
         else
         {
-            isActivated = (bool)stream.ReceiveNext();
             isMarked = (bool)stream.ReceiveNext();
         }
     }
@@ -87,11 +87,6 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         if (other.gameObject.tag == "Point")
         {
             if ((cardIsBlue && LocalGameManager.isBlue) || (!cardIsBlue && !LocalGameManager.isBlue))
-            {
-                LocalGameManager.tmpGameObjects.Remove(other.gameObject);
-                Destroy(other.gameObject);
-            }
-            else if (cardClass == "Shild" && isActivated)
             {
                 LocalGameManager.tmpGameObjects.Remove(other.gameObject);
                 Destroy(other.gameObject);

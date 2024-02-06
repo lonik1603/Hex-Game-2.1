@@ -22,18 +22,27 @@ public class CardsController : MonoBehaviour
     {
         LocalGameManager.cardsController.GetComponent<CardsController>().moveThisCard(coords, thisCard, otherCard);
     }
+    public static void eatThisCard(GameObject card)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().eatThisCard1(card);
+    }
+
+    private void eatThisCard1(GameObject card)
+    {
+        int otherCardId = card.GetPhotonView().ViewID;
+        pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
+    }
 
 
 
-
-    public void moveThisCard(Vector3 coords, GameObject thisCard)
+    private void moveThisCard(Vector3 coords, GameObject thisCard)
     {
         int cardId = thisCard.GetPhotonView().ViewID;
 
 
         pView.RPC("moveThisCardRPC", RpcTarget.All, cardId, coords);
     }
-    public void moveThisCard(Vector3 coord, GameObject thisCard, GameObject otherCard)
+    private void moveThisCard(Vector3 coord, GameObject thisCard, GameObject otherCard)
     {
         moveThisCard(coord, thisCard);
  
@@ -41,6 +50,8 @@ public class CardsController : MonoBehaviour
         pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
 
     }
+
+
 
 
 
@@ -104,6 +115,7 @@ public class CardsController : MonoBehaviour
         LocalGameManager.canClick = true;
         card.transform.position = new Vector3(card.transform.position.x, card.transform.position.y, 0);
         SF.getCardScript(card).canGiveMark = false;
+        SF.getCardScript(card).canUseAbility = false;
         yield return new WaitForSeconds(0.05f);
 
         if (pView.IsMine)
@@ -131,8 +143,7 @@ public class CardsController : MonoBehaviour
         else
         {
             GameManeger.enemyCards.Remove(card);
-            SF.getCardScript(LocalGameManager.activeCard).hasEaten = true;
-            SF.getCardScript(LocalGameManager.activeCard).canMove = false;
+
             if (SF.getCardScript(card).isMarked)
             {
                 Board.giveMeMark();
@@ -142,7 +153,73 @@ public class CardsController : MonoBehaviour
 
         Destroy(card);
 
+    }
+
+
+
+    public static void activateThisCard(GameObject card)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().activateThisCard1(card);
+    }
+    private void activateThisCard1(GameObject card)
+    {
+        pView.RPC("activateThisCardRPC", RpcTarget.All, card.GetPhotonView().ViewID);
+    }
+
+    [PunRPC]
+    private void activateThisCardRPC(int cardID)
+    {
+        GameObject cardToflip = findCard(cardID);
+        if (!SF.getCardScript(cardToflip).isActivated)
+        {
+            SF.getCardScript(cardToflip).activateThisCard();
+        }
+    }
+
+
+
+
+
+    public static void diactivateThisCard(GameObject card)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().diactivateThisCard1(card);
+    }
+    private void diactivateThisCard1(GameObject card)
+    {
+        pView.RPC("diactivateThisCardRPC", RpcTarget.All, card.GetPhotonView().ViewID);
+    }
+    
+    [PunRPC]
+    private void diactivateThisCardRPC(int cardID)
+    {
+        GameObject cardToflip = findCard(cardID);
+        if (SF.getCardScript(cardToflip).isActivated)
+        {
+            SF.getCardScript(cardToflip).diactivateThisCard();
+        }
 
     }
 
+
+
+
+    static GameObject findCard(int cardID)
+    {
+        GameObject card = null;
+        foreach (GameObject obj in GameManeger.myCards)
+        {
+            if (cardID == obj.GetPhotonView().ViewID)
+            {
+                card = obj;
+            }
+        }
+        foreach (GameObject obj in GameManeger.enemyCards)
+        {
+            if (cardID == obj.GetPhotonView().ViewID)
+            {
+                card = obj;
+            }
+        }
+        return card;
+    }
 }

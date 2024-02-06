@@ -201,22 +201,12 @@ public class ActButton : MonoBehaviourPunCallbacks
             {
                 if (cardClass == SF.getCardScript(card).cardClass && SF.getCardScript(card).isActivated)
                 {
-                    SF.getCardScript(card).diactivateThisCard();
+                    CardsController.diactivateThisCard(card);
                 }
             }
             gameObject.GetComponent<ActButton>().flipActCard();
         }
-        else
-        {
-            foreach (GameObject card in GameManeger.enemyCards)
-            {
-                if (cardClass == SF.getCardScript(card).cardClass)
-                {
-                    SF.getCardScript(card).diactivateThisCard();
-                }
-            }
-            gameObject.GetComponent<ActButton>().flipActCard();
-        }
+
     }
 
     public void checkThisActButtton()

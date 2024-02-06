@@ -6,50 +6,61 @@ using Photon.Realtime;
 
 public class KnifePoint : MonoBehaviour
 {
+    public bool thisCardIsBlue;
+    public string thisCardClass;
+    public bool thisCardIsActivated;
     private GameObject otherCard;
-    private bool thisPointEat;
+
+    [SerializeField] private GameObject point;
 
     private void Start()
     {
         if (gameObject.transform.position.x > 14 || gameObject.transform.position.x < -14 || gameObject.transform.position.y < -13 || gameObject.transform.position.y > 13)
         {
-            gameObject.SetActive(false);
+            LocalGameManager.tmpGameObjects.Remove(gameObject);
+            Destroy(gameObject);
         }
-        else
-        {
-            StartCoroutine(knifePointCheck());
-        }
+
+        StartCoroutine(visualisePoint());
     }
-    private void OnMouseDown()
+
+    private void OnTriggerEnter(Collider other)
     {
-        LocalGameManager.activeCard.transform.position = new Vector3(LocalGameManager.activeCard.transform.position.x, LocalGameManager.activeCard.transform.position.y, -1);
-       
-        SF.tmpObjListClear();
-    }
-    protected void OnTriggerEnter(Collider other)
-    {
-        if (SF.cardClassList.Contains(other.gameObject.tag))
+        if (SF.cardClassList.Contains(other.tag))
         {
             otherCard = other.gameObject;
         }
-    }
 
-    IEnumerator knifePointCheck()
+    }
+    private void OnMouseDown()
     {
-        yield return new WaitForSeconds(0.05f);
+
         if (otherCard != null)
         {
-            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1f, 0f, 1f);
-            gameObject.GetComponent<BoxCollider>().enabled = true;
+            if (otherCard.tag == "Shild" && SF.getCardScript(otherCard).isActivated)
+            {
+                CardsController.diactivateThisCard(otherCard);
+                if (GameManeger.myMana == 0)
+                {
+                    SF.pass();
+                }
+            }
+            else
+            {
+                CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard, otherCard);
+            }
         }
         else
         {
-            if (SF.getCardScript(LocalGameManager.activeCard).hasEaten)
-            {
-                LocalGameManager.tmpGameObjects.Remove(gameObject);
-                Destroy(gameObject);
-            }
-
+            CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard);
+            SF.changeMana(-1);
         }
+        SF.tmpObjListClear();
+    }
+
+    IEnumerator visualisePoint()
+    {
+        yield return new WaitForSeconds(0.05f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.85f, 0.6f);
     }
 }

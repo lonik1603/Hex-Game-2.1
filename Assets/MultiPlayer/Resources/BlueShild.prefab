@@ -131,6 +131,7 @@ MonoBehaviour:
   boarderLine: {fileID: 619236230197812260, guid: d7d5d931b25b7964baaff3068757488d, type: 3}
   stun: {fileID: 0}
   stunCount: 0
+  canUseAbility: 0
   cardIsBlue: 0
   cardClass: 
   isActivated: 0

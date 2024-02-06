@@ -27,13 +27,6 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         switch (photonEvent.Code)
         {
             case 12:
-                foreach (GameObject card in GameManeger.enemyCards)
-                {
-                    if ((string)photonEvent.CustomData == SF.getCardScript(card).cardClass)
-                    {
-                        SF.getCardScript(card).activateThisCard();
-                    }
-                }
                 foreach (GameObject card in GameManeger.enemyActButtons)
                 {
                     if (card.GetComponent<ActButton>().cardClass == (string)photonEvent.CustomData)
@@ -159,7 +152,7 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             if (thisClass == SF.getCardScript(card).cardClass)
             {
-                SF.getCardScript(card).activateThisCard();
+                CardsController.activateThisCard(card);
             }
         }
         foreach (GameObject card in GameManeger.myActButtons)

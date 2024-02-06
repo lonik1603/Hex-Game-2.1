@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 public class Boots : Card
 {
-    private bool canUseAbility;
+
     private void Awake()
     {
         canUseAbility = false;

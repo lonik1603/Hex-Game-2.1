@@ -35,18 +35,17 @@ public class Explosion : MonoBehaviour
             {
                 if(GetComponent<PhotonView>().IsMine)
                 {
+                    other.gameObject.GetComponent<BoxCollider>().enabled = false;
                     if (SF.getCardScript(other.gameObject).pView.IsMine)
                     {
+
                         if (SF.getCardScript(other.gameObject).isMarked)
                         {
-                            Board.giveOtherPlayerMark();
-                        }
-                        PhotonNetwork.Destroy(other.gameObject);
+                         //   Board.giveOtherPlayerMark();
+                        }                      
                     }
-                    else
-                    {
-                        
-                    }
+
+                    CardsController.eatThisCard(other.gameObject);
                 }
 
             }

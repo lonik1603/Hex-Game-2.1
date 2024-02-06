@@ -12,7 +12,7 @@ public class Knife : Card
     }
     public override void spawnPoints()
     {
-        if (isActivated && hasEaten)
+        if (isActivated)
         {
             LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
 
