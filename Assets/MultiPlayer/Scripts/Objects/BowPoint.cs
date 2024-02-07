@@ -66,7 +66,10 @@ public class BowPoint : MonoBehaviour
     }
     protected void OnTriggerEnter(Collider other)
     {
-        otherCard = other.gameObject;
+        if(SF.cardClassList.Contains(other.gameObject.tag))
+        {
+            otherCard = other.gameObject;
+        }
     }
     
     IEnumerator bowPointCheck()

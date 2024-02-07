@@ -26,16 +26,6 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         switch (photonEvent.Code)
         {
-            case 12:
-                foreach (GameObject card in GameManeger.enemyActButtons)
-                {
-                    if (card.GetComponent<ActButton>().cardClass == (string)photonEvent.CustomData)
-                    {
-                        card.GetComponent<ActButton>().flipActCard();
-                        card.GetComponent<ActButton>().activateThis();
-                    }
-                }
-                break;
             case 18:
                 GameManeger.enemyGottenMarks++;
                 enemyMarks[GameManeger.enemyGottenMarks - 1].SetActive(true);
@@ -145,25 +135,7 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         PhotonNetwork.RaiseEvent(19, null, SF.OtherEventOptions, SF.StandatSendOptions);
     }
 
-    public static void activateThisClass(string thisClass)
-    {
-        PhotonNetwork.RaiseEvent(12, thisClass, SF.OtherEventOptions, SF.StandatSendOptions);
-        foreach (GameObject card in GameManeger.myCards)
-        {
-            if (thisClass == SF.getCardScript(card).cardClass)
-            {
-                CardsController.activateThisCard(card);
-            }
-        }
-        foreach (GameObject card in GameManeger.myActButtons)
-        {
-            if (card.GetComponent<ActButton>().cardClass == thisClass)
-            {
-                card.GetComponent<ActButton>().flipActCard();
-                card.GetComponent<ActButton>().activateThis();
-            }
-        }
-    }
+
     public static void useThisAblityCard(int id)
     {
         PhotonNetwork.RaiseEvent(20, id, SF.OtherEventOptions, SF.StandatSendOptions);

@@ -14,7 +14,7 @@ public class Knife : Card
     {
         if (isActivated)
         {
-            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 1), Quaternion.identity));
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -4), Quaternion.identity));
 
             LocalGameManager.tmpGameObjects.Add
               (Instantiate(KnifePoint,

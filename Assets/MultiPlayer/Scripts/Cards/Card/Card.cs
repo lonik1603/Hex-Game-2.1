@@ -181,7 +181,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (canMove)
         {
-            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 4), Quaternion.identity));
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -4), Quaternion.identity));
 
             LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,

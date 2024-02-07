@@ -15,7 +15,7 @@ C:/Users/asus/Documents/GitHub/Hex-Game-2.1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58290
+51056
 Successfully changed project path to: C:/Users/asus/Documents/GitHub/Hex-Game-2.1
 C:/Users/asus/Documents/GitHub/Hex-Game-2.1
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/asus/Documents/GitHub/Hex-Game-2.1
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13424] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 3000436059 [EditorId] 3000436059 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9500] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 2989752388 [EditorId] 2989752388 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13424] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 3000436059 [EditorId] 3000436059 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9500] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 2989752388 [EditorId] 2989752388 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 17.86 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 18.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.016490 seconds.
-- Loaded All Assemblies, in  0.593 seconds
+Registered in 0.019065 seconds.
+- Loaded All Assemblies, in  0.595 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 424 ms
+Android Extension - Scanning For ADB Devices 460 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.004 seconds
-Domain Reload Profiling: 1595ms
-	BeginReloadAssembly (134ms)
+- Finished resetting the current domain, in  1.138 seconds
+Domain Reload Profiling: 1731ms
+	BeginReloadAssembly (149ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (113ms)
-	LoadAllAssembliesAndSetupDomain (259ms)
-		LoadAssemblies (131ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (248ms)
+		LoadAssemblies (147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (250ms)
-			TypeCache.Refresh (248ms)
-				TypeCache.ScanAssembly (231ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (217ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1005ms)
+	FinalizeReload (1139ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (903ms)
+		SetupLoadedEditorAssemblies (1038ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (637ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (704ms)
+			SetLoadedEditorAssemblies (19ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (170ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (217ms)
 			ProcessInitializeOnLoadMethodAttributes (86ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -117,52 +117,52 @@ Domain Reload Profiling: 1595ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.193 seconds
-Refreshing native plugins compatible for Editor in 5.94 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.288 seconds
+Refreshing native plugins compatible for Editor in 8.75 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.995 seconds
-Domain Reload Profiling: 2182ms
-	BeginReloadAssembly (221ms)
+- Finished resetting the current domain, in  0.981 seconds
+Domain Reload Profiling: 2264ms
+	BeginReloadAssembly (207ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (804ms)
-		LoadAssemblies (461ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (93ms)
+	LoadAllAssembliesAndSetupDomain (896ms)
+		LoadAssemblies (510ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (444ms)
-			TypeCache.Refresh (408ms)
-				TypeCache.ScanAssembly (387ms)
-			ScanForSourceGeneratedMonoScriptInfo (27ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (996ms)
+		AnalyzeDomain (484ms)
+			TypeCache.Refresh (440ms)
+				TypeCache.ScanAssembly (418ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (982ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (684ms)
+		SetupLoadedEditorAssemblies (656ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (44ms)
+			InitializePlatformSupportModulesInManaged (43ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (107ms)
-			ProcessInitializeOnLoadAttributes (453ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			BeforeProcessingInitializeOnLoad (125ms)
+			ProcessInitializeOnLoadAttributes (408ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
 			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 6.65 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (15ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 8.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2648 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 61 unused Assets / (60.7 KB). Loaded Objects now: 3120.
-Memory consumption went from 115.5 MB to 115.4 MB.
-Total: 5.162600 ms (FindLiveObjects: 0.254200 ms CreateObjectMapping: 0.126400 ms MarkObjects: 4.587000 ms  DeleteObjects: 0.193700 ms)
+Unloading 2661 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (60.6 KB). Loaded Objects now: 3133.
+Memory consumption went from 119.3 MB to 119.3 MB.
+Total: 5.646100 ms (FindLiveObjects: 0.250100 ms CreateObjectMapping: 0.138700 ms MarkObjects: 5.066400 ms  DeleteObjects: 0.189200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -178,743 +178,33 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1024799.668840 seconds.
-  path: Assets/MultiPlayer/Resources/point.prefab
-  artifactKey: Guid(0620b7e30045dfc49b5d6153f41d0f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/point.prefab using Guid(0620b7e30045dfc49b5d6153f41d0f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6336a68197beb8c5a573b9ce27079463') in 0.130207 seconds
+  Time since last request: 1051655.879166 seconds.
+  path: Assets/MultiPlayer/Square.prefab
+  artifactKey: Guid(e45f40b01fa905c46a7903ecc1e610b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Square.prefab using Guid(e45f40b01fa905c46a7903ecc1e610b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a048c7190bc1c6394d9f0d0729bdaa4') in 0.128025 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/MultiPlayer/Resources/RedBoots.prefab
-  artifactKey: Guid(01bfc9701d3b6e040be734eee796badf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedBoots.prefab using Guid(01bfc9701d3b6e040be734eee796badf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1640a4053e40108b73b9bc75a3632799') in 0.035924 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/MultiPlayer/Resources/BowPoint.prefab
-  artifactKey: Guid(4abae1106da5c1b4a8aabd38375c42ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BowPoint.prefab using Guid(4abae1106da5c1b4a8aabd38375c42ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf89239521503d2c62b60ee1bf492fd') in 0.022848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 17
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Resources/RedBomb.prefab
-  artifactKey: Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedBomb.prefab using Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcad3869d05f6536624b2865f22b242') in 0.031540 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/MultiPlayer/Resources/BlueBomb.prefab
-  artifactKey: Guid(ee5a786b997dbe64ea08dc0afa9dbba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueBomb.prefab using Guid(ee5a786b997dbe64ea08dc0afa9dbba8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892049aa1b091ddb5abde4d9b31cc09f') in 0.030061 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/MultiPlayer/Resources/BlueBombButton.prefab
-  artifactKey: Guid(3cdff05494726c94caf060f55b4e8e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueBombButton.prefab using Guid(3cdff05494726c94caf060f55b4e8e3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4bdd3e1d9d65fa776c6520aa93f4df') in 0.029996 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Resources/Explosion.prefab
-  artifactKey: Guid(0df35470242ee534689b929acac23053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/Explosion.prefab using Guid(0df35470242ee534689b929acac23053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45fc4b4f4424a389a897e582b30c5e4') in 0.025605 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Resources/BlueKnife.prefab
-  artifactKey: Guid(6d6b4eb8998630b4cbc4bd58408db28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueKnife.prefab using Guid(6d6b4eb8998630b4cbc4bd58408db28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a03d9423a91c09dd63f7f53ccdf744') in 0.038158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/MultiPlayer/Resources/BlueKnifeButton.prefab
-  artifactKey: Guid(288deda51db917e4998a3a87f4fb0668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueKnifeButton.prefab using Guid(288deda51db917e4998a3a87f4fb0668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc51c19cf203dad7f70d669d666c980c') in 0.032423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/MultiPlayer/Resources/RedBootsButton.prefab
-  artifactKey: Guid(4e21a982b2eef5f49ad9d705ed4b59c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedBootsButton.prefab using Guid(4e21a982b2eef5f49ad9d705ed4b59c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7d0cffd6963d8ee616fbb0329e9762') in 0.030753 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MultiPlayer/Resources/BlueBootsButton.prefab
-  artifactKey: Guid(2402f7c0203279742a030d28bed949bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueBootsButton.prefab using Guid(2402f7c0203279742a030d28bed949bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c76f29ea82781bc226c92c2021437688') in 0.030912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Resources/RedBowButton.prefab
-  artifactKey: Guid(e4a8b004090b41f4f9537d0b8a96329c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedBowButton.prefab using Guid(e4a8b004090b41f4f9537d0b8a96329c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a536f9ae56b140f5d723e860e4ec7a') in 0.030638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 22
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MultiPlayer/Resources/RedKnife.prefab
-  artifactKey: Guid(47b356141069b284e834f4de65734ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedKnife.prefab using Guid(47b356141069b284e834f4de65734ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791af03e5b5e00cad0687c27bd358d58') in 0.030065 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 13.952749 seconds.
-  path: Assets/MultiPlayer/Scripts/Objects/BowPoint.cs
-  artifactKey: Guid(a036de0411e2c9746927f1327bf091e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Scripts/Objects/BowPoint.cs using Guid(a036de0411e2c9746927f1327bf091e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4164e78c59fa4ac68fede3a73c35d7') in 0.000611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 24.378487 seconds.
-  path: Assets/MultiPlayer/Scripts/Objects/BowPoint.cs
-  artifactKey: Guid(a036de0411e2c9746927f1327bf091e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Scripts/Objects/BowPoint.cs using Guid(a036de0411e2c9746927f1327bf091e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab41fa04c4c67b6ebf9b45de8a6c9e20') in 0.001253 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.856 seconds
-Refreshing native plugins compatible for Editor in 6.67 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.899 seconds
-Domain Reload Profiling: 1752ms
-	BeginReloadAssembly (171ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (575ms)
-		LoadAssemblies (325ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (320ms)
-			TypeCache.Refresh (310ms)
-				TypeCache.ScanAssembly (297ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (899ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (390ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (248ms)
-			ProcessInitializeOnLoadMethodAttributes (32ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 4.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2634 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (34.8 KB). Loaded Objects now: 3133.
-Memory consumption went from 112.1 MB to 112.1 MB.
-Total: 2.925100 ms (FindLiveObjects: 0.200700 ms CreateObjectMapping: 0.102800 ms MarkObjects: 2.557800 ms  DeleteObjects: 0.062900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 37.392838 seconds.
-  path: Assets/MultiPlayer/Scripts/ClassChoiceButtons/cardPlace
-  artifactKey: Guid(9e49325c0ccc1844f93d3d005181e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Scripts/ClassChoiceButtons/cardPlace using Guid(9e49325c0ccc1844f93d3d005181e8d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499b85cb90cd5092f3048104de3da492') in 0.001706 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.968884 seconds.
-  path: Assets/MultiPlayer/Scripts/ClassChoiceButtons/cardPlace/CardPlace.cs
-  artifactKey: Guid(5c9668bd13ea6494fb0d839061e84b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Scripts/ClassChoiceButtons/cardPlace/CardPlace.cs using Guid(5c9668bd13ea6494fb0d839061e84b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf6299f3c8ec4c02697c41c9e81c410') in 0.000739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 26.294266 seconds.
-  path: Assets/MultiPlayer/Scripts/GameStart.cs
-  artifactKey: Guid(d7b4596ce90a5664480de1113e763482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Scripts/GameStart.cs using Guid(d7b4596ce90a5664480de1113e763482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c286b54beeae69c505541d7a6561cdc') in 0.000530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 27.129082 seconds.
-  path: Assets/MultiPlayer/Resources/BlueBow.prefab
-  artifactKey: Guid(9d360a452a736984aa67c77611c6d9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/BlueBow.prefab using Guid(9d360a452a736984aa67c77611c6d9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06bb75736c8537afae919eac6245b7d') in 0.106302 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/MultiPlayer/Resources/RedBow.prefab
-  artifactKey: Guid(9b6b89be356f9b84ba4c856f7200370e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Resources/RedBow.prefab using Guid(9b6b89be356f9b84ba4c856f7200370e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008d3851ee2c7c04a046adc26d040ca2') in 0.016955 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 9.830733 seconds.
-  path: Assets/MultiPlayer/Sprites/Board.prefab
-  artifactKey: Guid(164b5ce28491dd043be0f7c32fecd8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Sprites/Board.prefab using Guid(164b5ce28491dd043be0f7c32fecd8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986f38eb6bd81e75aa2f7683cfb128cc') in 0.020654 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 42
-========================================================================
-Received Import Request.
-  Time since last request: 29.659719 seconds.
-  path: Assets/MultiPlayer/Textures/AbilityCards/Blue Relay.png
-  artifactKey: Guid(193fed11ceb132d438cb0085c953044b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/AbilityCards/Blue Relay.png using Guid(193fed11ceb132d438cb0085c953044b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526ff5aca365916098f9bed3483823dc') in 0.064138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MultiPlayer/Textures/AbilityCards
-  artifactKey: Guid(b9ae5d3a877dd2c408381d2aae5fad6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/AbilityCards using Guid(b9ae5d3a877dd2c408381d2aae5fad6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1907d80237462679be0e8d5eaaac2ab9') in 0.000696 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/MultiPlayer/Textures/AbilityCards/red-mana-boost.png
-  artifactKey: Guid(7802854be75d6f047aaa17e7222f44b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/AbilityCards/red-mana-boost.png using Guid(7802854be75d6f047aaa17e7222f44b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920bfa68db10b529af271d40da43e28e') in 0.037694 seconds
+  Time since last request: 0.000046 seconds.
+  path: Assets/MultiPlayer/Mark.png
+  artifactKey: Guid(02419dbef14b642439c829c683fb2418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Mark.png using Guid(02419dbef14b642439c829c683fb2418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e9afe839a681160e479d58389c7e992') in 0.071043 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/MultiPlayer/Textures/AbilityCards/red_zaloop.png
-  artifactKey: Guid(9087392ca61739741b610ac4b6f3d047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/AbilityCards/red_zaloop.png using Guid(9087392ca61739741b610ac4b6f3d047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a027918df1981ee4b1c6ab01d7e9317a') in 0.035230 seconds
+  path: Assets/MultiPlayer/RedBombButton.prefab
+  artifactKey: Guid(ab8f5ffed59b1a04a8103139e46d2d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/RedBombButton.prefab using Guid(ab8f5ffed59b1a04a8103139e46d2d1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b7436dee825bf1735a4d9bbf5629af') in 0.142619 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+Number of asset objects unloaded after import = 9
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/MultiPlayer/Textures/AbilityCards/blue_kapkan.png
-  artifactKey: Guid(42d907797ce5e60499efdf452b2f90c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/AbilityCards/blue_kapkan.png using Guid(42d907797ce5e60499efdf452b2f90c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82c348d7bc5d153337bcf183572b367') in 0.035571 seconds
+  Time since last request: 11.310147 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(b5a4037f4aa8d7d42b87edd7d417229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(b5a4037f4aa8d7d42b87edd7d417229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583ba37c0774ff6fb89da52819dc207a') in 0.000602 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 31.164973 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat
-  artifactKey: Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerPlayership.mat using Guid(99fced4bc2985174cac8512dc765d2bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5351ec0dcede03a1d1f3b2163f1467d7') in 0.385735 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/PlayerDiamond.mat
-  artifactKey: Guid(c597444fc6a08854d89baeeff4ba511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/PlayerDiamond.mat using Guid(c597444fc6a08854d89baeeff4ba511d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7811987a995be9d5b143e7d36e30c60') in 0.285703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 8.043817 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/_blue_shield_marked.png
-  artifactKey: Guid(633b443cae1543d4682c53c9075bbfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/_blue_shield_marked.png using Guid(633b443cae1543d4682c53c9075bbfcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec372a70e1005546a0e66ce7835d0b0f') in 0.038531 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue-dagger-marked.png
-  artifactKey: Guid(aa8399724cd69e24aaa4119d0eb490bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue-dagger-marked.png using Guid(aa8399724cd69e24aaa4119d0eb490bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '166dcfcf8326b957f45dfe9d8b6cc777') in 0.104076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue_crown_marked.png
-  artifactKey: Guid(6571f5bd82278d64d8531329ab24c3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue_crown_marked.png using Guid(6571f5bd82278d64d8531329ab24c3e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad50d24958c9fa8508493a61a1c7bcc') in 0.057929 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue_bomb_marked.png
-  artifactKey: Guid(65784daf132b1e6479470fad02388936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue_bomb_marked.png using Guid(65784daf132b1e6479470fad02388936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ac66f12e6c1f39778b5e9a8d055bd2') in 0.060953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue_boots_marked.png
-  artifactKey: Guid(2745d64ff3dc0874880e1b5ef1b66cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue_boots_marked.png using Guid(2745d64ff3dc0874880e1b5ef1b66cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d723c1b8345e1f227caeffc5c9214d') in 0.048508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_1.FBX
-  artifactKey: Guid(1ec55baed88ac07429a52bee4c519015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_1.FBX using Guid(1ec55baed88ac07429a52bee4c519015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80373fe66dbe33dbcd7225770924760f') in 0.301841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 112
-========================================================================
-Received Import Request.
-  Time since last request: 0.734222 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_3.FBX
-  artifactKey: Guid(09f4942833b61cf429ab5ae4addaacac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_3.FBX using Guid(09f4942833b61cf429ab5ae4addaacac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e14594b238e75eb313af9dd33220bd') in 0.174885 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 85
-========================================================================
-Received Import Request.
-  Time since last request: 14.779703 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat
-  artifactKey: Guid(b957742c5b9bfd441b9b330c8b55d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat using Guid(b957742c5b9bfd441b9b330c8b55d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aeee2d3fce244fcb36efcea96a003a2') in 0.022838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/hamvee.FBX
-  artifactKey: Guid(7b912c5dfa554a04296ecbf246180058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/hamvee.FBX using Guid(7b912c5dfa554a04296ecbf246180058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81255ee177646986c81dad437aa5a1e') in 0.161069 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_1.FBX
-  artifactKey: Guid(92afa2e4e0d0b8542bf48b0de3ac19bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_1.FBX using Guid(92afa2e4e0d0b8542bf48b0de3ac19bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f8fd64066741675bcdec9723f45202') in 0.102609 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green232.mat
-  artifactKey: Guid(fd4000dd854ad0e40ba2a59fab94cad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green232.mat using Guid(fd4000dd854ad0e40ba2a59fab94cad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff55d9adccf4ec0fe63dfd8ee10c354') in 0.025666 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 51.461090 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue bow.png
-  artifactKey: Guid(f66741ff0d0ceee4eb3fe76ef7eccfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue bow.png using Guid(f66741ff0d0ceee4eb3fe76ef7eccfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce28b2d92698e22860d6cb3af65ce658') in 0.045148 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red_crown_marked.png
-  artifactKey: Guid(f294b1f88372d444ab0362c98e9869ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red_crown_marked.png using Guid(f294b1f88372d444ab0362c98e9869ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae04a0e8ab7bb6b7fe551a371ed5f3e7') in 0.083904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue-dagger.png
-  artifactKey: Guid(bc4e386d59fb134448ca332f3b31b3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue-dagger.png using Guid(bc4e386d59fb134448ca332f3b31b3b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2302a70f0f560dbd37f661cdfb907bf') in 0.049049 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red_dagger.png
-  artifactKey: Guid(24537252146a4bc43861bb850cde92df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red_dagger.png using Guid(24537252146a4bc43861bb850cde92df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5719bfa1bc96688b88d8695b98f3b9d0') in 0.041858 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red_bomb.png
-  artifactKey: Guid(4e85fe7144eb9164e81d455f70a604dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red_bomb.png using Guid(4e85fe7144eb9164e81d455f70a604dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b993c79df710905ddee949fe541255') in 0.040282 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red_crown.png
-  artifactKey: Guid(601cd5c7c4ab17e4c92fd0a005753074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red_crown.png using Guid(601cd5c7c4ab17e4c92fd0a005753074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c63fa0e721770fe8574d347315cdf92') in 0.039385 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red_bomb_marked.png
-  artifactKey: Guid(cf925f0e9f3e8104c8087067d1be0e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red_bomb_marked.png using Guid(cf925f0e9f3e8104c8087067d1be0e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e9055d6e54bca7fd9a7ff9061641c0') in 0.037655 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue_crown.png
-  artifactKey: Guid(6059ecbaf9de57240aeac3e7181822a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue_crown.png using Guid(6059ecbaf9de57240aeac3e7181822a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4bbab11fcd4644eabea769f4b46e9d3') in 0.037682 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/red bow m.png
-  artifactKey: Guid(83cba348e2b5d9640bd0fdd421e532c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/red bow m.png using Guid(83cba348e2b5d9640bd0fdd421e532c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd1c00e40368466475b3cbd86794189') in 0.037700 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/MultiPlayer/Textures/Cards/blue_bomb.png
-  artifactKey: Guid(d470708a7be6e554f81f5d61a98455ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/Cards/blue_bomb.png using Guid(d470708a7be6e554f81f5d61a98455ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ec48385e6f35002f12b63d677853c2') in 0.039350 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.361044 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_bomb1 1.png
-  artifactKey: Guid(c2ff414ae6e64c44b8c54a5f716b6f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_bomb1 1.png using Guid(c2ff414ae6e64c44b8c54a5f716b6f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e3ffb08f76ba0325807812c1f07c74') in 0.029870 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_dagger1.png
-  artifactKey: Guid(d201f207e5d4ea641abf5145b35476ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_dagger1.png using Guid(d201f207e5d4ea641abf5145b35476ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07124a77e32958d64e06a8a99d240f83') in 0.031427 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/red_button_shield1 1.png
-  artifactKey: Guid(ba613d2820b86354681cde4e8e023a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/red_button_shield1 1.png using Guid(ba613d2820b86354681cde4e8e023a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7910f472ed9d24279450997ea748f8e4') in 0.038562 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_shield2.png
-  artifactKey: Guid(cde4e8708fc01d244bc8711df788c883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_shield2.png using Guid(cde4e8708fc01d244bc8711df788c883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea357489b8631a5373d4155f0dd1f7e') in 0.046480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_bow1.png
-  artifactKey: Guid(a40735ad2366c8049a04ccffb474e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_bow1.png using Guid(a40735ad2366c8049a04ccffb474e6fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4e18f277d972cf40f6dc6ee9d923f9') in 0.039994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/red_button_dagger1.png
-  artifactKey: Guid(9b357ad354e65984e9b77acecad3fe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/red_button_dagger1.png using Guid(9b357ad354e65984e9b77acecad3fe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bce5c3e422149c05f87f1a922c25e6') in 0.036160 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_boots1 1.png
-  artifactKey: Guid(b30907623e41da6448aa79d4afa7d277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_boots1 1.png using Guid(b30907623e41da6448aa79d4afa7d277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977f21975e75a11fb8d755ee37606143') in 0.037713 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/blue_button_shield1 1.png
-  artifactKey: Guid(d952d7aea619dc947948566120b2a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/blue_button_shield1 1.png using Guid(d952d7aea619dc947948566120b2a979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b439ab175faa846b2d4bf6e9d5931a') in 0.042470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/MultiPlayer/Textures/ActButtons/red_button_boots2.png
-  artifactKey: Guid(d41b9a7c048c3194ab5559eba93136b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Textures/ActButtons/red_button_boots2.png using Guid(d41b9a7c048c3194ab5559eba93136b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b25290c43896530052c6923a700f346') in 0.039782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.909 seconds
-Refreshing native plugins compatible for Editor in 4.04 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.035 seconds
-Domain Reload Profiling: 1941ms
-	BeginReloadAssembly (191ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (614ms)
-		LoadAssemblies (366ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (319ms)
-			TypeCache.Refresh (307ms)
-				TypeCache.ScanAssembly (296ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1036ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (411ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (252ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2634 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (35.0 KB). Loaded Objects now: 3179.
-Memory consumption went from 113.3 MB to 113.3 MB.
-Total: 2.981100 ms (FindLiveObjects: 0.281300 ms CreateObjectMapping: 0.113100 ms MarkObjects: 2.532300 ms  DeleteObjects: 0.053800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1271.724486 seconds.
-  path: Assets/MultiPlayer/Sprites/контур.png
-  artifactKey: Guid(cdf859114a80bd940adceeaff6480d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/MultiPlayer/Sprites/контур.png using Guid(cdf859114a80bd940adceeaff6480d97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c477d1cec562ed69281921f43816a8') in 0.110884 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.873 seconds
-Refreshing native plugins compatible for Editor in 9.27 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.171 seconds
-Domain Reload Profiling: 5036ms
-	BeginReloadAssembly (387ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (102ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (1257ms)
-		LoadAssemblies (758ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (665ms)
-			TypeCache.Refresh (650ms)
-				TypeCache.ScanAssembly (625ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (3172ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1060ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (80ms)
-			SetLoadedEditorAssemblies (15ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (197ms)
-			ProcessInitializeOnLoadAttributes (661ms)
-			ProcessInitializeOnLoadMethodAttributes (85ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (41ms)
-Refreshing native plugins compatible for Editor in 14.19 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2634 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (35.0 KB). Loaded Objects now: 3186.
-Memory consumption went from 113.3 MB to 113.3 MB.
-Total: 8.687000 ms (FindLiveObjects: 0.452400 ms CreateObjectMapping: 0.347000 ms MarkObjects: 7.790900 ms  DeleteObjects: 0.094800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 20.43 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3186.
-Memory consumption went from 73.3 MB to 73.3 MB.
-Total: 12.536800 ms (FindLiveObjects: 0.504200 ms CreateObjectMapping: 0.354800 ms MarkObjects: 11.575600 ms  DeleteObjects: 0.097500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  3.293 seconds
-Refreshing native plugins compatible for Editor in 16.61 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.127 seconds
-Domain Reload Profiling: 8406ms
-	BeginReloadAssembly (481ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (45ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (110ms)
-	RebuildCommonClasses (119ms)
-	RebuildNativeTypeToScriptingClass (66ms)
-	initialDomainReloadingComplete (260ms)
-	LoadAllAssembliesAndSetupDomain (2351ms)
-		LoadAssemblies (1274ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1270ms)
-			TypeCache.Refresh (1227ms)
-				TypeCache.ScanAssembly (1188ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (42ms)
-	FinalizeReload (5129ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2360ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (149ms)
-			SetLoadedEditorAssemblies (28ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (504ms)
-			ProcessInitializeOnLoadAttributes (1389ms)
-			ProcessInitializeOnLoadMethodAttributes (245ms)
-			AfterProcessingInitializeOnLoad (44ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (79ms)
-Refreshing native plugins compatible for Editor in 74.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2635 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 34 unused Assets / (34.7 KB). Loaded Objects now: 3191.
-Memory consumption went from 113.6 MB to 113.5 MB.
-Total: 12.526900 ms (FindLiveObjects: 0.455200 ms CreateObjectMapping: 0.210900 ms MarkObjects: 11.710500 ms  DeleteObjects: 0.147600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+Number of asset objects unloaded after import = 0

@@ -222,4 +222,75 @@ public class CardsController : MonoBehaviour
         }
         return card;
     }
+
+
+    public static void activateThisClass(string cardClass)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().activateThisClass1(cardClass);
+    }
+    private void activateThisClass1(string cardClass)
+    {
+        pView.RPC("activateThisClassRPC", RpcTarget.All, cardClass);
+    }
+
+    [PunRPC]
+    private void activateThisClassRPC(string cardClass)
+    {
+        GameObject actButton = null;
+        if (pView.IsMine)
+            foreach (GameObject obj in GameManeger.myActButtons)
+            {
+                if (obj.GetComponent<ActButton>().cardClass == cardClass)
+                {
+                    actButton = obj;
+                }
+            }
+        else
+        {
+            foreach (GameObject obj in GameManeger.enemyActButtons)
+            {
+                if (obj.GetComponent<ActButton>().cardClass == cardClass)
+                {
+                    actButton = obj;
+                }
+            }
+        }
+        actButton.GetComponent<ActButton>().activateThis();
+    }
+
+
+
+    public static void diactivateThisClass(string cardClass)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().diactivateThisClass1(cardClass);
+    }
+    private void diactivateThisClass1(string cardClass)
+    {
+        pView.RPC("diactivateThisClassRPC", RpcTarget.All, cardClass);
+    }
+
+    [PunRPC]
+    private void diactivateThisClassRPC(string cardClass)
+    {
+        GameObject actButton = null;
+        if (pView.IsMine)
+            foreach (GameObject obj in GameManeger.myActButtons)
+            {
+                if (obj.GetComponent<ActButton>().cardClass == cardClass)
+                {
+                    actButton = obj;
+                }
+            }
+        else
+        {
+            foreach (GameObject obj in GameManeger.enemyActButtons)
+            {
+                if (obj.GetComponent<ActButton>().cardClass == cardClass)
+                {
+                    actButton = obj;
+                }
+            }
+        }
+        actButton.GetComponent<ActButton>().diactivateThis();
+    }
 }

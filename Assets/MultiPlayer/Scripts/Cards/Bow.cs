@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bow : Card
 {
     [SerializeField] private GameObject bowPoint;
+    [SerializeField] private GameObject bowPoint2;
 
     private GameObject newBowPoint;
     private void Awake()
@@ -17,7 +18,8 @@ public class Bow : Card
     {
         if (isActivated)
         {
-            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 4), Quaternion.identity));
+            LocalGameManager.tmpGameObjects.Add(Instantiate(boarderLine, new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -4), Quaternion.identity));
+
             if (LocalGameManager.isBlue)
             {
                 newBowPoint = Instantiate(bowPoint,
@@ -25,6 +27,11 @@ public class Bow : Card
                 Quaternion.identity);
                 LocalGameManager.tmpGameObjects.Add(newBowPoint);
                 newBowPoint.GetComponent<BowPoint>().bowPointCount = 1;
+
+                LocalGameManager.tmpGameObjects.Add
+                (Instantiate(bowPoint2,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),
+                Quaternion.identity));
 
             }
             else
@@ -34,6 +41,7 @@ public class Bow : Card
                 new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + SF.hexUp * 2, -1),
                 Quaternion.identity));
             }
+
             LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,
                 new Vector3(gameObject.transform.position.x + 3, gameObject.transform.position.y + SF.hexUp, -1),
@@ -56,6 +64,11 @@ public class Bow : Card
                 Quaternion.identity);
                 LocalGameManager.tmpGameObjects.Add(newBowPoint);
                 newBowPoint.GetComponent<BowPoint>().bowPointCount = 1;
+
+                LocalGameManager.tmpGameObjects.Add
+                (Instantiate(bowPoint2,
+                new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - SF.hexUp * 2, -1),
+                Quaternion.identity));
             }
             LocalGameManager.tmpGameObjects.Add
                 (Instantiate(point,

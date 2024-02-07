@@ -46,6 +46,8 @@ MonoBehaviour:
   - activdiactivateThisCardRPC
   - activateThisCardRPC
   - diactivateThisCardRPC
+  - activateThisClassRPC
+  - diactivateThisClassRPC
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

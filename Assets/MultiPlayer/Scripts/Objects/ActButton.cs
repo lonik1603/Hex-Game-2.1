@@ -22,12 +22,22 @@ public class ActButton : MonoBehaviourPunCallbacks
     private void OnMouseDown()
     {
 
-        if (GameManeger.myMana >= 2 && SF.isMyTurn() && pView.IsMine && canBeActivated)
+        if (GameManeger.myMana >= 2 && SF.isMyTurn() && pView.IsMine && canBeActivated && !isActivated)
         {
             SF.tmpObjListClear();
             SF.changeMana(-2);
-            Board.activateThisClass(cardClass);
-
+            CardsController.activateThisClass(cardClass);
+            foreach (GameObject card in GameManeger.myCards)
+            {
+                if (cardClass == SF.getCardScript(card).cardClass)
+                {
+                    CardsController.activateThisCard(card);
+                }
+            }
+            if(GameManeger.myMana == 0)
+            {
+                SF.pass();
+            }
         }
 
     }
@@ -160,14 +170,7 @@ public class ActButton : MonoBehaviourPunCallbacks
             }
 
         }
-        if (pView.IsMine && isActivated)
-        {
-            SF.pass();
-        }
-        else if(pView.IsMine)
-        {
-            canBeActivated = true;
-        }
+
         LocalGameManager.canClick = true;
     }
 
@@ -176,15 +179,8 @@ public class ActButton : MonoBehaviourPunCallbacks
     {
         gameObject.GetComponent<BoxCollider>().enabled = false;
         isActivated = true;
-        if (pView.IsMine)
-        {
-            activeTurnsCount = 4;
-        }
-        else
-        {
-            activeTurnsCount = 4;
-        }
-
+        activeTurnsCount = 4;
+        flipActCard();
         foreach(GameObject obj in thisCardSquers)
         {
             obj.SetActive(true);
@@ -195,17 +191,8 @@ public class ActButton : MonoBehaviourPunCallbacks
         canBeActivated = true;
         gameObject.GetComponent<BoxCollider>().enabled = true;
         isActivated = false;
-        if(pView.IsMine)
-        {
-            foreach (GameObject card in GameManeger.myCards)
-            {
-                if (cardClass == SF.getCardScript(card).cardClass && SF.getCardScript(card).isActivated)
-                {
-                    CardsController.diactivateThisCard(card);
-                }
-            }
-            gameObject.GetComponent<ActButton>().flipActCard();
-        }
+
+        flipActCard();
 
     }
 
@@ -225,10 +212,17 @@ public class ActButton : MonoBehaviourPunCallbacks
                     thisCardSquers[i].SetActive(false);
                 }
             }
-            if(activeTurnsCount == 0)
+            if(activeTurnsCount == 0 && pView.IsMine)
             {
 
-                diactivateThis();
+                CardsController.diactivateThisClass(cardClass);
+                foreach (GameObject card in GameManeger.myCards)
+                {
+                    if (cardClass == SF.getCardScript(card).cardClass)
+                    {
+                        CardsController.diactivateThisCard(card);
+                    }
+                }
             }
         }
     }
