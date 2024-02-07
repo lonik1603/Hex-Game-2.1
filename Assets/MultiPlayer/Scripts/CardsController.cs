@@ -122,8 +122,11 @@ public class CardsController : MonoBehaviour
         {
             if (GameManeger.myMana > 0)
             {
-                SF.getCardScript(card).spawnPoints();
-                LocalGameManager.activeCard = card;
+                if (SF.getCardScript(card).canMove)
+                {
+                    SF.getCardScript(card).spawnPoints();
+                    LocalGameManager.activeCard = card;
+                }
             }
             else
             {

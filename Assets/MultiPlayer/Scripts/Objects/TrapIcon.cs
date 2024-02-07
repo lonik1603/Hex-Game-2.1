@@ -45,6 +45,4 @@ public class TrapIcon : MonoBehaviour
             }
         }
     }
-
-
 }

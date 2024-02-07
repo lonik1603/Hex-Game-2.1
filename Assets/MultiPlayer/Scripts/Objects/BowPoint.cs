@@ -53,14 +53,15 @@ public class BowPoint : MonoBehaviour
         if (otherCard.tag == "Shild" && SF.getCardScript(otherCard).isActivated)
         {
             CardsController.diactivateThisCard(otherCard);
-            if (GameManeger.myMana == 0)
-            {
-                SF.pass();
-            }
+
         }
         else
         {
             CardsController.eatThisCard(otherCard);
+        }
+        if (GameManeger.myMana == 0)
+        {
+            SF.pass();
         }
         SF.tmpObjListClear();
     }

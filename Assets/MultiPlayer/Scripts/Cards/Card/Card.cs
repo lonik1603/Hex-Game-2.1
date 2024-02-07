@@ -114,6 +114,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     public void activateThisCard()
     {
         isActivated = true;
+        canUseAbility = true;
         StartCoroutine(flipThisCard());
     }
     public void diactivateThisCard()

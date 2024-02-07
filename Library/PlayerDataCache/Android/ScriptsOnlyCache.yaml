@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Boots
     - Bow
     - BowPoint
+    - BowPoint2
     - CardDestroyer
     - CardsController
     - Checker
@@ -161,6 +162,9 @@ ScriptsOnlyBuild:
     fullTypeName: Menu
     methodName: matchmaking
   - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: saveNickname
+  - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: Leave
   - assembly: Assembly-CSharp
@@ -246,25 +250,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19324}
     - Class: 114
-      Script: {instanceID: 19674}
+      Script: {instanceID: 19676}
     - Class: 114
-      Script: {instanceID: 19696}
+      Script: {instanceID: 19698}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20002}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20238}
     - Class: 114
-      Script: {instanceID: 20270}
+      Script: {instanceID: 20272}
     - Class: 114
-      Script: {instanceID: 20802}
+      Script: {instanceID: 20804}
     - Class: 114
-      Script: {instanceID: 20820}
+      Script: {instanceID: 20822}
     - Class: 114
-      Script: {instanceID: 21438}
+      Script: {instanceID: 21440}
     - Class: 114
-      Script: {instanceID: 21476}
+      Script: {instanceID: 21478}
     - Class: 114
-      Script: {instanceID: 21644}
+      Script: {instanceID: 21646}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,49 +387,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19454}
     - Class: 114
-      Script: {instanceID: 19496}
+      Script: {instanceID: 19472}
     - Class: 114
-      Script: {instanceID: 19714}
+      Script: {instanceID: 19498}
     - Class: 114
-      Script: {instanceID: 20036}
+      Script: {instanceID: 19716}
     - Class: 114
-      Script: {instanceID: 20204}
+      Script: {instanceID: 20038}
     - Class: 114
-      Script: {instanceID: 20210}
+      Script: {instanceID: 20206}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20212}
     - Class: 114
-      Script: {instanceID: 20408}
+      Script: {instanceID: 20238}
     - Class: 114
-      Script: {instanceID: 20476}
+      Script: {instanceID: 20410}
     - Class: 114
-      Script: {instanceID: 20512}
+      Script: {instanceID: 20478}
     - Class: 114
-      Script: {instanceID: 20524}
+      Script: {instanceID: 20514}
     - Class: 114
-      Script: {instanceID: 20546}
+      Script: {instanceID: 20526}
     - Class: 114
-      Script: {instanceID: 20710}
+      Script: {instanceID: 20548}
     - Class: 114
-      Script: {instanceID: 20820}
+      Script: {instanceID: 20712}
     - Class: 114
-      Script: {instanceID: 20860}
+      Script: {instanceID: 20822}
     - Class: 114
-      Script: {instanceID: 21148}
+      Script: {instanceID: 20862}
     - Class: 114
       Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21358}
+      Script: {instanceID: 21152}
     - Class: 114
-      Script: {instanceID: 21476}
+      Script: {instanceID: 21360}
     - Class: 114
-      Script: {instanceID: 21480}
+      Script: {instanceID: 21478}
     - Class: 114
-      Script: {instanceID: 21614}
+      Script: {instanceID: 21482}
     - Class: 114
-      Script: {instanceID: 21626}
+      Script: {instanceID: 21616}
     - Class: 114
-      Script: {instanceID: 21880}
+      Script: {instanceID: 21628}
+    - Class: 114
+      Script: {instanceID: 21882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1373,6 +1379,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
+      Hash: b69ef2018a1afe43b30e467604dfdd44
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BowPoint2
+  - hash:
+      serializedVersion: 2
       Hash: f8d6522c9262b56f1079affd2c2e4bbb
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1559,7 +1571,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 4d67bcd270a46a7e0c29c6b7a1931491
+      Hash: 4b3d65b8b9c37ac382bd6d2471ef5fee
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Menu
@@ -2045,7 +2057,7 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
-      Hash: 581bbcfca99a8c01668793e7669d2aa8
+      Hash: 8be969e9e6f59a8500937158b44ad7ea
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Bow
@@ -2161,4 +2173,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.2.3.apk
+  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.2.4b.apk

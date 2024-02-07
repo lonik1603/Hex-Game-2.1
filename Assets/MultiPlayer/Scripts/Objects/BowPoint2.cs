@@ -24,7 +24,8 @@ public class BowPoint2 : MonoBehaviour
     {
         if (SF.cardClassList.Contains(other.tag))
         {
-            otherCard = other.gameObject;
+            LocalGameManager.tmpGameObjects.Remove(gameObject);
+            Destroy(gameObject);
         }
 
     }
@@ -38,10 +39,6 @@ public class BowPoint2 : MonoBehaviour
             {
                 CardsController.diactivateThisCard(otherCard);
                 SF.getCardScript(LocalGameManager.activeCard).canMove = false;
-                if (GameManeger.myMana == 0)
-                {
-                    SF.pass();
-                }
 
             }
             else
@@ -55,15 +52,16 @@ public class BowPoint2 : MonoBehaviour
         {
             CardsController.moveThisCardTo(new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, -1), LocalGameManager.activeCard);
         }
+        if (GameManeger.myMana == 0)
+        {
+            SF.pass();
+        }
         SF.tmpObjListClear();
     }
 
     IEnumerator visualisePoint()
     {
         yield return new WaitForSeconds(0.05f);
-        if (otherCard == null)
-        {
-            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.85f, 0.6f);
-        }
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 0, 0.85f, 0.6f);
     }
 }

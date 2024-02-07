@@ -34,12 +34,12 @@ public class KnifePoint : MonoBehaviour
     }
     private void OnMouseDown()
     {
-
         if (otherCard != null)
         {
             if (otherCard.tag == "Shild" && SF.getCardScript(otherCard).isActivated)
             {
                 CardsController.diactivateThisCard(otherCard);
+                SF.getCardScript(LocalGameManager.activeCard).canMove = false;
                 if (GameManeger.myMana == 0)
                 {
                     SF.pass();
