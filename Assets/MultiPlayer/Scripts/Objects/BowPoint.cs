@@ -71,7 +71,7 @@ public class BowPoint : MonoBehaviour
     
     IEnumerator bowPointCheck()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.01f);
         if(otherCard != null)
         {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1f, 0f, 1f);

@@ -11,7 +11,7 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private Text gameVersionText;
     [SerializeField] private GameObject matchmakongButton;
 
-    const string gameVersion = "0.2.2";
+    const string gameVersion = "0.2.3";
     private static bool conected;
     private void Start()
     {

@@ -71,9 +71,9 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                     new Vector3(-10 + 5 * i, -19, 0), Quaternion.Euler(0, 0, 0)));
                 }
 
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(-9, -11.4f, -2), Quaternion.Euler(0, 0, 90)));
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, -11.4f, -2), Quaternion.Euler(0, 0, -90)));
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, -11.4f, -2), Quaternion.Euler(0, 0, 90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(-9, -10.9414f, -2), Quaternion.Euler(0, 0, 90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, -10.9414f, -2), Quaternion.Euler(0, 0, -90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, -10.9414f, -2), Quaternion.Euler(0, 0, 90)));
 
                 TextManager.activateThisText(TextManager.ChooseCardClass);
             }
@@ -84,9 +84,9 @@ public class CardsChoiseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                     createdChoiceButtons.Add(Instantiate(redChoiceButtonsPrefabs[i],
                     new Vector3(10 - 5 * i, 19, 0), Quaternion.Euler(0, 0, 180)));
                 }
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(-9, 11.4f, -2), Quaternion.Euler(0, 0, -90)));
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, 11.4f, -2), Quaternion.Euler(0, 0, 90)));
-                cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, 11.4f, -2), Quaternion.Euler(0, 0, -90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(-9, 10.9414f, -2), Quaternion.Euler(0, 0, -90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(0, 10.9414f, -2), Quaternion.Euler(0, 0, 90)));
+                cardPlaces.Add(Instantiate(cardPlace, new Vector3(9, 10.9414f, -2), Quaternion.Euler(0, 0, -90)));
                 diactivateClassChoiceButtons();
                 TextManager.activateThisText(TextManager.waitFor);
             }
