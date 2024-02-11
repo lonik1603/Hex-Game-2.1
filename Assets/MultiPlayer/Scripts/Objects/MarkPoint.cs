@@ -24,7 +24,7 @@ public class MarkPoint : MonoBehaviour
         if (LocalGameManager.marksCount == 3)
         {
             SF.tmpObjListClear();
-            MarksChoseStage.playerIsReady();
+            MarksChoseStage.playerHasMarked();
         }
         Destroy(gameObject);
     }

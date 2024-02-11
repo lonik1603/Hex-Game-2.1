@@ -136,6 +136,8 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
     }
 
 
+
+
     public static void useThisAblityCard(int id)
     {
         PhotonNetwork.RaiseEvent(20, id, SF.OtherEventOptions, SF.StandatSendOptions);

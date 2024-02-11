@@ -7,6 +7,10 @@ using Photon.Realtime;
 public class MarksChoseStage : MonoBehaviourPunCallbacks, IOnEventCallback
 {
     [SerializeField] private GameObject markPoint;
+    [SerializeField] private GameObject corruptedPointSt;
+
+    private static GameObject corruptedPoint;
+
     private static int readyPlayers;
     public static int p;
     [SerializeField] private GameObject endOfChoiseStage;
@@ -34,6 +38,8 @@ public class MarksChoseStage : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         if (p == 0)
         {
+            corruptedPoint = corruptedPointSt;
+
             if (LocalGameManager.isBlue)
             {
                 foreach (GameObject obj in TextManager.textList)
@@ -63,6 +69,17 @@ public class MarksChoseStage : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         PhotonNetwork.RaiseEvent(7, null, SF.StandertEventOptions, SF.StandatSendOptions);
     }    
-    
+
+    public static void playerHasMarked()
+    {
+        foreach (GameObject obj in GameManeger.myCards)
+        {
+            if (SF.getCardScript(obj).isMarked == false)
+            {
+                LocalGameManager.tmpGameObjects.Add(Instantiate(
+                corruptedPoint, new Vector3(obj.transform.position.x, obj.transform.position.y, -1), Quaternion.identity));
+            }
+        }
+    }
 
 }

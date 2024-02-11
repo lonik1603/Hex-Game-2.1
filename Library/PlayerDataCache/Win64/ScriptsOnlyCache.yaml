@@ -7,7 +7,6 @@ ScriptsOnlyBuild:
     - Bow
     - BowPoint
     - BowPoint2
-    - CardDestroyer
     - CardsController
     - Checker
     - CheckerPoint
@@ -34,6 +33,7 @@ ScriptsOnlyBuild:
     - Checker
     - CheckerPoint
     - ClassChoiceButton
+    - CorruptionPoint
     - EndOfChoiceStage
     - GameInterface
     - GameManeger
@@ -67,6 +67,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -248,25 +250,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19324}
     - Class: 114
-      Script: {instanceID: 19674}
+      Script: {instanceID: 19676}
     - Class: 114
-      Script: {instanceID: 19696}
+      Script: {instanceID: 19698}
     - Class: 114
-      Script: {instanceID: 20000}
+      Script: {instanceID: 20002}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20238}
     - Class: 114
-      Script: {instanceID: 20270}
+      Script: {instanceID: 20272}
     - Class: 114
-      Script: {instanceID: 20802}
+      Script: {instanceID: 20804}
     - Class: 114
-      Script: {instanceID: 20820}
+      Script: {instanceID: 20822}
     - Class: 114
-      Script: {instanceID: 21438}
+      Script: {instanceID: 21440}
     - Class: 114
-      Script: {instanceID: 21476}
+      Script: {instanceID: 21478}
     - Class: 114
-      Script: {instanceID: 21644}
+      Script: {instanceID: 21646}
+    - Class: 114
+      Script: {instanceID: 31472}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -369,8 +373,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18752}
     - Class: 114
-      Script: {instanceID: 18850}
-    - Class: 114
       Script: {instanceID: 18868}
     - Class: 114
       Script: {instanceID: 18878}
@@ -385,51 +387,51 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19454}
     - Class: 114
-      Script: {instanceID: 19496}
+      Script: {instanceID: 19472}
     - Class: 114
-      Script: {instanceID: 19714}
+      Script: {instanceID: 19498}
     - Class: 114
-      Script: {instanceID: 20036}
+      Script: {instanceID: 19716}
     - Class: 114
-      Script: {instanceID: 20204}
+      Script: {instanceID: 20038}
     - Class: 114
-      Script: {instanceID: 20210}
+      Script: {instanceID: 20206}
     - Class: 114
-      Script: {instanceID: 20236}
+      Script: {instanceID: 20212}
     - Class: 114
-      Script: {instanceID: 20408}
+      Script: {instanceID: 20238}
     - Class: 114
-      Script: {instanceID: 20476}
+      Script: {instanceID: 20410}
     - Class: 114
-      Script: {instanceID: 20512}
+      Script: {instanceID: 20478}
     - Class: 114
-      Script: {instanceID: 20524}
+      Script: {instanceID: 20514}
     - Class: 114
-      Script: {instanceID: 20546}
+      Script: {instanceID: 20526}
     - Class: 114
-      Script: {instanceID: 20710}
+      Script: {instanceID: 20548}
     - Class: 114
-      Script: {instanceID: 20820}
+      Script: {instanceID: 20712}
     - Class: 114
-      Script: {instanceID: 20860}
+      Script: {instanceID: 20822}
     - Class: 114
-      Script: {instanceID: 21148}
+      Script: {instanceID: 20862}
     - Class: 114
       Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21358}
+      Script: {instanceID: 21152}
     - Class: 114
-      Script: {instanceID: 21476}
+      Script: {instanceID: 21360}
     - Class: 114
-      Script: {instanceID: 21480}
+      Script: {instanceID: 21478}
     - Class: 114
-      Script: {instanceID: 21614}
+      Script: {instanceID: 21482}
     - Class: 114
-      Script: {instanceID: 21626}
+      Script: {instanceID: 21616}
     - Class: 114
-      Script: {instanceID: 21880}
+      Script: {instanceID: 21628}
     - Class: 114
-      Script: {instanceID: 23830}
+      Script: {instanceID: 21882}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -639,7 +641,7 @@ ScriptsOnlyBuild:
     className: RelayPoint2
   - hash:
       serializedVersion: 2
-      Hash: 39b91f07917202fa284a290cf53db9e0
+      Hash: 41e9ae3217c1958785c0f16f7b848208
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MarksChoseStage
@@ -1137,7 +1139,7 @@ ScriptsOnlyBuild:
     className: Cell
   - hash:
       serializedVersion: 2
-      Hash: 1dca759a29cb818601e6fb3b31294209
+      Hash: 25f39c2f089a4085a363a25eaef2bd7f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Knife
@@ -1377,7 +1379,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: f8d6522c9262b56f1079affd2c2e4bbb
+      Hash: b69ef2018a1afe43b30e467604dfdd44
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: BowPoint2
+  - hash:
+      serializedVersion: 2
+      Hash: b4bd78c7e1cbfe14765e9b76bc1038a3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Shild
@@ -1503,7 +1511,7 @@ ScriptsOnlyBuild:
     className: ToDemoHubButton
   - hash:
       serializedVersion: 2
-      Hash: f8d6522c9262b56f1079affd2c2e4bbb
+      Hash: b4bd78c7e1cbfe14765e9b76bc1038a3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Card
@@ -1749,7 +1757,7 @@ ScriptsOnlyBuild:
     className: StatesGui
   - hash:
       serializedVersion: 2
-      Hash: e7bef4c6ac990dea729c7b5db4e64d09
+      Hash: c047fd767843aba9f13dd27a7fb6b7b2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Bomb
@@ -1863,7 +1871,7 @@ ScriptsOnlyBuild:
     className: PhotonStatsGui
   - hash:
       serializedVersion: 2
-      Hash: f8d6522c9262b56f1079affd2c2e4bbb
+      Hash: b4bd78c7e1cbfe14765e9b76bc1038a3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Crown
@@ -2049,13 +2057,13 @@ ScriptsOnlyBuild:
     className: AppVersionProperty
   - hash:
       serializedVersion: 2
-      Hash: 8be969e9e6f59a8500937158b44ad7ea
+      Hash: 9a1c881aa1fbc10cf1fab688bbd7cae2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Bow
   - hash:
       serializedVersion: 2
-      Hash: f8d6522c9262b56f1079affd2c2e4bbb
+      Hash: b4bd78c7e1cbfe14765e9b76bc1038a3
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Boots
@@ -2163,12 +2171,12 @@ ScriptsOnlyBuild:
     className: UserIdUiForm
   - hash:
       serializedVersion: 2
-      Hash: b69ef2018a1afe43b30e467604dfdd44
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: BowPoint2
+    className: CorruptionPoint
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/HexGame.exe
+  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba_BurstDebugInformation_DoNotShip/HexGame.exe

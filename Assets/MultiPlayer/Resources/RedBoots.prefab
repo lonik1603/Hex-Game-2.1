@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7608464722814471116}
   - component: {fileID: -2840769549704268682}
   - component: {fileID: -6168038341569726843}
-  - component: {fileID: -4587558772721117794}
   - component: {fileID: -3323849323669618866}
   m_Layer: 0
   m_Name: RedBoots
@@ -108,7 +107,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -2840769549704268682}
-  - {fileID: -4587558772721117794}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -126,6 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: a1976ee8a0161c444851bc5c88a50c5a, type: 2}
   markedMterial: {fileID: 2100000, guid: cb0f702bfc06c8e4e938c32f1c02ee3c, type: 2}
+  corruptedMterial: {fileID: 2100000, guid: 169c12324bc140746966ae1574ca91c3, type: 2}
   point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
   giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
   boarderLine: {fileID: 8362239481190105151, guid: 48b4d7a82ff95ac4798610b309d076b6, type: 3}
@@ -136,6 +135,7 @@ MonoBehaviour:
   cardClass: 
   isActivated: 0
   isMarked: 0
+  isCorrupted: 0
   pView: {fileID: 0}
   canGiveMark: 0
   hasEaten: 0
@@ -161,22 +161,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02241079, y: 0.02, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4587558772721117794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6737932556309489471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 0
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!54 &-3323849323669618866
 Rigidbody:
   m_ObjectHideFlags: 0

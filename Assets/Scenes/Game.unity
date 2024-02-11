@@ -878,7 +878,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955255873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f010a3456a6b774bb7a00b9a687abb2, type: 3}
   m_Name: 
@@ -2044,6 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   markPoint: {fileID: 2082219074643854767, guid: a9857549eed791e4ab5b80ae5072598a, type: 3}
+  corruptedPointSt: {fileID: 2082219074643854767, guid: e7a062ae22792c649a710add2d18ef08, type: 3}
   endOfChoiseStage: {fileID: 1461906006}
 --- !u!4 &1756734646
 Transform:

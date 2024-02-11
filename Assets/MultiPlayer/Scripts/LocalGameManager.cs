@@ -9,7 +9,10 @@ public class LocalGameManager : MonoBehaviour
     public static bool isBlue;
     public static List<GameObject> tmpGameObjects;
     public static List<GameObject> cantMoveCards;
+
     public static int marksCount;
+    public static int corruptionCount;
+
     public static bool canClick;
 
     [SerializeField] private GameObject BoardPref;
@@ -30,6 +33,7 @@ public class LocalGameManager : MonoBehaviour
         gameStarted = false;
         isBlue = true;
         marksCount = 0;
+        corruptionCount = 0;
 
         Board = Instantiate(BoardPref, new Vector3(0, 0, 0), Quaternion.identity);
         cardsController = PhotonNetwork.Instantiate("CardsController", new Vector3(0,0,0), Quaternion.identity);

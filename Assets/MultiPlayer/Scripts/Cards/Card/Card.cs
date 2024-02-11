@@ -8,6 +8,8 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
 {
     [SerializeField] public Material defaultMaterial;
     [SerializeField] public Material markedMterial;
+    [SerializeField] public Material corruptedMterial;
+
     [SerializeField] protected GameObject point;
     [SerializeField] protected GameObject giveMarkPoint;
     [SerializeField] protected GameObject boarderLine;
@@ -19,8 +21,11 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
 
     public bool cardIsBlue;
     public string cardClass;
+
     public bool isActivated;
     public bool isMarked;
+    public bool isCorrupted;
+
     public PhotonView pView;
     public bool canGiveMark;
 
@@ -34,10 +39,12 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         if (stream.IsWriting)
         {
             stream.SendNext(isMarked);
+            stream.SendNext(isCorrupted);
         }
         else
         {
             isMarked = (bool)stream.ReceiveNext();
+            isCorrupted = (bool)stream.ReceiveNext();
         }
     }
     protected void Start()
@@ -45,6 +52,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         pView = GetComponent<PhotonView>();
         isActivated = false;
         isMarked = false;
+        isCorrupted = false;
         canMove = true;
         hasEaten = false;
         cardClass = gameObject.tag;
@@ -70,6 +78,12 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         gameObject.GetComponent<Renderer>().material = markedMterial;
         isMarked = true;
     }
+    public void corruptCard()
+    {
+        gameObject.GetComponent<Renderer>().material = corruptedMterial;
+        isCorrupted = true;
+    }
+
 
     protected void OnMouseDown()
     {

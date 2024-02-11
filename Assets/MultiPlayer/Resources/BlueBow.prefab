@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1501675649945356688}
   - component: {fileID: 2422986871359534319}
   - component: {fileID: 7555197225306804741}
-  - component: {fileID: 554878276128986719}
   - component: {fileID: 1306039447282915821}
   - component: {fileID: 4463892893411112923}
   m_Layer: 0
@@ -107,7 +106,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 554878276128986719}
+  - {fileID: 0}
   - {fileID: 4463892893411112923}
   sceneViewId: 0
   InstantiationId: 0
@@ -133,22 +132,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02241079, y: 0.02, z: 0.03}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &554878276128986719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141656441387968581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 0
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!54 &1306039447282915821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -190,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultMaterial: {fileID: 2100000, guid: ca4ae2b9709a9eb46a95be81248b5536, type: 2}
   markedMterial: {fileID: 2100000, guid: 093a32a26098df344ba247cc06c24ed7, type: 2}
+  corruptedMterial: {fileID: 2100000, guid: 49a014b897a862d449278c5906b30854, type: 2}
   point: {fileID: 4338518268871966913, guid: 0620b7e30045dfc49b5d6153f41d0f74, type: 3}
   giveMarkPoint: {fileID: 3696580206228706241, guid: 5292bed5183088646ac2df1f4824e873, type: 3}
   boarderLine: {fileID: 8362239481190105151, guid: 48b4d7a82ff95ac4798610b309d076b6, type: 3}
@@ -200,6 +184,7 @@ MonoBehaviour:
   cardClass: 
   isActivated: 0
   isMarked: 0
+  isCorrupted: 0
   pView: {fileID: 0}
   canGiveMark: 0
   hasEaten: 0
