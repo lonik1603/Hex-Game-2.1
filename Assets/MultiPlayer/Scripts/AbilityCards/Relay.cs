@@ -13,11 +13,8 @@ public class Relay : AbilityCard
             LocalGameManager.activeCard = gameObject;
             foreach (GameObject card in GameManeger.myCards)
             {
-                if (SF.getCardScript(card).isMarked)
-                {
-                    LocalGameManager.tmpGameObjects.Add(Instantiate(relayPoint1,
-                        new Vector3(card.transform.position.x, card.transform.position.y, -1), Quaternion.identity));
-                }
+                LocalGameManager.tmpGameObjects.Add(Instantiate(relayPoint1,
+                    new Vector3(card.transform.position.x, card.transform.position.y, -1), Quaternion.identity));
             }
         }
     }

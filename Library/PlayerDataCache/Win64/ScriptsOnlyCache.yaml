@@ -250,27 +250,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19324}
     - Class: 114
-      Script: {instanceID: 19676}
+      Script: {instanceID: 19588}
     - Class: 114
-      Script: {instanceID: 19698}
+      Script: {instanceID: 19678}
     - Class: 114
-      Script: {instanceID: 20002}
+      Script: {instanceID: 19700}
     - Class: 114
-      Script: {instanceID: 20238}
+      Script: {instanceID: 20004}
     - Class: 114
-      Script: {instanceID: 20272}
+      Script: {instanceID: 20240}
     - Class: 114
-      Script: {instanceID: 20804}
+      Script: {instanceID: 20274}
     - Class: 114
-      Script: {instanceID: 20822}
+      Script: {instanceID: 20806}
     - Class: 114
-      Script: {instanceID: 21440}
+      Script: {instanceID: 20824}
     - Class: 114
-      Script: {instanceID: 21478}
+      Script: {instanceID: 21442}
     - Class: 114
-      Script: {instanceID: 21646}
+      Script: {instanceID: 21480}
     - Class: 114
-      Script: {instanceID: 31472}
+      Script: {instanceID: 21648}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -391,47 +391,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19498}
     - Class: 114
-      Script: {instanceID: 19716}
+      Script: {instanceID: 19718}
     - Class: 114
-      Script: {instanceID: 20038}
+      Script: {instanceID: 20040}
     - Class: 114
-      Script: {instanceID: 20206}
+      Script: {instanceID: 20208}
     - Class: 114
-      Script: {instanceID: 20212}
+      Script: {instanceID: 20214}
     - Class: 114
-      Script: {instanceID: 20238}
+      Script: {instanceID: 20240}
     - Class: 114
-      Script: {instanceID: 20410}
+      Script: {instanceID: 20412}
     - Class: 114
-      Script: {instanceID: 20478}
+      Script: {instanceID: 20480}
     - Class: 114
-      Script: {instanceID: 20514}
+      Script: {instanceID: 20516}
     - Class: 114
-      Script: {instanceID: 20526}
+      Script: {instanceID: 20528}
     - Class: 114
-      Script: {instanceID: 20548}
+      Script: {instanceID: 20550}
     - Class: 114
-      Script: {instanceID: 20712}
+      Script: {instanceID: 20714}
     - Class: 114
-      Script: {instanceID: 20822}
+      Script: {instanceID: 20824}
     - Class: 114
-      Script: {instanceID: 20862}
-    - Class: 114
-      Script: {instanceID: 21150}
+      Script: {instanceID: 20864}
     - Class: 114
       Script: {instanceID: 21152}
     - Class: 114
-      Script: {instanceID: 21360}
+      Script: {instanceID: 21154}
     - Class: 114
-      Script: {instanceID: 21478}
+      Script: {instanceID: 21362}
     - Class: 114
-      Script: {instanceID: 21482}
+      Script: {instanceID: 21480}
     - Class: 114
-      Script: {instanceID: 21616}
+      Script: {instanceID: 21484}
     - Class: 114
-      Script: {instanceID: 21628}
+      Script: {instanceID: 21618}
     - Class: 114
-      Script: {instanceID: 21882}
+      Script: {instanceID: 21630}
+    - Class: 114
+      Script: {instanceID: 21884}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1415,6 +1415,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: CorruptionPoint
+  - hash:
+      serializedVersion: 2
       Hash: d0466941b4fb3aa50ad496a0f6540df1
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -2075,7 +2081,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: cfc69865ed04d61584736f1d1acb81e5
+      Hash: 6ce952dc677d410b0584eae189c2e0fd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Board
@@ -2169,12 +2175,6 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit.Forms
     className: UserIdUiForm
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: CorruptionPoint
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

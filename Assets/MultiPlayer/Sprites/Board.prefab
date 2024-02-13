@@ -25,12 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4758380822066831680}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7230754021539424402
 SpriteRenderer:
@@ -43,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -100,3 +102,4 @@ MonoBehaviour:
   bluePassButtun: {fileID: 408204522692007974, guid: 639f4b5dfb2eccf479222955c2e5e054, type: 3}
   redPassButtun: {fileID: 2931219402134441849, guid: 76b30cf19239a5a47840fa8b01e3bf41, type: 3}
   Mark: {fileID: 7949227073030163987, guid: 31071b4675899c14aa09971a1c7c7fbd, type: 3}
+  corruption: {fileID: 2942414872529968098, guid: eb2bef8754e13b341a4c8d69b9689be3, type: 3}

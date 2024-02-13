@@ -12,11 +12,17 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
     [SerializeField] private GameObject bluePassButtun;
     [SerializeField] private GameObject redPassButtun;
     [SerializeField] private GameObject Mark;
+    [SerializeField] private GameObject corruption;
 
     public static GameObject passButton;
 
     private static List<GameObject> myMarks;
     private static List<GameObject> enemyMarks;
+
+
+    private static List<GameObject> myCorruptions;
+    private static List<GameObject> enemyCorruptions;
+
 
 
     private static List<GameObject> myMana;
@@ -38,6 +44,18 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
             case 20:
                 GameManeger.enemyAbilityCards[(int)photonEvent.CustomData].GetComponent<AbilityCard>().useThisCard();
                 break;
+
+            case 45:
+                GameManeger.enemyGottenCur++;
+                enemyCorruptions[GameManeger.enemyGottenCur - 1].SetActive(true);
+                curCheck();
+                break;
+
+            case 46:
+                GameManeger.myGottenCur++;
+                myCorruptions[GameManeger.myGottenCur - 1].SetActive(true);
+
+                break;
         }
     }
     private void Start()
@@ -47,6 +65,9 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
 
         myMarks = new List<GameObject>();
         enemyMarks = new List<GameObject>();
+
+        myCorruptions = new List<GameObject>();
+        enemyCorruptions = new List<GameObject>();
 
 
         if (LocalGameManager.isBlue)
@@ -59,9 +80,13 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
             }
             for (int i = 0; i < 3; i++)
             {
-                myMarks.Add(Instantiate(Mark, new Vector3(0, -15.73f - 0.9f * i, 0), Quaternion.identity));
-                enemyMarks.Add(Instantiate(Mark, new Vector3(0, 15.73f + 0.9f * i, 0), Quaternion.identity));
+                myMarks.Add(Instantiate(Mark, new Vector3(-12, -19.5f - 0.9f * i, 0), Quaternion.identity));
+                enemyMarks.Add(Instantiate(Mark, new Vector3(12, 19.5f + 0.9f * i, 0), Quaternion.identity));
+
+                myCorruptions.Add(Instantiate(corruption, new Vector3(-8, -19.5f - 0.9f * i, 0), Quaternion.identity));
+                enemyCorruptions.Add(Instantiate(corruption, new Vector3(8, 19.5f + 0.9f * i, 0), Quaternion.identity));
             }
+
 
 
         }
@@ -75,8 +100,11 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
             }
             for (int i = 0; i < 3; i++)
             {
-                myMarks.Add(Instantiate(Mark, new Vector3(0, 15.73f + 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
-                enemyMarks.Add(Instantiate(Mark, new Vector3(0, -15.73f - 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
+                myMarks.Add(Instantiate(Mark, new Vector3(12, 19.5f + 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
+                enemyMarks.Add(Instantiate(Mark, new Vector3(-12, -19.5f - 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
+
+                myCorruptions.Add(Instantiate(corruption, new Vector3(8, 19.5f + 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
+                enemyCorruptions.Add(Instantiate(corruption, new Vector3(-8, -19.5f - 0.9f * i, 0), Quaternion.Euler(0, 0, 180)));
             }
         }
 
@@ -90,6 +118,9 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             myMarks[i].SetActive(false);
             enemyMarks[i].SetActive(false);
+
+            myCorruptions[i].SetActive(false);
+            enemyCorruptions[i].SetActive(false);
         }
     }
     public static void updateMyMana()
@@ -135,6 +166,21 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
         PhotonNetwork.RaiseEvent(19, null, SF.OtherEventOptions, SF.StandatSendOptions);
     }
 
+    public static void giveMeCur()
+    {
+        GameManeger.myGottenCur++;
+        myCorruptions[GameManeger.myGottenCur - 1].SetActive(true);
+        PhotonNetwork.RaiseEvent(45, null, SF.OtherEventOptions, SF.StandatSendOptions);
+
+    }
+    public static void giveOtherPlayerCur()
+    {
+        GameManeger.enemyGottenCur++;
+        enemyCorruptions[GameManeger.enemyGottenCur - 1].SetActive(true);
+        PhotonNetwork.RaiseEvent(46, null, SF.OtherEventOptions, SF.StandatSendOptions);
+        curCheck();
+    }
+
 
 
 
@@ -146,6 +192,13 @@ public class Board : MonoBehaviourPunCallbacks, IOnEventCallback
     public static void markCheck()
     {
         if(GameManeger.myGottenMarks == 3)
+        {
+            SF.sf.GetComponent<SF>().iWon();
+        }
+    }
+    public static void curCheck()
+    {
+        if(GameManeger.enemyGottenCur == 3)
         {
             SF.sf.GetComponent<SF>().iWon();
         }

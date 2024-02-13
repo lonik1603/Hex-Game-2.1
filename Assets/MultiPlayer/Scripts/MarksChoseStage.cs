@@ -40,7 +40,7 @@ public class MarksChoseStage : MonoBehaviourPunCallbacks, IOnEventCallback
         {
             corruptedPoint = corruptedPointSt;
 
-            if (LocalGameManager.isBlue)
+     /*       if (LocalGameManager.isBlue)
             {
                 foreach (GameObject obj in TextManager.textList)
                 {
@@ -54,6 +54,7 @@ public class MarksChoseStage : MonoBehaviourPunCallbacks, IOnEventCallback
                     obj.transform.position = new Vector3(4, 22, 0);
                 }
             }
+     */
             TextManager.activateThisText(TextManager.mark3ofCards);
             readyPlayers = 0;
             foreach (GameObject obj in GameManeger.myCards)

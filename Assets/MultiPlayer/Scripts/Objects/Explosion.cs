@@ -41,11 +41,18 @@ public class Explosion : MonoBehaviour
 
                         if (SF.getCardScript(other.gameObject).isMarked)
                         {
-                         //   Board.giveOtherPlayerMark();
+                             Board.giveOtherPlayerMark();
                         }                      
                     }
+                    else
+                    {
+                        if (SF.getCardScript(other.gameObject).isMarked)
+                        {
+                            Board.giveMeMark();
+                        }
+                    }
 
-                    CardsController.eatThisCard(other.gameObject);
+                    CardsController.destroyThisCard(other.gameObject);
                 }
 
             }

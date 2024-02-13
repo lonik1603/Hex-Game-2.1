@@ -5,6 +5,8 @@ using Photon.Pun;
 using Photon.Realtime;
 public class CardsController : MonoBehaviour
 {
+
+
     private PhotonView pView;
     GameObject card, otherCard;
 
@@ -29,8 +31,15 @@ public class CardsController : MonoBehaviour
 
     private void eatThisCard1(GameObject card)
     {
-        int otherCardId = card.GetPhotonView().ViewID;
-        pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
+        if (SF.getCardScript(card).cardClass == "Bomb" && SF.getCardScript(card).isActivated)
+        {
+            PhotonNetwork.Instantiate("Explosion", card.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            int otherCardId = card.GetPhotonView().ViewID;
+            pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
+        }
     }
 
 
@@ -150,6 +159,10 @@ public class CardsController : MonoBehaviour
             if (SF.getCardScript(card).isMarked)
             {
                 Board.giveMeMark();
+            }
+            if (SF.getCardScript(card).isCorrupted)
+            {
+                Board.giveMeCur();
             }
         }
         yield return new WaitForSeconds(0.1f);
@@ -295,5 +308,65 @@ public class CardsController : MonoBehaviour
             }
         }
         actButton.GetComponent<ActButton>().diactivateThis();
+    }
+
+
+
+
+
+
+
+
+    public static void destroyThisCard(GameObject card)
+    {
+        LocalGameManager.cardsController.GetComponent<CardsController>().destroyThisCard1(card);
+    }
+
+    private void destroyThisCard1(GameObject card)
+    {
+        int otherCardId = card.GetPhotonView().ViewID;
+        pView.RPC("destroyThisCardRPC", RpcTarget.All, otherCardId);
+    }
+
+
+    [PunRPC]
+    private void destroyThisCardRPC(int cardID)
+    {
+        foreach (GameObject obj in GameManeger.myCards)
+        {
+            if (cardID == obj.GetPhotonView().ViewID)
+            {
+                otherCard = obj;
+            }
+        }
+        foreach (GameObject obj in GameManeger.enemyCards)
+        {
+            if (cardID == obj.GetPhotonView().ViewID)
+            {
+                otherCard = obj;
+            }
+        }
+
+        StartCoroutine(destroyThisCardCur(otherCard));
+    }
+
+
+    IEnumerator destroyThisCardCur(GameObject card)
+    {
+        if (SF.getCardScript(card).cardIsBlue == LocalGameManager.isBlue)
+        {
+            GameManeger.myCards.Remove(card);
+
+        }
+        else
+        {
+            GameManeger.enemyCards.Remove(card);
+
+
+        }
+        yield return new WaitForSeconds(0.1f);
+
+        Destroy(card);
+
     }
 }

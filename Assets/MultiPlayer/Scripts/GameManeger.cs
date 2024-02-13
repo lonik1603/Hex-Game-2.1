@@ -28,6 +28,9 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public static int myGottenMarks;
     public static int enemyGottenMarks;
 
+    public static int myGottenCur;
+    public static int enemyGottenCur;
+
     public static bool gameIsOver;
 
     private void Start()
@@ -37,6 +40,8 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
         enemyMana = 4;
         myGottenMarks = 0;
         enemyGottenMarks = 0;
+        myGottenCur = 0;
+        enemyGottenCur = 0;
         myCards = new List<GameObject>();
         enemyCards = new List<GameObject>();
         myActButtons = new List<GameObject>();

@@ -5,6 +5,8 @@ using UnityEngine;
 public class RelayPoint2 : RelayPoint1
 {
     private GameObject thisCard2;
+    private static bool isMarked;
+    private static bool isCorrupted;
     private void OnTriggerEnter(Collider other)
     {
         if (SF.cardClassList.Contains(other.gameObject.tag))
@@ -14,11 +16,42 @@ public class RelayPoint2 : RelayPoint1
     }
     private void OnMouseDown()
     {
-        SF.getCardScript(cardToSwap).isMarked = false;
-        SF.getCardScript(thisCard2).isMarked = true;
+        if(SF.getCardScript(cardToSwap).isMarked)
+        {
+            SF.getCardScript(thisCard2).GetComponent<Renderer>().material = SF.getCardScript(thisCard2).markedMterial;
+        }
+        else if (SF.getCardScript(cardToSwap).isCorrupted)
+        {
+            SF.getCardScript(thisCard2).GetComponent<Renderer>().material = SF.getCardScript(thisCard2).corruptedMterial;
+        }
+        else
+        {
+            SF.getCardScript(thisCard2).GetComponent<Renderer>().material = SF.getCardScript(thisCard2).defaultMaterial;
+        }
 
-        SF.getCardScript(cardToSwap).GetComponent<Renderer>().material = SF.getCardScript(cardToSwap).defaultMaterial;
-        SF.getCardScript(thisCard2).GetComponent<Renderer>().material = SF.getCardScript(thisCard2).markedMterial;
+        if (SF.getCardScript(thisCard2).isMarked)
+        {
+            SF.getCardScript(cardToSwap).GetComponent<Renderer>().material = SF.getCardScript(cardToSwap).markedMterial;
+        }
+        else if (SF.getCardScript(thisCard2).isCorrupted)
+        {
+            SF.getCardScript(cardToSwap).GetComponent<Renderer>().material = SF.getCardScript(cardToSwap).corruptedMterial;
+        }
+        else
+        {
+            SF.getCardScript(cardToSwap).GetComponent<Renderer>().material = SF.getCardScript(cardToSwap).defaultMaterial;
+        }
+
+
+        isMarked = SF.getCardScript(cardToSwap).isMarked;
+        SF.getCardScript(cardToSwap).isMarked = SF.getCardScript(thisCard2).isMarked;
+        SF.getCardScript(thisCard2).isMarked = isMarked;
+
+
+        isCorrupted = SF.getCardScript(cardToSwap).isCorrupted;
+        SF.getCardScript(cardToSwap).isCorrupted = SF.getCardScript(thisCard2).isCorrupted;
+        SF.getCardScript(thisCard2).isCorrupted = isCorrupted;
+
 
         LocalGameManager.activeCard.GetComponent<Relay>().useThisCard();
         SF.changeMana(-2);

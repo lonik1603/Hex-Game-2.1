@@ -33,6 +33,11 @@ public class Checker : AbilityCard
             SF.getCardScript(card).GetComponent<Renderer>().material = SF.getCardScript(card).markedMterial;
             StartCoroutine(defaultMaterialCur(card));
         }
+        if (SF.getCardScript(card).isCorrupted)
+        {
+            SF.getCardScript(card).GetComponent<Renderer>().material = SF.getCardScript(card).corruptedMterial;
+            StartCoroutine(defaultMaterialCur(card));
+        }
     }
     IEnumerator defaultMaterialCur(GameObject card)
     {
