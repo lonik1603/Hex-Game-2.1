@@ -1,0 +1,306 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 16049 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+60349
+Successfully changed project path to: C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+C:/Users/asus/Documents/GitHub/Hex-Game-2.1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1180] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 2276760565 [EditorId] 2276760565 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1180] Host "[IP] 26.9.119.16 [Port] 0 [Flags] 2 [Guid] 2276760565 [EditorId] 2276760565 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-LA04QDUU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 38.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.5f1 (9674261d40ee)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/asus/Documents/GitHub/Hex-Game-2.1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Plus Graphics (ID=0x8a52)
+    Vendor:   Intel
+    VRAM:     8024 MB
+    Driver:   27.20.100.9268
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.024369 seconds.
+- Loaded All Assemblies, in  0.948 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 675 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.651 seconds
+Domain Reload Profiling: 2594ms
+	BeginReloadAssembly (257ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (105ms)
+	RebuildNativeTypeToScriptingClass (48ms)
+	initialDomainReloadingComplete (165ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (251ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (350ms)
+			TypeCache.Refresh (349ms)
+				TypeCache.ScanAssembly (321ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1652ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1483ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1028ms)
+			SetLoadedEditorAssemblies (12ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (312ms)
+			ProcessInitializeOnLoadMethodAttributes (125ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.929 seconds
+Refreshing native plugins compatible for Editor in 10.53 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.737 seconds
+Domain Reload Profiling: 3657ms
+	BeginReloadAssembly (393ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (88ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (109ms)
+	LoadAllAssembliesAndSetupDomain (1299ms)
+		LoadAssemblies (769ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (691ms)
+			TypeCache.Refresh (635ms)
+				TypeCache.ScanAssembly (607ms)
+			ScanForSourceGeneratedMonoScriptInfo (41ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1738ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (85ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (217ms)
+			ProcessInitializeOnLoadAttributes (791ms)
+			ProcessInitializeOnLoadMethodAttributes (95ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (20ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 15.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2663 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 61 unused Assets / (60.8 KB). Loaded Objects now: 3135.
+Memory consumption went from 119.5 MB to 119.5 MB.
+Total: 8.271300 ms (FindLiveObjects: 0.293200 ms CreateObjectMapping: 0.247800 ms MarkObjects: 7.528200 ms  DeleteObjects: 0.200600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23759.570202 seconds.
+  path: Assets/MultiPlayer/Textures/CorruptedCards/red_cringe_bow (3).png
+  artifactKey: Guid(bb3212f6a314eff4787f9fe865bf2b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Textures/CorruptedCards/red_cringe_bow (3).png using Guid(bb3212f6a314eff4787f9fe865bf2b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6e02d980eac8571bf4effd5c4a3702') in 0.227283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.697694 seconds.
+  path: Assets/MultiPlayer/Resources/BlueChecker.prefab
+  artifactKey: Guid(aecd8e3171f1cf342adcfec9b1267891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/BlueChecker.prefab using Guid(aecd8e3171f1cf342adcfec9b1267891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9789d1a4f132a827dd12e695148cf0') in 0.092723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/MultiPlayer/Resources/RedBow.prefab
+  artifactKey: Guid(9b6b89be356f9b84ba4c856f7200370e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/RedBow.prefab using Guid(9b6b89be356f9b84ba4c856f7200370e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c087378015e7aa489b889013493deb48') in 0.049357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 2.205040 seconds.
+  path: Assets/MultiPlayer/Resources/RedRelay.prefab
+  artifactKey: Guid(28bfb994bdf7a404ba5eb6bcc92ecc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/RedRelay.prefab using Guid(28bfb994bdf7a404ba5eb6bcc92ecc0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78745fb41e9bc5d4f5c72a1b97023f7e') in 0.035477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 3.908548 seconds.
+  path: Assets/MultiPlayer/Resources/BlueBow.prefab
+  artifactKey: Guid(9d360a452a736984aa67c77611c6d9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/BlueBow.prefab using Guid(9d360a452a736984aa67c77611c6d9b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363d4bbaeca6b6639095479ef8732410') in 0.040653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 15.260450 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/BlueBootsC.mat
+  artifactKey: Guid(d28766ade8e25994e8bfb69b35db8ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/BlueBootsC.mat using Guid(d28766ade8e25994e8bfb69b35db8ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7631e2d623fb3efcc6594337c0c3d60c') in 0.086478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/BlueKnife.mat
+  artifactKey: Guid(c1d4b194a8a5b5f45bc7ffab2fc4c7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/BlueKnife.mat using Guid(c1d4b194a8a5b5f45bc7ffab2fc4c7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e015ad52055bdbe0ae95aae8b99e542e') in 0.031027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.983808 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/BlueShild.mat
+  artifactKey: Guid(a901ab9b4f218cc4da7cecaed7b2ddd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/BlueShild.mat using Guid(a901ab9b4f218cc4da7cecaed7b2ddd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7710a35dda68d296ed1a806bd9d4d0a9') in 0.038529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureBlue12x.mat
+  artifactKey: Guid(c676d877ef241ab4686e2f237b1e2f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureBlue12x.mat using Guid(c676d877ef241ab4686e2f237b1e2f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c733fa8019ffcc08b971df810fb68c4') in 0.091953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 37.174186 seconds.
+  path: Assets/MultiPlayer/Textures/AbilityCards/Blue Relay.png
+  artifactKey: Guid(193fed11ceb132d438cb0085c953044b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Textures/AbilityCards/Blue Relay.png using Guid(193fed11ceb132d438cb0085c953044b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1e61095b7b570bff681be2afc15cee') in 0.059085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.620136 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/BlueBomb.mat
+  artifactKey: Guid(bd5ee53405dfbeb4b8d95d738cb40cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/BlueBomb.mat using Guid(bd5ee53405dfbeb4b8d95d738cb40cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb096dac42c0cf5c8cd69f16715619bc') in 0.039959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/RedShild.mat
+  artifactKey: Guid(f049cca70116f104988441b142140d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/RedShild.mat using Guid(f049cca70116f104988441b142140d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51541c98ccd492335eb44b6098807ec0') in 0.036376 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/MultiPlayer/Materials/Corrupted Cards/RedBow.mat
+  artifactKey: Guid(a7ac7a4c5758cf643b1be1d7b79d19f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Materials/Corrupted Cards/RedBow.mat using Guid(a7ac7a4c5758cf643b1be1d7b79d19f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5c665f2a766fafb13b02d8efcd22e7') in 0.020478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 44.570140 seconds.
+  path: Assets/MultiPlayer/Resources/RedBomb.prefab
+  artifactKey: Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/RedBomb.prefab using Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c7fd04294528424d2475ae25a1eacd9') in 0.045395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47
+========================================================================
+Received Import Request.
+  Time since last request: 19.324929 seconds.
+  path: Assets/MultiPlayer/Resources/RedBomb.prefab
+  artifactKey: Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/RedBomb.prefab using Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b14943262a7660fe381f8f8ee71091') in 0.026977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 1.794333 seconds.
+  path: Assets/MultiPlayer/Resources/RedBomb.prefab
+  artifactKey: Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MultiPlayer/Resources/RedBomb.prefab using Guid(743279790cb5f25419a62188d6c57980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d0b6d005af32dbc3f508c16856b896') in 0.028064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 47

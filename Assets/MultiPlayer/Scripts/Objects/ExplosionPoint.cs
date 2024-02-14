@@ -10,6 +10,10 @@ public class ExplosionPoint : MonoBehaviour
     {
         PhotonNetwork.Instantiate("Explosion", gameObject.transform.position, Quaternion.identity);
         SF.changeMana(-1);
+        if (GameManeger.myMana == 0)
+        {
+            SF.pass();
+        }
         SF.tmpObjListClear();
     }
 }

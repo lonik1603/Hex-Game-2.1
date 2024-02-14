@@ -22,10 +22,7 @@ public class Explosion : MonoBehaviour
             yield return null;
         }
         Destroy(gameObject);
-        if(GameManeger.myMana == 0)
-        {
-            SF.pass();
-        }
+
     }
     private void OnTriggerStay(Collider other)
     {

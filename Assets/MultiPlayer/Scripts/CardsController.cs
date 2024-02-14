@@ -54,10 +54,15 @@ public class CardsController : MonoBehaviour
     private void moveThisCard(Vector3 coord, GameObject thisCard, GameObject otherCard)
     {
         moveThisCard(coord, thisCard);
- 
-        int otherCardId = otherCard.GetPhotonView().ViewID;
-        pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
-
+        if (SF.getCardScript(otherCard).cardClass == "Bomb" && SF.getCardScript(otherCard).isActivated)
+        {
+            PhotonNetwork.Instantiate("Explosion", otherCard.transform.position, Quaternion.identity);
+        }
+        else
+        {
+            int otherCardId = otherCard.GetPhotonView().ViewID;
+            pView.RPC("eatThisCardRPC", RpcTarget.All, otherCardId);
+        }
     }
 
 
@@ -366,7 +371,7 @@ public class CardsController : MonoBehaviour
         }
         yield return new WaitForSeconds(0.1f);
 
-        Destroy(card);
+        card.SetActive(false);
 
     }
 }
