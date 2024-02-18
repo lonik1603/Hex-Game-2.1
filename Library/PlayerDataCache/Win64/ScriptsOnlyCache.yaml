@@ -166,19 +166,16 @@ ScriptsOnlyBuild:
     methodName: saveNickname
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
-    methodName: Leave
+    methodName: openClosePause
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
-    methodName: newGame
-  - assembly: Assembly-CSharp
-    fullTypeName: GameInterface
-    methodName: Leave
-  - assembly: Assembly-CSharp
-    fullTypeName: GameInterface
-    methodName: newGame
+    methodName: openClosePause
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: Leave
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: openClosePause
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -1079,7 +1076,7 @@ ScriptsOnlyBuild:
     className: LoaderAnime
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
+      Hash: 05cab7b5f83112ad63601ea95aaafb8f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameInterface

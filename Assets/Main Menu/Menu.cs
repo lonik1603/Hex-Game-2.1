@@ -12,7 +12,7 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject loading;
 
-    const string gameVersion = "0.2.4b";
+    const string gameVersion = "0.3";
     private static bool conected;
     private void Start()
     {
@@ -37,6 +37,8 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         if (conected == false)
         {
+            loading.SetActive(true);
+            menu.SetActive(false);
             PhotonNetwork.ConnectUsingSettings();
         }
     }

@@ -367,6 +367,7 @@
 "Assets/MultiPlayer/Scripts/Objects/BowPoint2.cs"
 "Assets/MultiPlayer/Scripts/Objects/Cell.cs"
 "Assets/MultiPlayer/Scripts/Objects/CheckerPoint.cs"
+"Assets/MultiPlayer/Scripts/Objects/CorruptionPoint.cs"
 "Assets/MultiPlayer/Scripts/Objects/Explosion.cs"
 "Assets/MultiPlayer/Scripts/Objects/ExplosionPoint.cs"
 "Assets/MultiPlayer/Scripts/Objects/GiveMarkPoint.cs"

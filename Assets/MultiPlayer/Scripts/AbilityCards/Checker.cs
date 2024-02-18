@@ -8,7 +8,7 @@ public class Checker : AbilityCard
 
     public override void onClick()
     {
-        if (GameManeger.myMana > 0)
+        if (GameManeger.myMana > 1)
         {
             LocalGameManager.activeCard = gameObject;
             foreach (GameObject card in GameManeger.enemyCards)

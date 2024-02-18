@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class CheckerPoint : MonoBehaviour
 {
+    private static int checkerCount;
     private GameObject thisCard;
+
+    private void Start()
+    {
+        checkerCount = 0;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (SF.cardClassList.Contains(other.gameObject.tag))
@@ -14,13 +21,23 @@ public class CheckerPoint : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        LocalGameManager.activeCard.GetComponent<Checker>().useThisCard();
+        checkerCount += 1;
         LocalGameManager.activeCard.GetComponent<Checker>().showThisCard(thisCard);
-        SF.changeMana(-1);
-        if(GameManeger.myMana == 0)
+        if (checkerCount == 1)
         {
-            SF.pass();
+            gameObject.SetActive(false);
+            LocalGameManager.canClick = false;
         }
-        SF.tmpObjListClear();
+        else if (checkerCount == 2)
+        {
+            LocalGameManager.canClick = true;
+            LocalGameManager.activeCard.GetComponent<Checker>().useThisCard();
+            SF.changeMana(-2);
+            if (GameManeger.myMana == 0)
+            {
+                SF.pass();
+            }
+            SF.tmpObjListClear();
+        }
     }
 }
