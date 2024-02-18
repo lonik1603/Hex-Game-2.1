@@ -12,7 +12,7 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject loading;
 
-    const string gameVersion = "0.3";
+    const string gameVersion = "0.3.0b";
     private static bool conected;
     private void Start()
     {

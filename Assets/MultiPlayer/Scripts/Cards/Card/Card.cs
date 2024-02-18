@@ -234,23 +234,7 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
     {
         canMove = true;
         hasEaten = false;
-        if (isMarked)
-        {
-            if (cardIsBlue)
-            {
-                if ((Mathf.Abs(Mathf.Abs(gameObject.transform.position.x) - 6) < 0.5f) && Mathf.Abs(gameObject.transform.position.y - 3 * SF.hexUp) < 0.5f)
-                {
-                    canGiveMark = true;
-                }
-            }
-            else
-            {
-                if ((Mathf.Abs(Mathf.Abs(gameObject.transform.position.x) - 6) < 0.5f) && Mathf.Abs(gameObject.transform.position.y + 3 * SF.hexUp) < 0.5f)
-                {
-                    canGiveMark = true;
-                }
-            }
-        }
+
         if(stunCount > 0)
         {
             canMove = false;

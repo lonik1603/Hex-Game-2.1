@@ -128,8 +128,32 @@ public class CardsController : MonoBehaviour
         card.transform.position = finPos;
         LocalGameManager.canClick = true;
         card.transform.position = new Vector3(card.transform.position.x, card.transform.position.y, 0);
-        SF.getCardScript(card).canGiveMark = false;
         SF.getCardScript(card).canUseAbility = false;
+        if (SF.getCardScript(card).isMarked)
+        {
+            if (SF.getCardScript(card).cardIsBlue)
+            {
+                if ((Mathf.Abs(Mathf.Abs(card.transform.position.x) - 6) < 0.5f) && Mathf.Abs(card.transform.position.y - 3 * SF.hexUp) < 0.5f)
+                {
+                    SF.getCardScript(card).canGiveMark = true;
+                }
+                else
+                {
+                    SF.getCardScript(card).canGiveMark = false;
+                }
+            }
+            else
+            {
+                if ((Mathf.Abs(Mathf.Abs(card.transform.position.x) - 6) < 0.5f) && Mathf.Abs(card.transform.position.y + 3 * SF.hexUp) < 0.5f)
+                {
+                    SF.getCardScript(card).canGiveMark = true;
+                }
+                else
+                {
+                    SF.getCardScript(card).canGiveMark = false;
+                }
+            }
+        }
         yield return new WaitForSeconds(0.05f);
 
         if (pView.IsMine)

@@ -173,9 +173,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: Leave
-  - assembly: Assembly-CSharp
-    fullTypeName: GameInterface
-    methodName: openClosePause
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -2176,4 +2173,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.3apk.apk
+  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.3.0b.apk

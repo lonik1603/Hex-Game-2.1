@@ -10,5 +10,9 @@ public class GiveMarkPoint : MonoBehaviour
         SF.changeMana(-1);
         SF.getCardScript(LocalGameManager.activeCard).giveMark();
         SF.tmpObjListClear();
+        if (GameManeger.myMana == 0)
+        {
+            SF.pass();
+        }
     }
 }

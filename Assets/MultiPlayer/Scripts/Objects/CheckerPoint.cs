@@ -23,12 +23,12 @@ public class CheckerPoint : MonoBehaviour
     {
         checkerCount += 1;
         LocalGameManager.activeCard.GetComponent<Checker>().showThisCard(thisCard);
-        if (checkerCount == 1)
+        if (checkerCount < 3)
         {
             gameObject.SetActive(false);
             LocalGameManager.canClick = false;
         }
-        else if (checkerCount == 2)
+        else if (checkerCount == 3)
         {
             LocalGameManager.canClick = true;
             LocalGameManager.activeCard.GetComponent<Checker>().useThisCard();

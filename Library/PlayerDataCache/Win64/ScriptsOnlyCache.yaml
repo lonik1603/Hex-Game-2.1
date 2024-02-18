@@ -173,9 +173,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: Leave
-  - assembly: Assembly-CSharp
-    fullTypeName: GameInterface
-    methodName: openClosePause
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
