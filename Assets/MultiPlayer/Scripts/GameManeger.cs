@@ -18,6 +18,8 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public static List<GameObject> myAbilityCards;
     public static List<GameObject> enemyAbilityCards;
 
+    public static List<GameObject> traps;
+
     public static List<string> myActivatedClasses;
     public static List<string> enemyActivatedClasses;
 
@@ -51,6 +53,7 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
         myActivatedClasses = new List<string>();
         enemyActivatedClasses = new List<string>();
         gameIsOver = false;
+        traps = new List<GameObject>();
     }
 
 
@@ -71,7 +74,10 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
     {
         base.OnPlayerLeftRoom(otherPlayer);
-        SF.sf.GetComponent<SF>().iWon();
+        if (gameIsOver == false)
+        {
+            SF.sf.GetComponent<SF>().iWon();
+        }
     }
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {

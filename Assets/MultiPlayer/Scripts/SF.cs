@@ -18,9 +18,9 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     { Receivers = ReceiverGroup.Others };
     public static ExitGames.Client.Photon.SendOptions StandatSendOptions = new ExitGames.Client.Photon.SendOptions
     { Reliability = true };
-    public static int manaBoostTurns; 
+    public static int manaBoostTurns;
 
-    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Bow", "Knife"};
+    public static List<string> cardClassList = new List<string> { "Bomb", "Shild", "Boots", "Bow", "Knife" };
 
     public const float hexUp = 3.37666f / 2;
     private static Card script;
@@ -43,10 +43,10 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
 
                 break;
             case 15:
-                foreach(GameObject card in GameManeger.enemyActButtons)
+                foreach (GameObject card in GameManeger.enemyActButtons)
                 {
                     card.GetComponent<ActButton>().checkThisActButtton();
-                    brighterSprite(Board.passButton);                  
+                    brighterSprite(Board.passButton);
                 }
                 Board.passButton.GetComponent<BoxCollider>().enabled = true;
                 GameManeger.isBlueTurn = !GameManeger.isBlueTurn;
@@ -55,7 +55,8 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
                 break;
             case 31:
                 GameManeger.gameIsOver = true;
-                youLost.SetActive(true);
+                GameInterface.showEndPanel("defeat");
+                showCardsAndTraps();
 
                 break;
             case 32:
@@ -66,6 +67,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
 
     private void Start()
     {
+
         script = new Card();
         sf = sfPref;
         manaBoostTurns = 0;
@@ -153,7 +155,7 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
             getCardScript(card).cardCheck();
         }
         changeMana(2);
-        if(manaBoostTurns > 0)
+        if (manaBoostTurns > 0)
         {
             changeMana(1);
             manaBoostTurns -= 1;
@@ -199,7 +201,29 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
     {
         PhotonNetwork.RaiseEvent(31, null, OtherEventOptions, StandatSendOptions);
         GameManeger.gameIsOver = true;
-        youWon.SetActive(true);
+        GameInterface.showEndPanel("victory");
+        showCardsAndTraps();
     }
 
+    private static void showCardsAndTraps()
+    {
+        foreach (GameObject card in GameManeger.enemyCards)
+        {
+            if (SF.getCardScript(card).isMarked)
+            {
+                SF.getCardScript(card).GetComponent<Renderer>().material = SF.getCardScript(card).markedMterial;
+            }
+            else if (SF.getCardScript(card).isCorrupted)
+            {
+                SF.getCardScript(card).GetComponent<Renderer>().material = SF.getCardScript(card).corruptedMterial;
+            }
+        }
+        foreach (GameObject trap in GameManeger.traps)
+        {
+            if (trap != null)
+            {
+                trap.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+            }
+        }
+    }
 }

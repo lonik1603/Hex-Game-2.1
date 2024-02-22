@@ -114,14 +114,14 @@ public class Card : MonoBehaviourPunCallbacks, IPunObservable
         if(photonView.IsMine)
         {
             GameManeger.myCards.Remove(gameObject);
-            if (stunCount > 0)
-            {
-                PhotonNetwork.Destroy(stun);
-            }
         }
         else
         {
             GameManeger.enemyCards.Remove(gameObject);
+        }
+        if (stun != null)
+        {
+            PhotonNetwork.Destroy(stun);
         }
     }
 

@@ -35,7 +35,7 @@ public class Menu : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if (conected == false)
+        if (PhotonNetwork.IsConnected == false)
         {
             loading.SetActive(true);
             menu.SetActive(false);
@@ -53,7 +53,7 @@ public class Menu : MonoBehaviourPunCallbacks
 
     public void matchmaking()
     {
-        if (conected)
+        if (PhotonNetwork.IsConnected)
         {
 
             Debug.Log("Trying to join random room");
@@ -74,7 +74,7 @@ public class Menu : MonoBehaviourPunCallbacks
 
     public void createRoom()
     {
-        if (conected)
+        if (PhotonNetwork.IsConnected)
         {
             PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false});
             Debug.Log("New room created");

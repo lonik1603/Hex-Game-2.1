@@ -18,6 +18,8 @@ public class EndOfChoiceStage : MonoBehaviour
     [SerializeField] private GameObject RedTrap;
     [SerializeField] private GameObject RedManaBoost;
 
+    [SerializeField] private GameObject PauseInterface;
+
     private void Start()
     {
         LocalGameManager.gameStarted = true;

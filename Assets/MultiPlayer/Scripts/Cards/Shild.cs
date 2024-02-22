@@ -6,8 +6,6 @@ using Photon.Realtime;
 
 public class Shild : Card
 {
-
-
     private void Awake()
     {
         cardClass = "Shild";
