@@ -556,7 +556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &195830988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -575,10 +575,10 @@ RectTransform:
   - {fileID: 1861913825}
   m_Father: {fileID: 437463263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -920, y: -352.6599}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 4.5}
+  m_SizeDelta: {x: 951.96, y: 752.07996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195830989
 MonoBehaviour:
@@ -720,8 +720,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -2927.1018, y: -393.60022}
-  m_SizeDelta: {x: 6819.62, y: 787.2}
+  m_AnchoredPosition: {x: -4036.7551, y: -393.60022}
+  m_SizeDelta: {x: 9038.93, y: 787.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &326274440
 CanvasRenderer:
@@ -1029,16 +1029,14 @@ RectTransform:
   m_Children:
   - {fileID: 195830988}
   - {fileID: 1668061524}
-  - {fileID: 940921145}
   - {fileID: 17394452}
   - {fileID: 2045124186}
-  - {fileID: 978687916}
   m_Father: {fileID: 1381028891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437463264
 MonoBehaviour:
@@ -1742,8 +1740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3447.27, y: -9.170013}
-  m_SizeDelta: {x: 768.24, y: 6025.31}
+  m_AnchoredPosition: {x: -4439.5156, y: -9.170013}
+  m_SizeDelta: {x: 768.24, y: 8009.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &905205308
 MonoBehaviour:
@@ -2038,15 +2036,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940921144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.000011444092}
-  m_LocalScale: {x: 0.9999018, y: 0.9999018, z: 0.9999018}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
+  m_LocalScale: {x: 0.99990183, y: 0.99990183, z: 0.99990183}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 437463263}
+  m_Father: {fileID: 1381028891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 183}
+  m_AnchoredPosition: {x: 0, y: 168.38}
   m_SizeDelta: {x: 570, y: 127}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940921146
@@ -2278,11 +2276,11 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978687915}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -25}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 437463263}
+  m_Father: {fileID: 1381028891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -3186,7 +3184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1295880722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3279,10 +3277,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 978687916}
   - {fileID: 1854501059}
   - {fileID: 799236647}
   - {fileID: 1230216411}
   - {fileID: 437463263}
+  - {fileID: 940921145}
   m_Father: {fileID: 955255876}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4231,7 +4231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1883423005
 RectTransform:
   m_ObjectHideFlags: 0

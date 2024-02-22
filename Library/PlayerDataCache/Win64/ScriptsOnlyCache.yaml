@@ -30,7 +30,6 @@ ScriptsOnlyBuild:
     - CameraConstantWidth
     - CardPlace
     - CardsChoiseStage
-    - CardsController
     - Checker
     - CheckerPoint
     - ClassChoiceButton
