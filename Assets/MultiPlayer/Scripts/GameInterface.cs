@@ -49,6 +49,8 @@ public class GameInterface : MonoBehaviourPunCallbacks
         victoryTXT = victoryTXTpref;
         defeatTXT = defeatTXTpref;
 
+
+
     }
 
     public void openClosePause()
@@ -76,13 +78,25 @@ public class GameInterface : MonoBehaviourPunCallbacks
 
     public static void Leave()
     {
-        
+        SceneManager.LoadScene(0);
         PhotonNetwork.LeaveRoom();
-        SceneManager.LoadScene(0); 
+        SF.tmpObjListClear();
+        foreach (GameObject obj in CardsChoiseStage.cardPlaces)
+        {
+            Destroy(obj);
+        }
+        CardsChoiseStage.cardPlaces.Clear();
     }
     public static void newGame()
     {
-        PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2 }, null);
+        GameManeger.findingNewGame = true;
+        PhotonNetwork.LeaveRoom();
+        SF.tmpObjListClear();
+        foreach (GameObject obj in CardsChoiseStage.cardPlaces)
+        {
+            Destroy(obj);
+        }
+        CardsChoiseStage.cardPlaces.Clear(); PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2 }, null);
     }
 
     public static void showEndPanel(string status)
@@ -100,6 +114,7 @@ public class GameInterface : MonoBehaviourPunCallbacks
         LocalGameManager.canClick = false;
         pauseWin.SetActive(false);
         pauseButton.SetActive(false);
+        PhotonNetwork.ConnectUsingSettings();
     }
 
     public void showTheBoard()
@@ -160,5 +175,48 @@ public class GameInterface : MonoBehaviourPunCallbacks
         additinalPanel.SetActive(false);
 
         rulesChosePanel.SetActive(true);
+    }
+
+
+
+    public void matchmaking()
+    {
+        if (PhotonNetwork.IsConnected)
+        {
+
+            Debug.Log("Trying to join random room");
+            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
+        }
+    }
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        Debug.Log("Failed");
+        PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
+        Debug.Log("New room created");
+    }
+    public override void OnJoinedRoom()
+    {
+
+        Debug.Log("Connected to room");
+    }
+
+    public void createRoom()
+    {
+        if (PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false });
+            Debug.Log("New room created");
+        }
+    }
+    public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
+    {
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        {
+            PhotonNetwork.CurrentRoom.IsOpen = false;
+            PhotonNetwork.CurrentRoom.RemovedFromList = true;
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+            PhotonNetwork.LoadLevel("Game");
+        }
+
     }
 }

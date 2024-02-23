@@ -12,7 +12,15 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject loading;
 
-    const string gameVersion = "0.3.0b";
+
+    [SerializeField] private GameObject rulesPanel;
+    [SerializeField] private GameObject basisPanel;
+    [SerializeField] private GameObject classesPanel;
+    [SerializeField] private GameObject additinalPanel;
+    [SerializeField] private GameObject CreditslPanel;
+    [SerializeField] private GameObject rules;
+
+    const string gameVersion = "0.3.1";
     private static bool conected;
     private void Start()
     {
@@ -39,7 +47,13 @@ public class Menu : MonoBehaviourPunCallbacks
         {
             loading.SetActive(true);
             menu.SetActive(false);
+
+            loading.GetComponent<Image>().enabled = true;
             PhotonNetwork.ConnectUsingSettings();
+        }
+        else
+        {
+
         }
     }
 
@@ -96,6 +110,60 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         PlayerPrefs.SetString("Nickname", nickname.text);
         PhotonNetwork.NickName = nickname.text;
+    }
+
+    public void backToMenu()
+    {
+        menu.SetActive(true);
+        rulesPanel.SetActive(false);
+        CreditslPanel.SetActive(false);
+    }
+
+
+    public void toRulesChose()
+    {
+        menu.SetActive(false);
+        rulesPanel.SetActive(true);
+
+
+    }
+
+    public void toBasis()
+    {
+        rulesPanel.SetActive(false);
+        basisPanel.SetActive(true);
+
+        rules.SetActive(true);
+    }
+    public void toClasses()
+    {
+        rulesPanel.SetActive(false);
+        classesPanel.SetActive(true);
+        rules.SetActive(true);
+    }
+    public void toAdditional()
+    {
+        rulesPanel.SetActive(false);
+        additinalPanel.SetActive(true);
+
+        rules.SetActive(true);
+    }
+    public void backToRulesChose()
+    {
+        rulesPanel.SetActive(true);
+
+        basisPanel.SetActive(false);
+        classesPanel.SetActive(false);
+        additinalPanel.SetActive(false);
+
+        rules.SetActive(false);
+
+    }
+
+    public void toCredits()
+    {
+        CreditslPanel.SetActive(true);
+        menu.SetActive(false);
     }
 
 }

@@ -35,8 +35,12 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
 
     public static bool gameIsOver;
 
+    public static bool findingNewGame;
+
     private void Start()
     {
+        findingNewGame = false;
+
         isBlueTurn = true;
         myMana = 4;
         enemyMana = 4;
@@ -63,13 +67,20 @@ public class GameManeger : MonoBehaviourPunCallbacks, IOnEventCallback
     }
     public override void OnLeftRoom()
     {
-        SF.tmpObjListClear();
-        foreach(GameObject obj in CardsChoiseStage.cardPlaces)
+        if (findingNewGame = false)
         {
-            Destroy(obj);
+            SF.tmpObjListClear();
+            foreach (GameObject obj in CardsChoiseStage.cardPlaces)
+            {
+                Destroy(obj);
+            }
+            CardsChoiseStage.cardPlaces.Clear();
+            SceneManager.LoadScene(0);
         }
-        CardsChoiseStage.cardPlaces.Clear();
-        SceneManager.LoadScene(0);
+        else
+        {
+
+        }
     }
     public override void OnPlayerLeftRoom(Photon.Realtime.Player otherPlayer)
     {

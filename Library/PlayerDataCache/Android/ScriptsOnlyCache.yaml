@@ -115,6 +115,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Text
   serializedClasses:
     PhotonRealtime:
@@ -155,24 +157,79 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
+    methodName: toRulesChose
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: backToRulesChose
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: backToMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: toAdditional
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: toBasis
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: backToMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
     methodName: matchmaking
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: toCredits
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: saveNickname
   - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: toClasses
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: toRulesButton
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: toClasses
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: toBasis
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: backFromRulesToPause
+  - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: openClosePause
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
+    methodName: backToEndGamePanel
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
     methodName: openClosePause
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: backToRulesChose
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: newGame
   - assembly: Assembly-CSharp
     fullTypeName: GameInterface
     methodName: Leave
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: Leave
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: toAdditional
+  - assembly: Assembly-CSharp
+    fullTypeName: GameInterface
+    methodName: showTheBoard
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -255,6 +312,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 20240}
     - Class: 114
       Script: {instanceID: 20274}
+    - Class: 114
+      Script: {instanceID: 20286}
+    - Class: 114
+      Script: {instanceID: 20552}
     - Class: 114
       Script: {instanceID: 20806}
     - Class: 114
@@ -395,6 +456,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20240}
     - Class: 114
+      Script: {instanceID: 20286}
+    - Class: 114
       Script: {instanceID: 20412}
     - Class: 114
       Script: {instanceID: 20480}
@@ -404,6 +467,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 20528}
     - Class: 114
       Script: {instanceID: 20550}
+    - Class: 114
+      Script: {instanceID: 20552}
     - Class: 114
       Script: {instanceID: 20714}
     - Class: 114
@@ -857,7 +922,7 @@ ScriptsOnlyBuild:
     className: SplineWalker
   - hash:
       serializedVersion: 2
-      Hash: b67ca9ae05b77d81fd1c466c11b88fc9
+      Hash: 382c7e4301a26bcdacc0365e003336cb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: EndOfChoiceStage
@@ -1073,7 +1138,7 @@ ScriptsOnlyBuild:
     className: LoaderAnime
   - hash:
       serializedVersion: 2
-      Hash: 05cab7b5f83112ad63601ea95aaafb8f
+      Hash: 51f683ff4837169c648022c27481427f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameInterface
@@ -1571,7 +1636,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 4b3d65b8b9c37ac382bd6d2471ef5fee
+      Hash: 2a0c72459d848e018def0745d9371c11
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Menu
@@ -2173,4 +2238,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.3.0b.apk
+  playerPath: C:/Users/asus/Documents/GitHub/Hex-Game-2.1/aboba 0.3.1.apk
