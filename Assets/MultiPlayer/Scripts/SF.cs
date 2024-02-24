@@ -59,9 +59,6 @@ public class SF : MonoBehaviourPunCallbacks, IOnEventCallback
                 showCardsAndTraps();
 
                 break;
-            case 32:
-
-                break;
         }
     }
 

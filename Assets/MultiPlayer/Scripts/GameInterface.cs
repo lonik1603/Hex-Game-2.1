@@ -38,6 +38,7 @@ public class GameInterface : MonoBehaviourPunCallbacks
 
     private static GameObject gameInterface;
 
+    private static bool tryingFindingGame;
     private void Start()
     {
         gameInterface = gameObject;
@@ -48,6 +49,10 @@ public class GameInterface : MonoBehaviourPunCallbacks
 
         victoryTXT = victoryTXTpref;
         defeatTXT = defeatTXTpref;
+
+        tryingFindingGame = false;
+
+        PhotonNetwork.AutomaticallySyncScene = true;
 
 
 
@@ -78,17 +83,14 @@ public class GameInterface : MonoBehaviourPunCallbacks
 
     public static void Leave()
     {
-        SceneManager.LoadScene(0);
+        tryingFindingGame = false;
         PhotonNetwork.LeaveRoom();
-        SF.tmpObjListClear();
-        foreach (GameObject obj in CardsChoiseStage.cardPlaces)
-        {
-            Destroy(obj);
-        }
+        SceneManager.LoadScene(0);
         CardsChoiseStage.cardPlaces.Clear();
     }
     public static void newGame()
     {
+        tryingFindingGame = true;
         GameManeger.findingNewGame = true;
         PhotonNetwork.LeaveRoom();
         SF.tmpObjListClear();
@@ -96,7 +98,19 @@ public class GameInterface : MonoBehaviourPunCallbacks
         {
             Destroy(obj);
         }
-        CardsChoiseStage.cardPlaces.Clear(); PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2 }, null);
+        CardsChoiseStage.cardPlaces.Clear();
+        if (PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
+        }
+    }
+
+    public override void OnConnectedToMaster()
+    {
+        if (tryingFindingGame)
+        {
+            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
+        }
     }
 
     public static void showEndPanel(string status)
@@ -109,12 +123,15 @@ public class GameInterface : MonoBehaviourPunCallbacks
         {
             defeatTXT.SetActive(true);
         }
+        LocalGameManager.canClick = false;
         endPanel.SetActive(true);
         darkBackground.SetActive(true);
         LocalGameManager.canClick = false;
         pauseWin.SetActive(false);
         pauseButton.SetActive(false);
+        SF.tmpObjListClear();
         PhotonNetwork.ConnectUsingSettings();
+
     }
 
     public void showTheBoard()
@@ -127,7 +144,7 @@ public class GameInterface : MonoBehaviourPunCallbacks
     public void backToEndGamePanel()
     {
         endPanel.SetActive(true);
-        darkBackground.SetActive(false);
+        darkBackground.SetActive(true);
         pauseWin.SetActive(false);
         backToEndPanelButton.SetActive(false);
     }
@@ -177,41 +194,24 @@ public class GameInterface : MonoBehaviourPunCallbacks
         rulesChosePanel.SetActive(true);
     }
 
-
-
-    public void matchmaking()
-    {
-        if (PhotonNetwork.IsConnected)
-        {
-
-            Debug.Log("Trying to join random room");
-            PhotonNetwork.JoinRandomOrCreateRoom(null, 2, MatchmakingMode.RandomMatching, null, null, null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
-        }
-    }
-    public override void OnJoinRoomFailed(short returnCode, string message)
-    {
-        Debug.Log("Failed");
-        PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false }, null);
-        Debug.Log("New room created");
-    }
     public override void OnJoinedRoom()
     {
 
-        Debug.Log("Connected to room");
-    }
-
-    public void createRoom()
-    {
-        if (PhotonNetwork.IsConnected)
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
-            PhotonNetwork.CreateRoom(null, new Photon.Realtime.RoomOptions { MaxPlayers = 2, CleanupCacheOnLeave = false });
-            Debug.Log("New room created");
+            PhotonNetwork.CurrentRoom.IsOpen = false;
+            PhotonNetwork.CurrentRoom.RemovedFromList = true;
+            PhotonNetwork.CurrentRoom.IsVisible = false;
+            PhotonNetwork.LoadLevel("Game");
         }
     }
+
+
     public override void OnPlayerEnteredRoom(Photon.Realtime.Player newPlayer)
     {
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {
+            Debug.Log("aboba");
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.RemovedFromList = true;
             PhotonNetwork.CurrentRoom.IsVisible = false;

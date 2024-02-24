@@ -11,6 +11,7 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private Text gameVersionText;
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject loading;
+    [SerializeField] private GameObject version;
 
 
     [SerializeField] private GameObject rulesPanel;
@@ -20,11 +21,11 @@ public class Menu : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject CreditslPanel;
     [SerializeField] private GameObject rules;
 
-    const string gameVersion = "0.3.1";
-    private static bool conected;
+    const string gameVersion = "0.3.1a";
+    private static bool menuIsActive;
     private void Start()
     {
-        conected = false;
+        menuIsActive = false;
         if (PlayerPrefs.HasKey("Nickname"))
         {
             nickname.text = PlayerPrefs.GetString("Nickname");
@@ -47,19 +48,24 @@ public class Menu : MonoBehaviourPunCallbacks
         {
             loading.SetActive(true);
             menu.SetActive(false);
+            menuIsActive = false;
 
-            loading.GetComponent<Image>().enabled = true;
             PhotonNetwork.ConnectUsingSettings();
         }
         else
         {
-
+            if (menuIsActive == false)
+            {
+                menuIsActive = true;
+                menu.SetActive(true);
+                loading.SetActive(false);
+            }
         }
     }
 
     public override void OnConnectedToMaster()
     {
-        conected = true;
+        menuIsActive = true;
         Debug.Log("Connected to master");
         menu.SetActive(true);
         loading.GetComponent<Image>().enabled = false;
@@ -117,6 +123,7 @@ public class Menu : MonoBehaviourPunCallbacks
         menu.SetActive(true);
         rulesPanel.SetActive(false);
         CreditslPanel.SetActive(false);
+        version.SetActive(true);
     }
 
 
@@ -124,7 +131,7 @@ public class Menu : MonoBehaviourPunCallbacks
     {
         menu.SetActive(false);
         rulesPanel.SetActive(true);
-
+        version.SetActive(false);
 
     }
 
